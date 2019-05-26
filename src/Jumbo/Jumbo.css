@@ -1,0 +1,22 @@
+
+
+body, html {
+height: 100%;
+padding:0;
+
+}
+
+.jumbostyle{
+/* The image used */
+background-image: url("./IMG/salad.jpg");
+
+/* Full height */
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.h1-responsive{
+    font-size: 75px;
+}
