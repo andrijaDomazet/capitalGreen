@@ -1,3 +1,13 @@
-.brandstyle{
-    color: white;
+.brandstyle {
+  color: white;
+}
+.navigacija {
+  /* border: 1px solid red; */
+  width: 40vw;
+  color: white;
+}
+.nav-link {
+  /* border: 1px solid green; */
+  color: white;
+  /* padding-right: 21rem; */
 }

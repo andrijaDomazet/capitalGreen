@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Collapse,
   Navbar,
@@ -10,8 +10,9 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
-  import './Navibar.css';
+  DropdownItem
+} from "reactstrap";
+import "./Navibar.css";
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -30,35 +31,38 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-   
-        <Navbar style={{backgroundColor: '#326301d3'}} light expand="md">
-          <NavbarBrand href="/" style={{ color: 'white', paddingLeft:'25px'}}>CapitalGreen</NavbarBrand>
+        <Navbar style={{ backgroundColor: "#326301d3" }} light expand="md">
+          <NavbarBrand href="/" style={{ color: "white", paddingLeft: "25px" }}>
+            CapitalGreen
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto navigacija" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/o-nama/" style={{ color: "white" }}>
+                  O nama
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                <NavLink href="/delatnosti/" className="nav-link">
+                  Delatnosti
+                </NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/proizvodi/" className="nav-link">
+                  Proizvodi
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/zaposlenje/" className="nav-link">
+                  Zaposlenje
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/kontakt/" className="nav-link">
+                  Kontakt
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

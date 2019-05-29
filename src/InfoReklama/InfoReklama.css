@@ -1,0 +1,54 @@
+/* @import "../../../index.scss"; */
+
+.infoObjekta {
+  top: 15vh;
+  width: 50%;
+  height: auto;
+  background: white;
+  /* box-shadow: 2px 0px 7px $mainBlack; */
+  position: fixed;
+  left: 25%;
+  z-index: 200;
+  transform: translateX(-400%);
+  transition: transform 0.5s ease-out;
+}
+.infoDiv {
+  background: rgba(77, 148, 255, 0.377);
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid $mainGrey; */
+}
+.close-btn {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  font-size: 5vh;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  opacity: 1;
+  color: green;
+  /* color: $mainRed; */
+}
+/* .infoSlika { */
+h1 {
+  margin: 0 0;
+  padding: 0.5rem 0;
+  /* color: $mainGrey; */
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* } */
+/* } */
+/* } */
+.infoObjekta.open {
+  transform: translateX(0);
+}
+
+/* @media screen and(min-width:769px) {
+  .infoObjekta {
+    top: 20vh;
+    width: 40%;
+    left: 30%;
+    height: auto;
+  }
+} */
