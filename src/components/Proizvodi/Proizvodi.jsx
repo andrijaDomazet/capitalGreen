@@ -15,6 +15,7 @@ export default class Proizvodi extends React.Component {
               <th className="nazivProizvoda">Naziv proizvoda</th>
               <th>Pakovanje</th>
               <th>MP cena (din)</th>
+              <th />
             </tr>
           </thead>
           <tbody>

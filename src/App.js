@@ -9,12 +9,14 @@ import Zaposlenje from "./components/zaposlenje/Zaposlenje";
 import Kontakt from "./components/kontakt/Kontakt";
 import O_nama from "./components/o-nama/O_nama";
 import Home from "./components/home/Home";
+import TopBar from "./components/TopBar/TopBar";
 // import Kartice from "./Kartice/Kartice.js";
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <TopBar />
         <Navibar />
         {/* <Home /> */}
         {/* <Jumbo /> */}

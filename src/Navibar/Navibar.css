@@ -3,11 +3,13 @@
 }
 .navigacija {
   /* border: 1px solid red; */
-  width: 40vw;
+  width: 60vw;
+  justify-content: space-between;
   color: white;
+  padding-right: 10%;
 }
 .nav-link {
   /* border: 1px solid green; */
-  color: white;
+  /* color: white !important; */
   /* padding-right: 21rem; */
 }
