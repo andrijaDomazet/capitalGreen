@@ -31,15 +31,15 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar style={{ backgroundColor: "#326301d3" }} light expand="md">
-          <NavbarBrand href="/" style={{ color: "white", paddingLeft: "25px" }}>
+        <Navbar style={{ backgroundColor: "#4d9702" }} light expand="md">
+          <NavbarBrand href="/" style={{ paddingLeft: "10%", color: "white" }}>
             CapitalGreen
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto navigacija" navbar>
               <NavItem>
-                <NavLink href="/o-nama/" style={{ color: "white" }}>
+                <NavLink href="/o-nama/" className="nav-link">
                   O nama
                 </NavLink>
               </NavItem>
