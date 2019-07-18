@@ -1,0 +1,83 @@
+@import "../../index.scss";
+
+.home-div {
+  // margin-top: -20vh;
+  // height: 100vh;
+}
+.home-left-down {
+  margin-top: 10vh;
+
+  height: 20vh;
+  background: white;
+  -webkit-clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
+  clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
+  opacity: 0.9;
+  width: 20vw;
+}
+.home-center {
+  bottom: -30vh;
+}
+.home-right {
+  background: white;
+  opacity: 0.9;
+  height: 85vh;
+  border-left: 2px solid $green2;
+}
+
+.kartica1 {
+  // margin-left: 15vw;
+  margin-top: 10vh;
+  color: $green1;
+  .kartica1-tekst {
+    background: transparent;
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+.kartica2 {
+  margin: 20vh 5vw 0 0;
+  border: 1px solid white;
+  color: white;
+  // background: yellow;
+  background: transparent;
+  text-align: center;
+  // -webkit-clip-path: polygon(
+  //   50% 0%,
+  //   80% 10%,
+  //   100% 35%,
+  //   100% 70%,
+  //   80% 90%,
+  //   50% 100%,
+  //   20% 90%,
+  //   0% 70%,
+  //   0% 35%,
+  //   20% 10%
+  // );
+  // clip-path: polygon(
+  //   50% 0%,
+  //   80% 10%,
+  //   100% 35%,
+  //   100% 70%,
+  //   80% 90%,
+  //   50% 100%,
+  //   20% 90%,
+  //   0% 70%,
+  //   0% 35%,
+  //   20% 10%
+  // );
+
+  .kartica2-phone {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .kartica2-tekst {
+    span {
+      font-size: 1rem;
+      color: $green1;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./index.scss";
+
+.appDiv {
+  background-image: url("./pozadina1.jpeg");
+  // opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+
+  .appRow {
+    border-bottom: 2px solid $green2;
+  }
+  .logo {
+    text-align: center;
+    img {
+      height: 15vh;
+    }
+  }
+  .appBars {
+    // padding-right: 5vw;
+  }
+}

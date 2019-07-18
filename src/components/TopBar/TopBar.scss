@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.topBar-div {
+  display: flex;
+  text-decoration: none;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 0.5px solid $green2;
+
+  .topBar-link {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.3rem;
+    justify-content: space-between;
+    text-align: center;
+    text-decoration: none;
+    color: $green2;
+    // opacity: 1 !important;
+  }
+  .btn-mail,
+  .btn-phone,
+  .btn-clock {
+    margin-right: 0.5rem;
+    color: $green2;
+  }
+}
+
+.hover {
+  color: white;
+}
