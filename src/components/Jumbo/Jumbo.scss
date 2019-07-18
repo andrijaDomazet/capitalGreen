@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.jumbo {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  height: 20vh;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+
+  p {
+    font-size: 1.2em;
+  }
+}

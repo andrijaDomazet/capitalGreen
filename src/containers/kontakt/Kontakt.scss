@@ -1,0 +1,37 @@
+@import "../../index.scss";
+
+.contact__row {
+  display: flex;
+  background: white;
+  border: 1px solid $green2;
+  margin: 2% 10%;
+  opacity: 0.95;
+  height: 70vh;
+
+  .contact__row-left {
+    flex: 1;
+  }
+  .contact__row-right {
+    flex: 1;
+  }
+}
+
+.kartica__logo {
+  padding-top: 5%;
+  text-align: center;
+  display: flex;
+  .flex-slika {
+    flex: 1;
+    img {
+      width: 20vw;
+    }
+  }
+  .flex {
+    flex: 1;
+  }
+
+  h5 {
+    padding-top: 5%;
+    font-weight: bold;
+  }
+}

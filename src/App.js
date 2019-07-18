@@ -1,35 +1,31 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import Navibar from "./Navibar/Navibar.js";
-import Jumbo from "./Jumbo/Jumbo.js";
-import Delatnosti from "./components/delatnosti/Delatnosti";
-import Proizvodi from "./components/Proizvodi/Proizvodi";
-import Zaposlenje from "./components/zaposlenje/Zaposlenje";
-import Kontakt from "./components/kontakt/Kontakt";
-import O_nama from "./components/o-nama/O_nama";
-import Home from "./components/home/Home";
-import TopBar from "./components/TopBar/TopBar";
-// import Kartice from "./Kartice/Kartice.js";
+import "./App.scss";
+import Delatnosti from "./containers/delatnosti/Delatnosti";
+import Proizvodi from "./containers/Proizvodi/Proizvodi";
+import Zaposlenje from "./containers/zaposlenje/Zaposlenje";
+import Kontakt from "./containers/kontakt/Kontakt";
+import O_nama from "./containers/o-nama/O_nama";
+import Home from "./containers/Home/Home";
+import NoMatch from "./components/NoMatch/NoMatch";
+import Bars from "./containers/Bars/Bars";
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <TopBar />
-        <Navibar />
-        {/* <Home /> */}
-        {/* <Jumbo /> */}
-      </div>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/o-nama" component={O_nama} />
-        <Route path="/delatnosti" component={Delatnosti} />
-        <Route path="/proizvodi" component={Proizvodi} />
-        <Route path="/zaposlenje" component={Zaposlenje} />
-        <Route path="/kontakt" component={Kontakt} />
-      </Switch>
-    </Router>
+    <div className="appDiv">
+      <Router>
+        <Bars />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/o-nama" component={O_nama} />
+          <Route path="/delatnosti" component={Delatnosti} />
+          <Route path="/proizvodi" component={Proizvodi} />
+          <Route path="/zaposlenje" component={Zaposlenje} />
+          <Route path="/kontakt" component={Kontakt} />
+          <Route component={NoMatch} />
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
