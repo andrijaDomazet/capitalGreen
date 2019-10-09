@@ -1,0 +1,50 @@
+@import "../../../index.scss";
+.product-main {
+  background: rgba(255, 255, 255, 0.623);
+  border-radius: 5px;
+  text-align: center;
+  margin: 5px 5px 0 5px;
+  animation: treca-animacija 8s;
+  h2 {
+    font-size: 1em;
+  }
+  .product {
+    display: flex;
+
+    img {
+      border-radius: 15%;
+      margin-left: 5px;
+      height: 70px;
+    }
+    h1 {
+      font-size: 0.8em;
+    }
+
+    p {
+      height: 70px;
+      text-align: left;
+      padding: 0 2px;
+      font-size: 0.8em;
+      line-height: 16px;
+      margin: 2px;
+    }
+    button {
+      float: right;
+      font-size: 0.8em;
+      line-height: 1.4em;
+      margin: 5px auto;
+      margin-right: 10px;
+    }
+  }
+}
+@keyframes treca-animacija {
+  0% {
+    transform: translateY(350%);
+  }
+  95% {
+    transform: treca-animacija(350%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

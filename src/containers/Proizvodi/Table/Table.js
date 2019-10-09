@@ -1,27 +1,31 @@
 import React, { Component } from "react";
-import "./ObjectRow.scss";
-import Jumbo from "../../../components/Jumbo/Jumbo";
+import "./Table.scss";
 import Selection from "../../../components/Selection/Selection";
-
-export default class ObjectRow extends Component {
+import slika from "../../../logo.png";
+export default class Table extends Component {
   state = {
-    value: "select"
+    value: "select",
+    grupaProizvoda: "folije",
+    group: this.props.data[1]
   };
 
   //render for header of table
   renderTableHeader = () => {
-    return this.props.data.naziviKolona.map((naziv, i) => {
+    return this.props.data[0].map((naziv, i) => {
       return <th key={i}>{naziv}</th>;
     });
   };
 
   //render for td for table
   renderTableData = () => {
-    return this.props.data.djubriva.map((proizvod, id) => {
+    return this.state.group.map((proizvod, id) => {
       return (
         <tr key={proizvod.id}>
-          <td>{proizvod.id}</td>
-          <td>{proizvod.nazivProizvoda} </td>
+          <td>{proizvod.id}.</td>
+          <td>
+            <img src={slika} alt="" />
+            {proizvod.nazivProizvoda}
+          </td>
           <td>{proizvod.pakovanje} </td>
           <td>{proizvod.mpCena.toFixed(2)} </td>
           <td>
@@ -41,16 +45,17 @@ export default class ObjectRow extends Component {
     this.setState({ value: event.target.value });
     console.log(this.state.value);
   };
+  grupaProizvoda = e => {
+    const groupProducts = this.props.data[e];
+    this.setState({ group: groupProducts });
+  };
   render() {
-    const { data } = this.props;
-    console.log(data.djubriva[0].id);
-
     return (
-      <div className="objectRow">
-        <div className="proizvodiJumbo">
-          <Jumbo />
+      <div className="tableDiv">
+        <div className="tableChoise">
+          <h3>Izaberite grupu proizvoda:</h3>
+          {<Selection promenaGrupe={this.grupaProizvoda} />}
         </div>
-        <h3>Izaberite grupu proizvoda:</h3> {<Selection />}
         <table>
           <thead>
             <tr>{this.renderTableHeader()}</tr>

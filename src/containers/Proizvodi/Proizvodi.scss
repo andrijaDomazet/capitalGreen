@@ -1,32 +1,8 @@
 @import "../../index.scss";
 
-.proizvodi-div {
-  // margin-top: 1rem;
-  background: white;
-  opacity: 0.9;
+.products {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.89);
   margin: 0 auto;
-
-  .proizvodiJumbo {
-    padding-top: 5vh;
-  }
-
-  .tabela {
-    // background: white;
-    // opacity: 1 !important;
-    // opacity: 0.4;
-    color: $dark1 !important;
-    text-align: center;
-    margin: 0 auto;
-
-    .nazivProizvoda {
-      // padding-top: 1rem;
-      text-align: left;
-      // margin-top: 1rem;
-    }
-
-    button {
-      background-color: $green1;
-      border: none;
-    }
-  }
+  padding-top: 25px;
 }

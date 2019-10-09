@@ -1,35 +1,49 @@
 @import "../../index.scss";
 
 .home-div {
-  // margin-top: -20vh;
-  // height: 100vh;
-}
-.home-left-down {
-  margin-top: 10vh;
+  display: flex;
+  position: relative;
+  .home-left {
+    margin-top: 20px;
+    margin-left: 2vw;
+    height: 20vh;
+    width: 20vw;
+  }
+  .home-center {
+    margin-top: 35vh;
+    margin-left: 10vw;
+  }
+  .home-center.move {
+    animation: druga-animacija 5s forwards;
+  }
+  .home-right {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background: rgba(184, 184, 184, 0.507);
+    width: 20vw;
+    height: 85vh;
+    animation: prva-animacija 1.5s;
+    overflow: hidden;
 
-  height: 20vh;
-  background: white;
-  -webkit-clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
-  clip-path: polygon(0 0, 60% 0, 50% 100%, 0% 100%);
-  opacity: 0.9;
-  width: 20vw;
-}
-.home-center {
-  bottom: -30vh;
-}
-.home-right {
-  background: white;
-  opacity: 0.9;
-  height: 85vh;
-  border-left: 2px solid $green2;
+    h6 {
+      color: white;
+      margin: 5px 5px 0 5px;
+      padding: 3px 0;
+      text-align: center;
+      background: rgba(107, 107, 107, 0.616);
+      border-radius: 5px;
+
+      // margin: 0;
+    }
+  }
 }
 
 .kartica1 {
-  // margin-left: 15vw;
-  margin-top: 10vh;
   color: $green1;
   .kartica1-tekst {
     background: transparent;
+    margin-bottom: 20px;
     color: white;
     padding-top: 1rem;
     font-size: 1.2rem;
@@ -37,47 +51,47 @@
 }
 
 .kartica2 {
-  margin: 20vh 5vw 0 0;
+  margin: 80px 1vw 0 0;
   border: 1px solid white;
   color: white;
-  // background: yellow;
-  background: transparent;
   text-align: center;
-  // -webkit-clip-path: polygon(
-  //   50% 0%,
-  //   80% 10%,
-  //   100% 35%,
-  //   100% 70%,
-  //   80% 90%,
-  //   50% 100%,
-  //   20% 90%,
-  //   0% 70%,
-  //   0% 35%,
-  //   20% 10%
-  // );
-  // clip-path: polygon(
-  //   50% 0%,
-  //   80% 10%,
-  //   100% 35%,
-  //   100% 70%,
-  //   80% 90%,
-  //   50% 100%,
-  //   20% 90%,
-  //   0% 70%,
-  //   0% 35%,
-  //   20% 10%
-  // );
-
+  background: rgba(0, 0, 0, 0.14);
   .kartica2-phone {
-    font-size: 1.2rem;
     font-weight: bold;
+    i {
+      margin-right: 5px;
+    }
   }
 
   .kartica2-tekst {
+    font-size: 1.1em;
+    line-height: 1.4em;
     span {
-      font-size: 1rem;
+      // font-size: 1.1em;
       color: $green1;
       font-weight: bold;
     }
+  }
+}
+@keyframes prva-animacija {
+  from {
+    transform: translateX(400%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes druga-animacija {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

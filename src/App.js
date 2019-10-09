@@ -4,7 +4,7 @@ import "./App.scss";
 import Delatnosti from "./containers/delatnosti/Delatnosti";
 import Proizvodi from "./containers/Proizvodi/Proizvodi";
 import Zaposlenje from "./containers/zaposlenje/Zaposlenje";
-import Kontakt from "./containers/kontakt/Kontakt";
+import Kontakt from "./containers/kontakt/Kontakt.js";
 import O_nama from "./containers/o-nama/O_nama";
 import Home from "./containers/Home/Home";
 import NoMatch from "./components/NoMatch/NoMatch";

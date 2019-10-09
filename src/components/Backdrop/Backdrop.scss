@@ -3,11 +3,25 @@
 .backDrop {
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  // padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
+  //px, em, %, auto, min-height i min-height
   height: 100%;
+  //hidden, auto, clip, scroll, visible
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.6);
+  //background je u ovoj situaciji isto sto i background-color
+  //sa background mozemo dodavati url, poziciju i no repeat
+  background-color: rgba(46, 46, 46, 0.945);
+  animation: cetvrta-animacija 1.5s;
+}
+
+@keyframes cetvrta-animacija {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

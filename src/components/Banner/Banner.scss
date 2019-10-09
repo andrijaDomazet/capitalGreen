@@ -1,15 +1,20 @@
 @import "../../index.scss";
 
-.jumbo {
+.banner {
   background-image: url("./img/background.jpg");
   background-size: cover;
-  height: 20vh;
+  height: 18vh;
   width: 90%;
   margin: 0 auto;
+  padding-top: 3px;
   text-align: center;
   color: white;
-
+  h3 {
+    margin: 0;
+  }
   p {
-    font-size: 1.2em;
+    line-height: 1.6em;
+    font-size: 1.1em;
+    padding: 0 15px;
   }
 }

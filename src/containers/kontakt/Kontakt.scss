@@ -2,12 +2,12 @@
 
 .contact__row {
   display: flex;
-  background: white;
-  border: 1px solid $green2;
-  margin: 2% 10%;
-  opacity: 0.95;
-  height: 70vh;
-
+  background: rgba(97, 114, 109, 0.596);
+  // border: 1px solid $green2;
+  margin: 0 8%;
+  // opacity: 0.95;
+  height: 85vh;
+  // padding: 5%;
   .contact__row-left {
     flex: 1;
   }

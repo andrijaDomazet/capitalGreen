@@ -5,11 +5,7 @@ import { withRouter } from "react-router-dom";
 
 function Kartica1(props) {
   const { click1 } = props;
-  const click = () => {
-    console.log("idemooo2");
-    // <Redirect to="/o-nama" />;
-    this.props.history.push("/delatnosti/");
-  };
+
   return (
     <div className="kartica1-div">
       <div className="kartica1">
@@ -19,13 +15,8 @@ function Kartica1(props) {
           tehnologijama u poljoprivredi, kao i inovativnim načinom uzgoja
           biljaka. Pogledajte našu ponudu i izaberite samo najbolje.
         </p>
-        <button onClick={click}>redirect</button>
-        <Buttons
-          clicked={click1}
-          // onClick={this.props.history.push("/o-nama")}
-        >
-          O nama
-        </Buttons>
+
+        <Buttons clicked={click1}>O nama</Buttons>
       </div>
     </div>
   );

@@ -3,40 +3,30 @@ import { Link } from "react-router-dom";
 import "./Navibar.scss";
 
 export default function Navibar(props) {
-  const { admin } = props;
-  let adminPanel = newFunction();
-
-  return (
-    <div className="navBar-div">
+  const adminFunction = () => {
+    return props.admin ? <Link to="admin">Admin</Link> : null;
+  };
+  const navBarOptions = () => {
+    return (
       <div className="links">
-        <Link to="/" className="nav-link">
-          Naslovna
-        </Link>
-        <Link to="/o-nama/" className="nav-link">
-          O nama
-        </Link>
-        <Link to="/delatnosti/" className="nav-link">
-          Delatnosti
-        </Link>
-        <Link to="/proizvodi/" className="nav-link">
-          Proizvodi
-        </Link>
-        <Link to="/zaposlenje/" className="nav-link">
-          Zaposlenje
-        </Link>
-        <Link to="/kontakt/" className="nav-link">
-          Kontakt
-        </Link>
-        {adminPanel}
+        {options.map((option, index) => {
+          return (
+            <Link to={option.route} key={index} className="nav-link">
+              {option.title}
+            </Link>
+          );
+        })}
+        {adminFunction()}
       </div>
-    </div>
-  );
-
-  function newFunction() {
-    let adminPanel = null;
-    if (admin) {
-      adminPanel = <Link to="admin">Admin</Link>;
-    }
-    return adminPanel;
-  }
+    );
+  };
+  return <div className="navBar-div">{navBarOptions()}</div>;
 }
+const options = [
+  { route: "/", title: "Naslovna" },
+  { route: "/o-nama", title: "O nama" },
+  { route: "/delatnosti", title: "Delatnosti" },
+  { route: "/proizvodi", title: "Proizvodi" },
+  { route: "/zaposlenje", title: "Zaposlenje" },
+  { route: "/kontakt", title: "Kontakt" }
+];
