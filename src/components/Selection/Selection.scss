@@ -1,8 +1,21 @@
 @import "../../index.scss";
 
 .selectionDiv {
-  p {
-    color: $green1;
-    text-decoration: underline;
+  select {
+    text-align: center;
+    text-align-last: center;
+    background: $green1;
+    color: white;
+    font-weight: 600;
+    font-size: 1.6em;
+    outline: none;
+    border: none;
+    // border: 1px solid green;
+    border-radius: 5px;
+    // border-bottom: 1px solid green;
+
+    option {
+      text-align: center;
+    }
   }
 }

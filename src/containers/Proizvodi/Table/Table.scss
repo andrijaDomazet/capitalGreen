@@ -1,0 +1,47 @@
+@import "../../../index.scss";
+
+.tableDiv {
+  border-top: none;
+  // overflow: scroll;
+  .tableChoise {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 0;
+    h3 {
+      margin-right: 10px;
+    }
+  }
+
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+    img {
+      margin: 0;
+      height: 50px;
+    }
+  }
+  table tr {
+    border-bottom: 1px solid $dark1;
+  }
+  table td {
+    padding: 0.3em;
+
+    button {
+      background-color: $green1;
+      border: none;
+    }
+  }
+  table tr:nth-child(odd) td {
+    background: rgba(173, 194, 173, 0.253);
+  }
+  table td:nth-child(2) {
+    text-align: left;
+  }
+  table td:nth-child(4) {
+    text-align: right;
+  }
+}

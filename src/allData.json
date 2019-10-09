@@ -1,7 +1,7 @@
-{
-  "naziviKolona": ["R.br.", "Naziv proizvoda", "Pakovanje", "MP cena", ""],
+[
+  ["R.br.", "Naziv proizvoda", "Pakovanje", "MP cena", ""],
 
-  "djubriva": [
+  [
     {
       "id": 1,
       "nazivProizvoda": "ORGANIC MINERAL Ca +NK+Mg+B+ AMINOKISELINE",
@@ -37,10 +37,9 @@
       "nazivProizvoda": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
       "mpCena": 200
-    },
-    { "id": 7, "nazivProizvoda": "Folija", "pakovanje": "1", "mpCena": 654.55 }
+    }
   ],
-  "folije": [
+  [
     {
       "id": 1,
       "nazivProizvoda": "Folija 1",
@@ -59,5 +58,25 @@
       "pakovanje": "10/1",
       "mpCena": 2000.0
     }
+  ],
+  [
+    {
+      "id": 1,
+      "nazivProizvoda": "Bioloska zastita 1",
+      "pakovanje": "1/1",
+      "mpCena": 654.55
+    },
+    {
+      "id": 2,
+      "nazivProizvoda": "Bioloska zastita 2",
+      "pakovanje": "6/1",
+      "mpCena": 3790.92
+    },
+    {
+      "id": 3,
+      "nazivProizvoda": "Bioloska zastita 3",
+      "pakovanje": "10/1",
+      "mpCena": 2000.0
+    }
   ]
-}
+]

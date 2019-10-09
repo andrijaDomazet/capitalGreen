@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.parent {
+  height: 50%;
+  border: 1px solid red;
+}
+.child {
+  height: inherit;
+  border: 1px solid blue;
+}

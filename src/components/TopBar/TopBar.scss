@@ -5,23 +5,24 @@
   text-decoration: none;
   width: 80%;
   margin: 0 auto;
-  border-bottom: 0.5px solid $green2;
+  border-bottom: 1px solid $green3;
 
   .topBar-link {
     flex: 1;
     font-size: 1rem;
+    font-weight: 500;
     padding: 0.3rem;
     justify-content: space-between;
     text-align: center;
     text-decoration: none;
-    color: $green2;
-    // opacity: 1 !important;
+    color: $green3;
   }
+
   .btn-mail,
   .btn-phone,
   .btn-clock {
     margin-right: 0.5rem;
-    color: $green2;
+    color: $green3;
   }
 }
 
