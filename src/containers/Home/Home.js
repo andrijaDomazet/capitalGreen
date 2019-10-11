@@ -16,7 +16,7 @@ export default class Home extends Component {
       { id: 3, name: "Organic mineral Ca" },
       { id: 4, name: "Folija" }
     ],
-    prikazInfoObjekta: false,
+    prikazAkcijskeReklame: false,
     lista: false,
     lista1: true,
     lista2: false
@@ -32,23 +32,20 @@ export default class Home extends Component {
   componentDidMount() {
     setTimeout(() => {
       //Start the timer
-      this.setState({ prikazInfoObjekta: true }); //After 6 second, set render to true
+      this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
     }, 5000);
   }
 
   removeCommentBox = () => {
     this.setState({
-      prikazInfoObjekta: false,
+      prikazAkcijskeReklame: false,
       lista: true
     });
   };
-
+  close = () => {
+    console.log("idemo");
+  };
   render() {
-    console.log(`0123456789 napred nazad gore dole`.lastIndexOf(" ", 16));
-    // console.log(
-    //   (`0123456789 napred nazad gore dole` + " ").lastIndexOf(" ", 17)
-    // );
-    console.log(`0123456789 napred nazad gore dole`.lastIndexOf("B"));
     let naslov = <p>ORGANIC MINERAL Ca</p>;
     let listaProizvoda = this.kreiranjeListeProizvoda(naslov);
     let classCenter = this.state.lista
@@ -56,9 +53,12 @@ export default class Home extends Component {
       : "col-sm-4 home-center";
     return (
       <div>
-        <Backdrop show={this.state.prikazInfoObjekta} />
+        <Backdrop
+          clicked={this.removeCommentBox}
+          show={this.state.prikazAkcijskeReklame}
+        />
         <div className="row home-div">
-          <Banner2 />
+          <Banner2 small={this.state.lista} />
           <div className="col-sm-6 home-left">
             <Kartica1 click1={this.click1} />
           </div>
@@ -68,9 +68,9 @@ export default class Home extends Component {
           <AkcijskaReklama
             click={this.click}
             removeCommentBox={this.removeCommentBox}
-            show={this.state.prikazInfoObjekta}
+            show={this.state.prikazAkcijskeReklame}
           />
-          <News />
+          <News small={this.state.lista} />
           {listaProizvoda}
         </div>
       </div>
