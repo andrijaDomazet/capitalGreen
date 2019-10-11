@@ -3,8 +3,8 @@
 .banner {
   background-image: url("./img/background.jpg");
   background-size: cover;
-  height: 18vh;
-  width: 90%;
+  height: 6em;
+  // width: 90%;
   margin: 0 auto;
   padding-top: 3px;
   text-align: center;
@@ -16,5 +16,10 @@
     line-height: 1.6em;
     font-size: 1.1em;
     padding: 0 15px;
+  }
+}
+@media screen and(min-width:768px) {
+  .banner {
+    width: 90%;
   }
 }

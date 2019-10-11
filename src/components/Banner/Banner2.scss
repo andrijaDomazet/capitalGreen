@@ -4,7 +4,7 @@
   margin-left: 0px;
   margin-top: 15px;
   background: rgba(212, 212, 212, 0.61);
-  width: 80vw;
+  width: 100vw;
   height: 30px;
   color: black;
   overflow: hidden;
@@ -26,11 +26,13 @@
     animation-timing-function: linear;
     &:hover {
       cursor: pointer;
-      animation-play-state: paused;
     }
   }
 }
-
+.banner2Div.small {
+  width: 80vw;
+  animation: smallerBanner 1s linear;
+}
 @keyframes sesta-animacija {
   0% {
     transform: translateX(1200px);
@@ -38,5 +40,13 @@
 
   100% {
     transform: translateX(-800px);
+  }
+}
+@keyframes smallerBanner {
+  from {
+    width: 100vw;
+  }
+  to {
+    width: 80vw;
   }
 }
