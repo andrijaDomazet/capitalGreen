@@ -18,7 +18,7 @@
   }
   .home-right {
     position: absolute;
-    top: 0;
+    // top: 10px;
     right: 30px;
     background: rgba(184, 184, 184, 0.507);
     width: 20vw;
@@ -28,51 +28,15 @@
 
     h6 {
       color: white;
-      margin: 5px 5px 0 5px;
+      margin: 5px 10px 0 10px;
       padding: 3px 0;
       text-align: center;
       background: rgba(107, 107, 107, 0.616);
       border-radius: 5px;
-
-      // margin: 0;
     }
   }
 }
 
-.kartica1 {
-  color: $green1;
-  .kartica1-tekst {
-    background: transparent;
-    margin-bottom: 20px;
-    color: white;
-    padding-top: 1rem;
-    font-size: 1.2rem;
-  }
-}
-
-.kartica2 {
-  margin: 80px 1vw 0 0;
-  border: 1px solid white;
-  color: white;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.14);
-  .kartica2-phone {
-    font-weight: bold;
-    i {
-      margin-right: 5px;
-    }
-  }
-
-  .kartica2-tekst {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    span {
-      // font-size: 1.1em;
-      color: $green1;
-      font-weight: bold;
-    }
-  }
-}
 @keyframes prva-animacija {
   from {
     transform: translateX(400%);

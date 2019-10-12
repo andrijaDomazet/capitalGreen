@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import AkcijskaReklama from "../../components/AkcijskaReklama/AkcijskaReklama";
 import "./Home.scss";
-import Kartica1 from "./Kartica1";
-import Kartica2 from "./Kartica2";
+import AkcijskaReklama from "../../components/AkcijskaReklama/AkcijskaReklama";
 import Backdrop from "../../components/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
 import News from "../../components/News/News";
 import Banner2 from "../../components/Banner/Banner2";
+import Kartica1 from "../../components/Kartice/Kartica1";
+import Kartica2 from "../../components/Kartice/Kartica2";
 
 export default class Home extends Component {
   state = {
@@ -47,7 +47,7 @@ export default class Home extends Component {
   };
   render() {
     let naslov = <p>ORGANIC MINERAL Ca</p>;
-    let listaProizvoda = this.kreiranjeListeProizvoda(naslov);
+    let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista
       ? "col-sm-4 home-center move"
       : "col-sm-4 home-center";
@@ -77,7 +77,7 @@ export default class Home extends Component {
     );
   }
 
-  kreiranjeListeProizvoda(naslov) {
+  setProductsList(naslov) {
     return this.state.lista ? (
       <div className="home-right">
         <h6>Proizvodi na akciji</h6>
