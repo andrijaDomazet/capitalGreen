@@ -6,7 +6,7 @@ import "./Bars.scss";
 
 export default class Bars extends Component {
   state = {
-    admin: true
+    admin: false
   };
   render() {
     return (
