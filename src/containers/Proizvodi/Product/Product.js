@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Buttons from "../../../UI/Button/Buttons";
 import "./Product.scss";
 import slika from "../../../components/AkcijskaReklama/img/djubrivo.jpg";
-import data from "../../../allData";
+// import data from "../../../allData";
 export default class Product extends Component {
   state = {
     products: [
@@ -22,8 +22,8 @@ export default class Product extends Component {
     return <p>{truncate(text, 100)}...</p>;
   };
   render() {
-    console.log(this.props.product.name);
-    console.log(data);
+    // console.log(this.props.product.name);
+    // console.log(data);
 
     return (
       <div className="product-main">

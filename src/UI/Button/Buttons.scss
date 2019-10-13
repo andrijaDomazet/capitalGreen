@@ -1,6 +1,7 @@
 @import "../../index.scss";
 
 button {
+  z-index: +999;
   cursor: pointer;
   color: white;
   background: rgb(8, 124, 43);

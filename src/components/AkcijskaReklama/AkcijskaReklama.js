@@ -15,9 +15,11 @@ export default class AkcijskaReklama extends PureComponent {
   state = {
     val: "ORGANIC MINERAL Ca"
   };
-
+  click = () => {
+    console.log("idemo");
+  };
   render() {
-    const { click, show } = this.props;
+    const { click2, show } = this.props;
     let infoClasses = show ? "infoObjekta open" : "infoObjekta";
 
     return (
@@ -33,7 +35,7 @@ export default class AkcijskaReklama extends PureComponent {
             prehranu kultura. Ova đubriva sadrže različite kombinacije makro i
             mikroelemenata za sve faze proizvodnje.
           </p>
-          <Buttons clicked={click}>Saznaj više...</Buttons>
+          <Buttons clicked={click2}>Saznaj više...</Buttons>
         </div>
         <div className="info-close" onClick={this.props.removeCommentBox}>
           <i className="fas fa-times" />
