@@ -28,12 +28,16 @@ export default class Home extends Component {
   click1 = () => {
     this.props.history.push("/o-nama");
   };
+  click2 = () => {
+    // console.log("idemooo");
 
+    this.props.history.push("/proizvodi");
+  };
   componentDidMount() {
     setTimeout(() => {
       //Start the timer
       this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
-    }, 5000);
+    }, 2000);
   }
 
   removeCommentBox = () => {
@@ -66,7 +70,7 @@ export default class Home extends Component {
             <Kartica2 />
           </div>
           <AkcijskaReklama
-            click={this.click}
+            click2={this.click2}
             removeCommentBox={this.removeCommentBox}
             show={this.state.prikazAkcijskeReklame}
           />

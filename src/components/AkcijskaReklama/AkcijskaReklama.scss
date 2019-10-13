@@ -39,9 +39,7 @@
 
   .info-close {
     position: fixed;
-    height: 100%;
-    width: 100%;
-
+    right: 0;
     i {
       position: absolute;
       top: 8px;
@@ -97,8 +95,6 @@
 
     .info-close {
       position: fixed;
-      height: 100%;
-      width: 100%;
 
       i {
         position: absolute;
