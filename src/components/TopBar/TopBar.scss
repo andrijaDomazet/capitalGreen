@@ -16,13 +16,9 @@
     text-align: center;
     text-decoration: none;
     color: $green3;
-  }
-
-  .btn-mail,
-  .btn-phone,
-  .btn-clock {
-    margin-right: 0.5rem;
-    color: $green3;
+    i {
+      margin-right: 0.5rem;
+    }
   }
 }
 
