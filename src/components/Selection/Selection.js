@@ -6,9 +6,9 @@ export default class Selection extends Component {
     groupProducts: ""
   };
   setGroupProducts = e => {
-    var grupa = e.target.value;
+    var group = e.target.value;
     this.setState({ groupProducts: e.target.value });
-    this.props.promenaGrupe(grupa);
+    this.props.changeGroup(group);
   };
   render() {
     return (

@@ -14,7 +14,7 @@ export default class Bars extends Component {
         <div className="col-sm-2 logo">
           <img src={Logo} alt="logo" />
         </div>
-        <div className="col-sm-9 aappBarsOptions">
+        <div className="col-sm-9">
           <TopBar />
           <Navibar admin={this.state.admin} />
         </div>

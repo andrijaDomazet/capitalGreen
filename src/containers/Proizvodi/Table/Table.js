@@ -39,7 +39,7 @@ export default class Table extends Component {
   };
 
   poziv = () => {
-    console.log("idemooo");
+    console.log("Ucitavanje proizvoda");
   };
   change = event => {
     this.setState({ value: event.target.value });
@@ -54,7 +54,7 @@ export default class Table extends Component {
       <div className="tableDiv">
         <div className="tableChoise">
           <h3>Izaberite grupu proizvoda:</h3>
-          {<Selection promenaGrupe={this.grupaProizvoda} />}
+          {<Selection changeGroup={this.grupaProizvoda} />}
         </div>
         <table>
           <thead>
