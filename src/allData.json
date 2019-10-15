@@ -4,79 +4,91 @@
   [
     {
       "id": 1,
-      "nazivProizvoda": "ORGANIC MINERAL Ca +NK+Mg+B+ AMINOKISELINE",
+      "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "1/1",
-      "mpCena": 654.55
+      "mpCena": 654.55,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
-      "nazivProizvoda": "ORGANIC MINERAL Ca +NK+Mg+B+ AMINOKISELINE",
+      "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "6/1",
-      "mpCena": 3790.92
+      "mpCena": 3790.92,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
-      "nazivProizvoda": "IDRON 20 20 20 +me",
+      "name": "IDRON 20 20 20 +me",
       "pakovanje": "10/1",
-      "mpCena": 2000.0
+      "mpCena": 2000.0,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 4,
-      "nazivProizvoda": "IDRON 10 5 40 +me",
+      "name": "IDRON 10 5 40 +me",
       "pakovanje": "10/1",
-      "mpCena": 654.55
+      "mpCena": 654.55,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 5,
-      "nazivProizvoda": "IDRON 5 45 15 +me",
+      "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
-      "mpCena": 200
+      "mpCena": 200,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 6,
-      "nazivProizvoda": "IDRON 5 45 15 +me",
+      "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
-      "mpCena": 200
+      "mpCena": 200,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ],
   [
     {
       "id": 1,
-      "nazivProizvoda": "Folija 1",
+      "name": "Folija 1",
       "pakovanje": "1/1",
-      "mpCena": 654.55
+      "mpCena": 654.55,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
-      "nazivProizvoda": "Folija 2",
+      "name": "Folija 2",
       "pakovanje": "6/1",
-      "mpCena": 3790.92
+      "mpCena": 3790.92,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
-      "nazivProizvoda": "Folija 3",
+      "name": "Folija 3",
       "pakovanje": "10/1",
-      "mpCena": 2000.0
+      "mpCena": 2000.0,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ],
   [
     {
       "id": 1,
-      "nazivProizvoda": "Bioloska zastita 1",
+      "name": "Bioloska zastita 1",
       "pakovanje": "1/1",
-      "mpCena": 654.55
+      "mpCena": 654.55,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
-      "nazivProizvoda": "Bioloska zastita 2",
+      "name": "Bioloska zastita 2",
       "pakovanje": "6/1",
-      "mpCena": 3790.92
+      "mpCena": 3790.92,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
-      "nazivProizvoda": "Bioloska zastita 3",
+      "name": "Bioloska zastita 3",
       "pakovanje": "10/1",
-      "mpCena": 2000.0
+      "mpCena": 2000.0,
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ]
 ]

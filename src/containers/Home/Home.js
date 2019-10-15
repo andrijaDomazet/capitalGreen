@@ -7,7 +7,7 @@ import News from "../../components/News/News";
 import Banner2 from "../../components/Banner/Banner2";
 import Kartica1 from "../../components/Kartice/Kartica1";
 import Kartica2 from "../../components/Kartice/Kartica2";
-
+import data from "../../allData";
 export default class Home extends Component {
   state = {
     products: [
@@ -50,6 +50,8 @@ export default class Home extends Component {
     console.log("idemo");
   };
   render() {
+    console.log(data[1]);
+
     let naslov = <p>ORGANIC MINERAL Ca</p>;
     let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista
@@ -85,9 +87,11 @@ export default class Home extends Component {
     return this.state.lista ? (
       <div className="home-right">
         <h6>Proizvodi na akciji</h6>
-        {this.state.products.map((product, index) => {
-          return <Product key={index} product={this.state.products[index]} />;
-        })}
+        <div className="home-products">
+          {data[1].map((product, index) => {
+            return <Product key={index} product={data[1][index]} />;
+          })}
+        </div>
       </div>
     ) : null;
   }
