@@ -1,8 +1,13 @@
 @import "../../../index.scss";
 
 .tableDiv {
+  // background: rgba(255, 255, 255, 0.89);
   border-top: none;
+  width: 80vw;
+  margin: 0 auto;
+  // height: 100%;
   // overflow: scroll;
+
   .tableChoise {
     display: flex;
     justify-content: center;
@@ -35,7 +40,7 @@
       border: none;
     }
   }
-  table tr:nth-child(odd) td {
+  tbody tr:nth-child(odd) td {
     background: rgba(173, 194, 173, 0.253);
   }
   table td:nth-child(2) {

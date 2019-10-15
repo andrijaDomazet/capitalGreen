@@ -21,11 +21,11 @@ export default class Table extends Component {
     return this.state.group.map((proizvod, id) => {
       return (
         <tr key={proizvod.id}>
-          <td>{proizvod.id}.</td>
           <td>
             <img src={slika} alt="" />
-            {proizvod.nazivProizvoda}
+            {proizvod.id}.
           </td>
+          <td>{proizvod.name}</td>
           <td>{proizvod.pakovanje} </td>
           <td>{proizvod.mpCena.toFixed(2)} </td>
           <td>

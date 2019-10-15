@@ -1,10 +1,9 @@
 @import "../../index.scss";
 
-.parent {
-  height: 50%;
-  border: 1px solid red;
-}
-.child {
-  height: inherit;
-  border: 1px solid blue;
+.activities {
+  width: 80vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.89);
+  margin: 0 auto;
+  padding-top: 25px;
 }

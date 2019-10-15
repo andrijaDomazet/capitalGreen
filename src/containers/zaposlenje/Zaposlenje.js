@@ -1,5 +1,6 @@
 import React from "react";
+import "./Zaposlenje.scss";
 
 export default function Zaposlenje() {
-  return <div>Zaposlenje...</div>;
+  return <div className="jobs">Zaposlenje...</div>;
 }

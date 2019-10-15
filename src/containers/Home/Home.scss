@@ -18,21 +18,22 @@
   }
   .home-right {
     position: absolute;
-    // top: 10px;
     right: 30px;
     background: rgba(184, 184, 184, 0.507);
     width: 20vw;
     height: 85vh;
     animation: prva-animacija 1.5s;
-    overflow: hidden;
 
     h6 {
       color: white;
-      margin: 5px 10px 0 10px;
+      margin: 5px 5px 0 5px;
       padding: 3px 0;
       text-align: center;
       background: rgba(107, 107, 107, 0.616);
       border-radius: 5px;
+    }
+    .home-products {
+      overflow: hidden;
     }
   }
 }
