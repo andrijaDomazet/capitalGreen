@@ -27,7 +27,7 @@ export default class Table extends Component {
           </td>
           <td>{proizvod.name}</td>
           <td>{proizvod.pakovanje} </td>
-          <td>{proizvod.mpCena.toFixed(2)} </td>
+          <td>{proizvod.price.toFixed(2)} </td>
           <td>
             <button className="btn btn-secondary btn-sm" onClick={this.poziv}>
               Info

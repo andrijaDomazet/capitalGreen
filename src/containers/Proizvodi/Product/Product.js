@@ -23,6 +23,14 @@ export default class Product extends Component {
             {this.paragraph()}
             <Buttons>Saznaj više...</Buttons>
           </div>
+          <div className="productPrice">
+            <div className="price1">{this.props.product.price}</div>
+            <div className="price2">
+              {Math.floor(
+                this.props.product.price - this.props.product.price * 0.2
+              ).toFixed(2)}
+            </div>
+          </div>
         </div>
       </div>
     );

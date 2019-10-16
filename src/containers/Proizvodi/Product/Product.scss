@@ -4,7 +4,7 @@
   border-radius: 5px;
   text-align: center;
   margin: 10px 10px 0 10px;
-  animation: treca-animacija 38s linear infinite;
+  animation: treca-animacija 60s linear infinite;
 
   h2 {
     font-size: 0.8em;
@@ -35,6 +35,25 @@
       line-height: 1.4em;
       margin: 5px auto;
       margin-right: 10px;
+    }
+    .productPrice {
+      display: flex;
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+
+      .price1 {
+        font-size: 0.8em;
+        font-weight: 500;
+        color: black;
+        text-decoration: line-through;
+        margin-right: 5px;
+      }
+      .price2 {
+        font-size: 1em;
+        font-weight: 700;
+        color: red;
+      }
     }
   }
 }
