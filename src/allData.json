@@ -6,42 +6,42 @@
       "id": 1,
       "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "1/1",
-      "mpCena": 654.55,
+      "price": 654.55,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
       "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "6/1",
-      "mpCena": 3790.92,
+      "price": 3790.92,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
       "name": "IDRON 20 20 20 +me",
       "pakovanje": "10/1",
-      "mpCena": 2000.0,
+      "price": 2000.0,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 4,
       "name": "IDRON 10 5 40 +me",
       "pakovanje": "10/1",
-      "mpCena": 654.55,
+      "price": 654.55,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 5,
       "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
-      "mpCena": 200,
+      "price": 200,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 6,
       "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
-      "mpCena": 200,
+      "price": 200,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ],
@@ -50,21 +50,21 @@
       "id": 1,
       "name": "Folija 1",
       "pakovanje": "1/1",
-      "mpCena": 654.55,
+      "price": 654.55,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
       "name": "Folija 2",
       "pakovanje": "6/1",
-      "mpCena": 3790.92,
+      "price": 3790.92,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
       "name": "Folija 3",
       "pakovanje": "10/1",
-      "mpCena": 2000.0,
+      "price": 2000.0,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ],
@@ -73,21 +73,21 @@
       "id": 1,
       "name": "Bioloska zastita 1",
       "pakovanje": "1/1",
-      "mpCena": 654.55,
+      "price": 654.55,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 2,
       "name": "Bioloska zastita 2",
       "pakovanje": "6/1",
-      "mpCena": 3790.92,
+      "price": 3790.92,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     },
     {
       "id": 3,
       "name": "Bioloska zastita 3",
       "pakovanje": "10/1",
-      "mpCena": 2000.0,
+      "price": 2000.0,
       "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
     }
   ]
