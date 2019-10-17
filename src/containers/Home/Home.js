@@ -29,15 +29,13 @@ export default class Home extends Component {
     this.props.history.push("/o-nama");
   };
   click2 = () => {
-    // console.log("idemooo");
-
     this.props.history.push("/proizvodi");
   };
   componentDidMount() {
     setTimeout(() => {
       //Start the timer
       this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
-    }, 2000);
+    }, 5000);
   }
 
   removeCommentBox = () => {
