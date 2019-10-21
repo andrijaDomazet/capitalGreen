@@ -1,38 +1,9 @@
 @import "../../index.scss";
 
 .banner2Div {
-  margin-left: 0px;
-  margin-top: 15px;
-  background: rgba(212, 212, 212, 0.61);
-  width: 100vw;
-  height: 30px;
-  color: black;
-  overflow: hidden;
-  border-top: 1px solid rgb(182, 182, 182);
-  border-bottom: 1px solid rgb(182, 182, 182);
-  span {
-    color: $green1;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  p {
-    left: 0px;
-    font-weight: 600;
-    animation-name: sesta-animacija;
-    animation-duration: 25s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    &:hover {
-      cursor: pointer;
-    }
-  }
+  display: none;
 }
-.banner2Div.small {
-  width: 80vw;
-  animation: smallerBanner 1s linear;
-}
+
 @keyframes sesta-animacija {
   0% {
     transform: translateX(1200px);
@@ -48,5 +19,42 @@
   }
   to {
     width: 80vw;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .banner2Div {
+    display: inline;
+    margin-left: 0px;
+    margin-top: 15px;
+    background: rgba(212, 212, 212, 0.61);
+    width: 100vw;
+    height: 30px;
+    color: black;
+    overflow: hidden;
+    border-top: 1px solid rgb(182, 182, 182);
+    border-bottom: 1px solid rgb(182, 182, 182);
+    span {
+      color: $green1;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+    p {
+      left: 0px;
+      font-weight: 600;
+      animation-name: sesta-animacija;
+      animation-duration: 25s;
+      animation-fill-mode: forwards;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .banner2Div.small {
+    width: 80vw;
+    animation: smallerBanner 1s linear;
   }
 }

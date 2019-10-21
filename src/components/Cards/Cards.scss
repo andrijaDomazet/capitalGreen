@@ -1,0 +1,83 @@
+@import "../../index.scss";
+
+.card1 {
+  position: absolute;
+  color: $green1;
+  // line-height: 1em;
+  // width: 90%;
+  h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  .card1-text {
+    background: transparent;
+    // margin-bottom: 20px;
+    color: white;
+    // padding-top: 1rem;
+    line-height: 1.4em;
+    font-size: 0.9em;
+  }
+}
+
+.card2 {
+  margin-top: 30px;
+  // margin: 80px 1vw 0 0;
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.14);
+  .card2-phone {
+    font-weight: bold;
+    i {
+      margin-right: 5px;
+    }
+  }
+  .card2-text {
+    font-size: 1em;
+    line-height: 1.4em;
+    span {
+      color: $green1;
+      font-weight: bold;
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .card1 {
+    position: relative;
+    color: $green1;
+    h2 {
+      margin-top: 0px;
+    }
+    .card1-text {
+      background: transparent;
+      margin-bottom: 20px;
+      color: white;
+      padding-top: 1rem;
+      line-height: 1.6em;
+
+      font-size: 1.2rem;
+    }
+  }
+
+  .card2 {
+    margin: 80px 1vw 0 0;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.14);
+    .card2-phone {
+      font-weight: bold;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .card2-text {
+      font-size: 1.1em;
+      line-height: 1.4em;
+      span {
+        color: $green1;
+        font-weight: bold;
+      }
+    }
+  }
+}

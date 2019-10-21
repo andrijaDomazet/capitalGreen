@@ -5,9 +5,10 @@ import Backdrop from "../../components/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
 import News from "../../components/News/News";
 import Banner2 from "../../components/Banner/Banner2";
-import Kartica1 from "../../components/Kartice/Kartica1";
-import Kartica2 from "../../components/Kartice/Kartica2";
 import data from "../../allData";
+import Card2 from "../../components/Cards/Card2";
+import Card1 from "../../components/Cards/Card1";
+
 export default class Home extends Component {
   state = {
     products: [
@@ -64,10 +65,10 @@ export default class Home extends Component {
         <div className="row home-div">
           <Banner2 small={this.state.lista} />
           <div className="col-sm-6 home-left">
-            <Kartica1 click1={this.click1} />
+            <Card1 click1={this.click1} />
           </div>
           <div className={classCenter}>
-            <Kartica2 />
+            <Card2 />
           </div>
           <AkcijskaReklama
             click2={this.click2}
