@@ -2,22 +2,24 @@
 
 .infoObjekta {
   position: absolute;
-  display: flex;
+  // display: flex;
   background: rgb(10, 70, 20);
   z-index: 200;
   transform: translateX(-400%);
   transition: transform 1.5s ease-in-out;
   text-align: center;
   color: white;
-  border: 10px solid white;
+  // border: 10px solid white;
+  width: 90vw;
+  margin: 0 auto;
   .info-picture {
-    flex: 1;
+    // flex: 1;
     img {
       width: 100%;
     }
   }
   .info-text {
-    flex: 1;
+    // flex: 1;
     h1 {
       padding-top: 20px;
       font-size: 1.2em;
@@ -54,7 +56,7 @@
 }
 
 .infoObjekta.open {
-  transform: translateX(0);
+  transform: translateX(5vw);
 }
 
 @media screen and(min-width:768px) {

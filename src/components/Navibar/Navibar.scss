@@ -1,26 +1,32 @@
 @import "../../index.scss";
 
 .navBar-div {
-  display: flex;
-  flex-flow: wrap;
-  font-size: 20px;
+  display: none;
+}
 
-  .links {
-    width: 100%;
+@media screen and(min-width:768px) {
+  .navBar-div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: wrap;
+    font-size: 20px;
 
-    .nav-link {
-      text-decoration: none;
-      color: $green2;
-      font-weight: bold;
-      &:hover {
+    .links {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .nav-link {
+        text-decoration: none;
+        color: $green2;
+        font-weight: bold;
+        &:hover {
+          color: $green1;
+        }
+      }
+      .active {
         color: $green1;
       }
-    }
-    .active {
-      color: $green1;
     }
   }
 }

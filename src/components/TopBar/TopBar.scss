@@ -3,25 +3,34 @@
 .topBar-div {
   display: flex;
   text-decoration: none;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid $green3;
+  // border-bottom: 1px solid $green3;
 
   .topBar-link {
     flex: 1;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.3rem;
-    justify-content: space-between;
+    font-size: 0.6em;
+    padding: 0.2rem;
     text-align: center;
-    text-decoration: none;
     color: $green3;
     i {
-      margin-right: 0.5rem;
+      font-size: 1em;
+      margin-right: 0.2rem;
     }
   }
 }
 
-.hover {
-  color: white;
+@media screen and(min-width:768px) {
+  .topBar-div {
+    width: 80%;
+    margin: 0 auto;
+
+    .topBar-link {
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.3rem;
+      justify-content: space-between;
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }
