@@ -1,0 +1,35 @@
+@import "../../index.scss";
+
+.toggle {
+  margin-top: -65px;
+  right: 35px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 2rem;
+  width: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+  .toggle-button-line {
+    width: 2rem;
+    height: 0.3rem;
+    background: $green2;
+    transition: all 0.1s linear;
+    &:active {
+      background: $green1;
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .toggle {
+    display: none;
+  }
+}

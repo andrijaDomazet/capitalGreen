@@ -3,29 +3,28 @@
 .card1 {
   position: absolute;
   color: $green1;
-  // line-height: 1em;
-  // width: 90%;
+
   h2 {
     margin-top: 10px;
     font-size: 1.2em;
   }
   .card1-text {
     background: transparent;
-    // margin-bottom: 20px;
     color: white;
-    // padding-top: 1rem;
     line-height: 1.4em;
     font-size: 0.9em;
   }
 }
 
 .card2 {
+  width: 300px;
   margin-top: 30px;
   // margin: 80px 1vw 0 0;
   border: 1px solid white;
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.14);
+  // font-size: 0.8em;
   .card2-phone {
     font-weight: bold;
     i {
@@ -33,9 +32,10 @@
     }
   }
   .card2-text {
-    font-size: 1em;
-    line-height: 1.4em;
+    font-size: 0.8em;
+    line-height: 1.3em;
     span {
+      font-size: 1em;
       color: $green1;
       font-weight: bold;
     }
@@ -60,6 +60,7 @@
   }
 
   .card2 {
+    width: 400px;
     margin: 80px 1vw 0 0;
     border: 1px solid white;
     color: white;

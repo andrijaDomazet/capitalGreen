@@ -1,35 +1,7 @@
 @import "../../index.scss";
 
 .newsDiv {
-  margin-top: 5px;
-  background: rgba(134, 125, 116, 0.726);
-  // width: 100vw;
-  height: 25px;
-  line-height: 25px;
-  color: rgb(2, 2, 2);
-  overflow: hidden;
-  border-top: 1px solid rgb(44, 23, 6);
-  border-bottom: 1px solid rgb(44, 23, 6);
-
-  span {
-    font-size: 1em;
-    color: rgb(90, 5, 5);
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 5px;
-  }
-  p {
-    // left: 0px;
-    font-weight: 600;
-    animation-name: peta-animacija;
-    animation-duration: 18s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
+  display: none;
 }
 .newsDiv.small {
   // width: 80vw;
@@ -54,6 +26,7 @@
 
 @media screen and(min-width:768px) {
   .newsDiv {
+    display: inline-block;
     margin-top: 15px;
     background: rgba(134, 125, 116, 0.726);
     width: 100vw;

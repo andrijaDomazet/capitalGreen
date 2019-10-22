@@ -49,8 +49,6 @@ export default class Home extends Component {
     console.log("idemo");
   };
   render() {
-    console.log(data[1]);
-
     let naslov = <p>ORGANIC MINERAL Ca</p>;
     let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista

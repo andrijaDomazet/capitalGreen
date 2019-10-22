@@ -4,7 +4,7 @@
   background: rgba(255, 255, 255, 0.623);
   border-radius: 5px;
   text-align: center;
-  margin: 10px 10px 0 10px;
+  margin: 5px 5px 0 5px;
   animation: treca-animacija 60s linear infinite;
 
   h2 {
@@ -19,14 +19,14 @@
       height: 70px;
     }
     h1 {
-      font-size: 0.8em;
+      font-size: 0.7em;
     }
 
     p {
       height: 70px;
       text-align: left;
       padding: 0 2px;
-      font-size: 0.8em;
+      font-size: 0.6em;
       line-height: 16px;
       margin: 2px;
     }
@@ -57,15 +57,81 @@
       }
     }
   }
-}
-@keyframes treca-animacija {
-  0% {
-    transform: translateY(350%);
+  @keyframes treca-animacija {
+    0% {
+      transform: translateX(350%);
+    }
+    100% {
+      transform: translateX(-750%);
+    }
   }
-  // 95% {
-  //   transform: treca-animacija(350%);
-  // }
-  100% {
-    transform: translateY(-750%);
+}
+
+@media screen and(min-width:768px) {
+  .product-main {
+    background: rgba(255, 255, 255, 0.623);
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 10px 0 10px;
+    animation: treca-animacija 60s linear infinite;
+
+    h2 {
+      font-size: 0.8em;
+    }
+    .product {
+      display: flex;
+
+      img {
+        border-radius: 15%;
+        margin-left: 5px;
+        height: 70px;
+      }
+      h1 {
+        font-size: 0.8em;
+      }
+
+      p {
+        height: 70px;
+        text-align: left;
+        padding: 0 2px;
+        font-size: 0.8em;
+        line-height: 16px;
+        margin: 2px;
+      }
+      button {
+        float: right;
+        font-size: 0.8em;
+        line-height: 1.4em;
+        margin: 5px auto;
+        margin-right: 10px;
+      }
+      .productPrice {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+
+        .price1 {
+          font-size: 0.8em;
+          font-weight: 500;
+          color: black;
+          text-decoration: line-through;
+          margin-right: 5px;
+        }
+        .price2 {
+          font-size: 1em;
+          font-weight: 700;
+          color: red;
+        }
+      }
+    }
+  }
+  @keyframes treca-animacija {
+    0% {
+      transform: translateY(350%);
+    }
+    100% {
+      transform: translateY(-750%);
+    }
   }
 }

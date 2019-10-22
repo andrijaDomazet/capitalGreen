@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Delatnosti from "./containers/delatnosti/Delatnosti";
@@ -11,9 +11,6 @@ import NoMatch from "./components/NoMatch/NoMatch";
 import Bars from "./containers/Bars/Bars";
 
 function App() {
-  useEffect(() => {
-    console.log("Component did mount");
-  });
   return (
     <div className="appDiv">
       <Router>

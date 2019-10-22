@@ -3,12 +3,11 @@
 .topBar-div {
   display: flex;
   text-decoration: none;
-  // border-bottom: 1px solid $green3;
 
   .topBar-link {
     flex: 1;
     font-size: 0.6em;
-    padding: 0.2rem;
+    padding: 0.1rem;
     text-align: center;
     color: $green3;
     i {
