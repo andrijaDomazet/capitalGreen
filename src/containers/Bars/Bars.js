@@ -1,8 +1,8 @@
 import React, { Component } from "react";
+import "./Bars.scss";
 import Navibar from "../../components/Navibar/Navibar";
 import TopBar from "../../components/TopBar/TopBar";
 import Logo from "../../logo.png";
-import "./Bars.scss";
 import ToggleButton from "../../components/SideDrawer/ToggleButton";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import Backdrop from "../../components/Backdrop/Backdrop";
