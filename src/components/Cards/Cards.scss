@@ -19,12 +19,10 @@
 .card2 {
   width: 300px;
   margin-top: 30px;
-  // margin: 80px 1vw 0 0;
   border: 1px solid white;
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.14);
-  // font-size: 0.8em;
   .card2-phone {
     font-weight: bold;
     i {
@@ -44,17 +42,13 @@
 @media screen and(min-width:768px) {
   .card1 {
     position: relative;
-    color: $green1;
     h2 {
       margin-top: 0px;
     }
     .card1-text {
-      background: transparent;
       margin-bottom: 20px;
-      color: white;
       padding-top: 1rem;
       line-height: 1.6em;
-
       font-size: 1.2rem;
     }
   }
@@ -62,23 +56,10 @@
   .card2 {
     width: 400px;
     margin: 80px 1vw 0 0;
-    border: 1px solid white;
-    color: white;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.14);
-    .card2-phone {
-      font-weight: bold;
-      i {
-        margin-right: 5px;
-      }
-    }
+
     .card2-text {
       font-size: 1.1em;
       line-height: 1.4em;
-      span {
-        color: $green1;
-        font-weight: bold;
-      }
     }
   }
 }
