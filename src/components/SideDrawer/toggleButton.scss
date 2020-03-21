@@ -1,13 +1,16 @@
 @import "../../index.scss";
 
 .toggle {
-  margin-top: -65px;
-  right: 35px;
+  // border: 1px solid yellow;
+  margin-top: -50px;
+  right: 25px;
   display: flex;
   position: absolute;
   flex-direction: column;
   justify-content: space-around;
   height: 2rem;
+  // line-height: 2rem;
+  // vertical-align: middle;
   width: 25px;
   background: transparent;
   border: none;

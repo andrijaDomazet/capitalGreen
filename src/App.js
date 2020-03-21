@@ -12,7 +12,7 @@ import Bars from "./containers/Bars/Bars";
 
 function App() {
   return (
-    <div className="appDiv">
+    <div className="app">
       <Router>
         <Bars />
         <Switch>

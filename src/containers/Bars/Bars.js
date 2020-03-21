@@ -26,8 +26,8 @@ export default class Bars extends Component {
   };
   render() {
     return (
-      <div className="row appBars">
-        <div className="col-sm-2 logo">
+      <div className="bars__div">
+        <div className="bars__logo">
           <img src={Logo} alt="logo" />
         </div>
         <div className="col-sm-9">

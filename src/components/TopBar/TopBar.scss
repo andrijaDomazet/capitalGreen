@@ -2,13 +2,15 @@
 
 .topBar-div {
   display: flex;
+  flex-direction: column;
   text-decoration: none;
-
+  // border: 1px solid blueviolet;
   .topBar-link {
     flex: 1;
-    font-size: 0.6em;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
     padding: 0.1rem;
-    text-align: center;
+    text-align: left;
     color: $green3;
     i {
       font-size: 1em;
