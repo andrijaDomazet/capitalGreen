@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Bars />
         <Switch>
-          <Route exact path="https://andrijadomazet.github.io/capitalGreen/" />
+          <Route exact path="https://andrijadomazet.github.io/capital-green/" />
           <Route path="/" exact component={Home} />
           <Route path="/o-nama" component={O_nama} />
           <Route path="/delatnosti" component={Delatnosti} />
