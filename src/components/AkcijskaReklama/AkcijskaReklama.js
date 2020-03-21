@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import "./AkcijskaReklama.scss";
-import Slika from "./img/djubrivo.jpg";
+import Slika from "./img/prvaStrana.jpg";
 import Buttons from "../../UI/Button/Buttons";
 
 const Naslov = props => {

@@ -1,16 +1,24 @@
 @import "./index.scss";
 
-.appDiv {
-  // height: 100vh;
+.app {
   display: fixed;
-  background: linear-gradient(to bottom, white 5%, rgba(43, 43, 43, 0.295) 30%),
+  background: linear-gradient(to bottom, white 5%, rgba(43, 43, 43, 0.582) 35%),
     url("./pozadina6.jpg");
-
-  // background-image: url("./pozadina3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
-  // box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and(min-width:768px) {
+  .app {
+    background: linear-gradient(
+        to bottom,
+        white 5%,
+        rgba(43, 43, 43, 0.295) 30%
+      ),
+      url("./pozadina6.jpg");
+  }
 }
