@@ -16,13 +16,14 @@ function App() {
       <Router>
         <Bars />
         <Switch>
+          <Route exact path="https://andrijadomazet.github.io/capitalGreen/" />
           <Route path="/" exact component={Home} />
           <Route path="/o-nama" component={O_nama} />
           <Route path="/delatnosti" component={Delatnosti} />
           <Route path="/proizvodi" component={Proizvodi} />
           <Route path="/zaposlenje" component={Zaposlenje} />
           <Route path="/kontakt" component={Kontakt} />
-          <Route component={NoMatch} />
+          <Route component={Home} />
         </Switch>
       </Router>
     </div>
