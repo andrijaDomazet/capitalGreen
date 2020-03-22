@@ -4,30 +4,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  // justify-content: center;
   align-items: center;
-  .home__left {
-    // padding: 30px 10px;
-    // border: 1px solid blue;
-    // margin-left: 10px;
-    // width: 90%;
-    // height: 20vh;
-    // text-align: center;
-  }
-  .home__center {
-    position: fixed;
-    // margin-left: 200px;
-    // margin-top: 30px;
-    bottom: 20px;
-    // border: 1px solid blue;
-  }
-  .home__center.move {
-    animation: druga-animacija 5s forwards;
-  }
+
   .home__right {
-    border: 1px solid blue;
     margin-top: 10px;
     right: 30px;
+    border-radius: 5px;
     background: rgba(184, 184, 184, 0.507);
     height: 20vh;
     animation: prva-animacija 1.5s;
@@ -78,19 +60,20 @@
     .home__left {
       margin-top: 20px;
       margin-left: 2vw;
-      // margin-left: 10px;
-      height: 20vh;
       width: 20vw;
     }
     .home__center {
-      margin-top: 35vh;
-      margin-left: 10vw;
-      // margin-left: 200px;
+      position: fixed;
+      right: 100px;
+      bottom: 80px;
+    }
+    .home__center.move {
+      animation: druga-animacija 5s forwards;
     }
 
     .home__right {
       position: absolute;
-      margin-top: 0px;
+      margin-top: 110px;
       right: 30px;
       width: 20vw;
       height: 85vh;
