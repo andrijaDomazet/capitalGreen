@@ -25,8 +25,9 @@
 
 @media screen and(min-width:768px) {
   .newsDiv {
+    position: fixed;
     display: inline-block;
-    margin-top: 15px;
+    bottom: 20px;
     background: rgba(134, 125, 116, 0.726);
     width: 100vw;
     height: 30px;
