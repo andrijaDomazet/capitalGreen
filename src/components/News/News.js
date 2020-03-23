@@ -7,8 +7,8 @@ export default class News extends Component {
       <div className={classes}>
         <p>
           <span>News1</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odio
-          ea voluptatibus aspernatur dolore fugit!
+          Ministar Krkobabić: Zadrugari, pomozite starijima na selu. Zabrana
+          kretanja: Kako do POSEBNIH POTVRDA za odlazak na njivu?
         </p>
       </div>
     );

@@ -1,119 +1,100 @@
 @import "../../index.scss";
 
-.infoObjekta {
-  top: -50px;
-  position: absolute;
-  // background: rgb(10, 70, 20);
-  background-color: white;
+.action__product {
+  top: 15vh;
+  position: fixed;
   z-index: 200;
   transform: translateX(-400%);
   transition: transform 1.5s ease-in-out;
-  text-align: center;
-  // color: white;
-  width: 90vw;
   margin: 0 auto;
-  .info-picture {
-    img {
-      width: 100px;
-    }
+  img {
+    width: 100%;
+    max-width: 320px;
   }
-  .info-text {
-    clip-path: polygon(50% 0%, 100% 21%, 100% 46%, 0 76%, 0 0);
-    background: #0b59a9;
-    background: linear-gradient(to top, #0b59a9 30%, #024c86 80%);
-    h1 {
-      padding-top: 20px;
-      font-size: 1.2em;
-      text-transform: uppercase;
-    }
-    h2 {
-      font-size: 1.2em;
-    }
-    p {
-      padding: 0 20px;
-      text-align: justify;
-    }
-    button {
-      font-size: 1.2em;
-      padding: 5px 15px;
-      margin-top: 10px;
-    }
+
+  .info__text {
+    display: none;
   }
 
   .info-close {
-    position: fixed;
-    right: 0;
+    position: absolute;
+    top: -25px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    border-bottom: none;
+    z-index: +999;
     i {
-      position: absolute;
-      top: 8px;
-      right: 10px;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       cursor: pointer;
       transition: all 0.3s linear;
-      opacity: 1;
-      color: white;
+      color: green;
     }
   }
 }
 
-.infoObjekta.open {
-  transform: translateX(5vw);
+.action__product.open {
+  transform: translateX(0);
 }
 
 @media screen and(min-width:768px) {
-  .infoObjekta {
-    position: absolute;
+  .action__product {
+    top: 10vh;
+    position: fixed;
     display: flex;
-    left: 20%;
-    width: 60%;
-    // background: rgb(10, 70, 20);
+    max-width: 550px;
     z-index: 200;
     transform: translateX(-400%);
     transition: transform 1.5s ease-in-out;
-    text-align: center;
-    // color: white;
-    border: 5px double white;
-    .info-picture {
-      img {
-        width: 350px;
-        height: 100%;
-      }
+    margin: 0 auto;
+    color: white;
+    border: 1px solid yellowgreen;
+    img {
+      width: 350px;
+      height: 100%;
     }
-    .info-text {
+    .info__text {
+      display: flex;
+      flex-direction: column;
+      background: #0b59a9;
+      background: linear-gradient(to top, #0b59a9 30%, #024c86 80%);
+      border-left: 5px double white;
+      text-align: center;
       h1 {
-        letter-spacing: 4px;
-        padding-top: 50px;
-        color: white;
-        font-size: 1.5rem;
+        padding-top: 20px;
         text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
       }
       h2 {
-        color: white;
-        padding-top: 40px;
+        font-size: 1.2rem;
+        padding-top: 20px;
+      }
+      p {
+        padding: 0 20px;
+        text-align: justify;
       }
       button {
-        font-size: 1.5em;
-        padding: 10px 25px;
+        width: 150px;
+        position: fixed;
+        bottom: 10px;
       }
     }
 
     .info-close {
-      position: fixed;
+      position: absolute;
 
       i {
-        position: absolute;
-        top: 5px;
-        right: 10px;
+        border: 1px solid blue;
         font-size: 1.2em;
         cursor: pointer;
         transition: all 0.3s linear;
-        opacity: 1;
-        color: white;
       }
     }
   }
 
-  .infoObjekta.open {
+  .action__product.open {
     transform: translateX(0);
   }
 }

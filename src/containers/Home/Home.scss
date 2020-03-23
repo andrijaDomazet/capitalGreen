@@ -3,15 +3,13 @@
 .home__div {
   display: flex;
   flex-direction: column;
-  position: relative;
-  align-items: center;
 
-  .home__right {
-    margin-top: 10px;
-    right: 30px;
-    border-radius: 5px;
-    background: rgba(184, 184, 184, 0.507);
-    height: 20vh;
+  .home__products {
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    background: rgba(184, 184, 184, 0.705);
+    height: 25vh;
     animation: prva-animacija 1.5s;
     overflow: hidden;
 
@@ -19,10 +17,10 @@
       color: white;
       padding: 3px 0;
       text-align: center;
-      background: rgba(107, 107, 107, 0.616);
+      background: rgba(184, 184, 184, 0.596);
       border-radius: 5px;
     }
-    .home__products {
+    div {
       display: flex;
       overflow: hidden;
     }
@@ -54,13 +52,9 @@
 
 @media screen and(min-width:768px) {
   .home__div {
-    display: flex;
-    flex-direction: row;
     position: relative;
     .home__left {
-      margin-top: 20px;
-      margin-left: 2vw;
-      width: 20vw;
+      width: 50vw;
     }
     .home__center {
       position: fixed;
@@ -71,14 +65,15 @@
       animation: druga-animacija 5s forwards;
     }
 
-    .home__right {
-      position: absolute;
-      margin-top: 110px;
-      right: 30px;
+    .home__products {
+      top: 5.5rem;
+      right: 1.5rem;
       width: 20vw;
-      height: 85vh;
-      .home__products {
+      height: 75vh;
+      border-radius: 10px;
+      .home__product {
         display: inline-block;
+        margin: 0 auto;
       }
     }
   }

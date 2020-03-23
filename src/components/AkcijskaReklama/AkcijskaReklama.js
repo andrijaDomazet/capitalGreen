@@ -20,21 +20,19 @@ export default class AkcijskaReklama extends PureComponent {
   };
   render() {
     const { click2, show } = this.props;
-    let infoClasses = show ? "infoObjekta open" : "infoObjekta";
+    let infoClasses = show ? "action__product open" : "action__product";
 
     return (
       <div className={infoClasses}>
-        <div className="info-picture">
-          <img src={Slika} alt="slika" />
-        </div>
-        <div className="info-text">
+        <img src={Slika} alt="picture" />
+        <div className="info__text">
           <h1>AKCIJSKA PONUDA !!!</h1>
           {<Naslov>{this.state.val}</Naslov>}
-          <p>
+          {/* <p>
             NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za
             prehranu kultura. Ova đubriva sadrže različite kombinacije makro i
             mikroelemenata za sve faze proizvodnje.
-          </p>
+          </p> */}
           <Buttons clicked={click2}>Saznaj više...</Buttons>
         </div>
         <div className="info-close" onClick={this.props.removeCommentBox}>

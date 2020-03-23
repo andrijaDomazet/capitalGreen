@@ -11,11 +11,7 @@
 
 @media screen and(min-width:768px) {
   .app {
-    background: linear-gradient(
-        to bottom,
-        white 5%,
-        rgba(43, 43, 43, 0.295) 30%
-      ),
+    background: linear-gradient(to bottom, white 5%, rgba(43, 43, 43, 0.26) 30%),
       url("./pozadina6.jpg");
     background-repeat: no-repeat;
     background-size: cover;

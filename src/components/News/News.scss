@@ -19,7 +19,7 @@
     width: 100vw;
   }
   to {
-    width: 80vw;
+    width: 100vw;
   }
 }
 
@@ -27,7 +27,7 @@
   .newsDiv {
     position: fixed;
     display: inline-block;
-    bottom: 20px;
+    bottom: 10px;
     background: rgba(134, 125, 116, 0.726);
     width: 100vw;
     height: 30px;
@@ -56,7 +56,7 @@
     }
   }
   .newsDiv.small {
-    width: 80vw;
+    width: 100vw;
     animation: smallerBanner 1s linear;
   }
 }
