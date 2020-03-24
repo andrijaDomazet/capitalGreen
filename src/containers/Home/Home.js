@@ -53,28 +53,25 @@ export default class Home extends Component {
     let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
-      <div>
+      <div className="home__div">
         <Backdrop
           clicked={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        <div className="home__div">
-          <Banner2 small={this.state.lista} />
-          <div className="home__left">
-            <Card1 click1={this.click1} />
-          </div>
-          <div className={classCenter}>
-            <Card2 />
-          </div>
-          <AkcijskaReklama
-            click2={this.click2}
-            removeCommentBox={this.removeCommentBox}
-            show={this.state.prikazAkcijskeReklame}
-          />
-          <News small={this.state.lista} />
-          {listaProizvoda}
+        <Banner2 small={this.state.lista} />
+        <Card1 click1={this.click1} />
+        <div className={classCenter}>
+          <Card2 />
         </div>
+        <AkcijskaReklama
+          click2={this.click2}
+          removeCommentBox={this.removeCommentBox}
+          show={this.state.prikazAkcijskeReklame}
+        />
+        <News small={this.state.lista} />
+        {listaProizvoda}
       </div>
+      // </div>
     );
   }
 

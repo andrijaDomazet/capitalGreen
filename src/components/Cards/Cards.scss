@@ -2,12 +2,11 @@
 
 .card1 {
   color: $green1;
-  margin-top: 40px;
+  margin: 0 5px;
   h2 {
-    color: white;
+    color: $green1;
     font-weight: 600;
-    // margin: 0;
-    // padding: 0;
+    padding-top: 20px;
     text-align: center;
     font-size: 1.4em;
   }

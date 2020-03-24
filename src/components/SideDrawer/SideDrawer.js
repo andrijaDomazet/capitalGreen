@@ -10,7 +10,7 @@ export default function SideDrawer(props) {
   }
 
   return (
-    <div>
+    <div onClick={props.clicked}>
       <nav className={drawerClasses}>
         <div className="logo">
           <img src={Logo} alt="pivo" width="80px" />

@@ -3,13 +3,13 @@
 .home__div {
   display: flex;
   flex-direction: column;
-
+  // border: 1px solid red;
   .home__products {
-    position: fixed;
+    // position: fixed;
     width: 100%;
     bottom: 10px;
-    background: rgba(184, 184, 184, 0.705);
-    height: 25vh;
+    background: rgba(233, 233, 233, 0.87);
+    height: 10rem;
     animation: prva-animacija 1.5s;
     overflow: hidden;
 
