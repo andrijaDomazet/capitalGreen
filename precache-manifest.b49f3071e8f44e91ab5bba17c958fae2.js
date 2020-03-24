@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "550300f6604658a4a6c14645a441eec1",
+    "revision": "71b9de163bf9d8ca5663f85eef2f5c87",
     "url": "/capitalGreen/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capitalGreen/static/css/2.f93178fb.chunk.css"
   },
   {
-    "revision": "bba500959b9cf58c71dc",
-    "url": "/capitalGreen/static/css/main.a63dc99d.chunk.css"
+    "revision": "dd693e82ab5ccf6531ca",
+    "url": "/capitalGreen/static/css/main.66653ced.chunk.css"
   },
   {
     "revision": "1246daabc6ef309ed2d2",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capitalGreen/static/js/2.be45299f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bba500959b9cf58c71dc",
-    "url": "/capitalGreen/static/js/main.5fba44b9.chunk.js"
+    "revision": "dd693e82ab5ccf6531ca",
+    "url": "/capitalGreen/static/js/main.30a2723e.chunk.js"
   },
   {
     "revision": "c7d3943dd367b7a4854b",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capitalGreen/static/media/logo.6673bf88.png"
   },
   {
-    "revision": "628fdb61584050a31a76c5137cd52369",
-    "url": "/capitalGreen/static/media/pozadina6.628fdb61.jpg"
+    "revision": "30884e2d1b24ba84996b8d853764ebf1",
+    "url": "/capitalGreen/static/media/pozadina7.30884e2d.jpg"
   },
   {
     "revision": "3c10112c6c4dfe8deb1783a04f63a053",
