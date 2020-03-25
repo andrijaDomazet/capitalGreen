@@ -4,24 +4,6 @@
   display: none;
 }
 
-@keyframes sesta-animacija {
-  0% {
-    transform: translateX(1200px);
-  }
-
-  100% {
-    transform: translateX(-800px);
-  }
-}
-@keyframes smallerBanner {
-  from {
-    width: 100vw;
-  }
-  to {
-    width: 80vw;
-  }
-}
-
 @media screen and(min-width:768px) {
   .banner2Div {
     display: inline-block;
@@ -34,6 +16,7 @@
     overflow: hidden;
     border-top: 1px solid rgb(182, 182, 182);
     border-bottom: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
     span {
       color: $green1;
       text-transform: uppercase;
@@ -54,7 +37,25 @@
     }
   }
   .banner2Div.small {
-    width: 80vw;
+    margin-left: 15px;
+    width: 75vw;
     animation: smallerBanner 1s linear;
+  }
+}
+@keyframes sesta-animacija {
+  0% {
+    transform: translateX(1200px);
+  }
+
+  100% {
+    transform: translateX(-800px);
+  }
+}
+@keyframes smallerBanner {
+  from {
+    width: 100vw;
+  }
+  to {
+    width: 80vw;
   }
 }

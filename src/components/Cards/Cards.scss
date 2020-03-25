@@ -2,27 +2,34 @@
 
 .card1 {
   color: $green1;
-  margin-top: 40px;
+  margin: 0 5px;
   h2 {
+    color: $green1;
+    font-weight: 600;
+    padding-top: 20px;
     text-align: center;
     font-size: 1.4em;
   }
   p {
-    justify-content: center;
+    // border: 1px solid blue;
+    // justify-content: center;
     text-align: justify;
     text-justify: inter-word;
-    padding: 30px 8px;
+    padding: 10px 8px;
     color: white;
     line-height: 1.6rem;
     font-size: 1rem;
   }
 }
 .card1 > div {
+  // border: 1px solid red;
   margin-left: 10px;
+  // padding: 0;
 }
 .card2 {
+  top: 10px;
   width: 300px;
-  margin: 50px auto;
+  margin: 25px auto;
   border: 1px solid white;
   color: white;
   text-align: center;
@@ -45,7 +52,10 @@
 }
 @media screen and(min-width:768px) {
   .card1 {
-    margin: 10px auto;
+    width: 60vw;
+    // border: 1px solid yellow;
+    // margin: 10px auto;
+    padding: 20px;
     position: relative;
     h2 {
       text-align: left;
@@ -63,8 +73,10 @@
   }
 
   .card2 {
-    width: 400px;
-    margin: 80px 1vw 0 0;
+    position: absolute;
+    top: -100px;
+    right: 16vw;
+    width: 300px;
     .card2-text {
       font-size: 1.1em;
       line-height: 1.4em;

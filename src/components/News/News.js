@@ -6,9 +6,9 @@ export default class News extends Component {
     return (
       <div className={classes}>
         <p>
-          <span>News1</span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odio
-          ea voluptatibus aspernatur dolore fugit!
+          <span>Capital green</span>
+          {/* <span>News1</span> */}
+          Vaš partner na putu ka modernoj poljoprivrednoj proizvodnji!
         </p>
       </div>
     );

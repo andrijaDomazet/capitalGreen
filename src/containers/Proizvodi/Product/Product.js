@@ -19,17 +19,18 @@ export default class Product extends Component {
           <div>
             <img src={slika} alt="slika" />
           </div>
+          {this.paragraph()}
+
           <div>
-            {this.paragraph()}
-            <Buttons>Saznaj više...</Buttons>
-          </div>
-          <div className="productPrice">
-            <div className="price1">{this.props.product.price}</div>
-            <div className="price2">
-              {Math.floor(
-                this.props.product.price - this.props.product.price * 0.2
-              ).toFixed(2)}
+            <div className="productPrice">
+              <div className="price1">{this.props.product.price}</div>
+              <div className="price2">
+                {Math.floor(
+                  this.props.product.price - this.props.product.price * 0.2
+                ).toFixed(2)}
+              </div>
             </div>
+            <Buttons>Saznaj više...</Buttons>
           </div>
         </div>
       </div>

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./Bars.scss";
-import Navibar from "../../components/Navibar/Navibar";
 import TopBar from "../../components/TopBar/TopBar";
 import Logo from "../../logo.png";
 import ToggleButton from "../../components/SideDrawer/ToggleButton";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import Backdrop from "../../components/Backdrop/Backdrop";
+import NavBar from "../../components/NavBar/NavBar.js";
 
 export default class Bars extends Component {
   state = {
@@ -17,7 +17,6 @@ export default class Bars extends Component {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
-    console.log(this.state.sideDrawerOpen);
   };
   removeBackdrop = () => {
     this.setState({
@@ -30,15 +29,18 @@ export default class Bars extends Component {
         <div className="bars__logo">
           <img src={Logo} alt="logo" />
         </div>
-        <div className="col-sm-9">
+        <div className="bars__links">
           <Backdrop
             clicked={this.removeBackdrop}
             show={this.state.sideDrawerOpen}
           />
           <TopBar />
-          <Navibar admin={this.state.admin} />
+          <NavBar admin={this.state.admin} />
           <ToggleButton click={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer
+            show={this.state.sideDrawerOpen}
+            clicked={this.drawerToggleClickHandler}
+          />
         </div>
       </div>
     );

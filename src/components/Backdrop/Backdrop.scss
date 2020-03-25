@@ -1,18 +1,13 @@
 @import "../../index.scss";
 
-.backDrop {
+.backdrop {
   position: fixed;
-  z-index: 1;
-  // padding-top: 100px;
+  z-index: 200;
   left: 0;
   top: 0;
   width: 100%;
-  //px, em, %, auto, min-height i min-height
   height: 100%;
-  //hidden, auto, clip, scroll, visible
   overflow: auto;
-  //background je u ovoj situaciji isto sto i background-color
-  //sa background mozemo dodavati url, poziciju i no repeat
   background-color: rgba(46, 46, 46, 0.945);
   animation: cetvrta-animacija 1.5s;
 }

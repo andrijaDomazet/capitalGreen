@@ -32,12 +32,12 @@ export default class Home extends Component {
   click2 = () => {
     this.props.history.push("/proizvodi");
   };
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     //Start the timer
-  //     this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
-  //   }, 5000);
-  // }
+  componentDidMount() {
+    setTimeout(() => {
+      //Start the timer
+      this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
+    }, 5000);
+  }
 
   removeCommentBox = () => {
     this.setState({
@@ -51,40 +51,35 @@ export default class Home extends Component {
   render() {
     let naslov = <p>ORGANIC MINERAL Ca</p>;
     let listaProizvoda = this.setProductsList(naslov);
-    let classCenter = this.state.lista
-      ? "col-sm-4 home__center move"
-      : "col-sm-4 home__center";
+    let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
-      <div>
+      <div className="home__div">
         <Backdrop
           clicked={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        <div className="row home__div">
-          <Banner2 small={this.state.lista} />
-          <div className="col-sm-6 home__left">
-            <Card1 click1={this.click1} />
-          </div>
-          <div className={classCenter}>
-            <Card2 />
-          </div>
-          <AkcijskaReklama
-            click2={this.click2}
-            removeCommentBox={this.removeCommentBox}
-            show={this.state.prikazAkcijskeReklame}
-          />
-          <News small={this.state.lista} />
-          {listaProizvoda}
+        <Banner2 small={this.state.lista} />
+        <Card1 click1={this.click1} />
+        <div className={classCenter}>
+          <Card2 />
         </div>
+        <AkcijskaReklama
+          click2={this.click2}
+          removeCommentBox={this.removeCommentBox}
+          show={this.state.prikazAkcijskeReklame}
+        />
+        <News small={this.state.lista} />
+        {listaProizvoda}
       </div>
+      // </div>
     );
   }
 
   setProductsList(naslov) {
     return this.state.lista ? (
-      <div className="home__right">
+      <div className="home__products">
         <h6>Proizvodi na akciji</h6>
-        <div className="home__products">
+        <div className="home__product">
           {data[1].map((product, index) => {
             return <Product key={index} product={data[1][index]} />;
           })}

@@ -51,8 +51,8 @@ export default class Table extends Component {
   };
   render() {
     return (
-      <div className="tableDiv">
-        <div className="tableChoise">
+      <div className="table">
+        <div className="table__choise">
           <h3>Izaberite grupu proizvoda:</h3>
           {<Selection changeGroup={this.grupaProizvoda} />}
         </div>

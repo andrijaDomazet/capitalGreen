@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Navibar.scss";
+import "./NavBar.scss";
 
-export default function Navibar(props) {
+export default function NavBar(props) {
   const navBarOptions = () => {
     return (
       <div className="links">
@@ -20,7 +20,6 @@ export default function Navibar(props) {
   const adminFunction = () => {
     return props.admin ? <NavLink to="admin">Admin</NavLink> : null;
   };
-
   return <div className="navBar-div">{navBarOptions()}</div>;
 }
 const options = [

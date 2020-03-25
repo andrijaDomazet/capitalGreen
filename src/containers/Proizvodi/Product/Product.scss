@@ -1,28 +1,39 @@
 @import "../../../index.scss";
 
 .product-main {
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.623);
   border-radius: 5px;
   text-align: center;
-  margin: 5px 5px 0 5px;
+  margin: 0px 5px 0 5px;
   animation: treca-animacija 60s linear infinite;
+  border: 1px solid white;
+  min-width: 200px;
+  height: 125px;
 
   h2 {
-    font-size: 0.8em;
+    line-height: 0.9rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    vertical-align: middle;
   }
   .product {
     display: flex;
-
+    flex-direction: row;
     img {
+      flex: 1;
       border-radius: 15%;
       margin-left: 5px;
+      width: auto;
       height: 70px;
     }
-    h1 {
+    h2 {
       font-size: 0.7em;
     }
 
     p {
+      flex: 1;
       height: 70px;
       text-align: left;
       padding: 0 2px;
@@ -31,11 +42,11 @@
       margin: 2px;
     }
     button {
-      float: right;
-      font-size: 0.8em;
+      position: absolute;
+      font-size: 0.7rem;
       line-height: 1.4em;
-      margin: 5px auto;
-      margin-right: 10px;
+      bottom: 5px;
+      right: 5px;
     }
     .productPrice {
       display: flex;
@@ -72,16 +83,21 @@
     background: rgba(255, 255, 255, 0.623);
     border-radius: 5px;
     text-align: center;
-    margin: 10px 10px 0 10px;
     animation: treca-animacija 60s linear infinite;
-
+    width: 90%;
+    margin: 5px auto;
+    height: 160px;
     h2 {
       font-size: 0.8em;
+      line-height: 1.4rem;
     }
     .product {
-      display: flex;
-
+      display: flex !important;
+      flex-direction: row;
+      height: 90px;
+      margin-top: -5px;
       img {
+        flex: 1;
         border-radius: 15%;
         margin-left: 5px;
         height: 70px;
@@ -91,7 +107,9 @@
       }
 
       p {
-        height: 70px;
+        flex: 1;
+        width: 30%;
+        height: 100%;
         text-align: left;
         padding: 0 2px;
         font-size: 0.8em;
@@ -99,11 +117,9 @@
         margin: 2px;
       }
       button {
-        float: right;
-        font-size: 0.8em;
-        line-height: 1.4em;
-        margin: 5px auto;
-        margin-right: 10px;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+        margin: 2px auto;
       }
       .productPrice {
         display: flex;

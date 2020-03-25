@@ -1,11 +1,15 @@
 @import "../../index.scss";
 
 .topBar__div {
+  // border: 1px solid blue;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  // min-width: 100vw;
+  // margin-left: 15px;
+  justify-content: space-evenly;
   .topBar__link {
-    flex: 1;
+    // flex: 1;
     font-size: 0.8rem;
     line-height: 0.8rem;
     padding: 0.1rem;
@@ -20,16 +24,19 @@
 
 @media screen and(min-width:768px) {
   .topBar__div {
+    display: flex;
     flex-direction: row;
-    width: 80%;
-    margin: 0 auto;
-
+    // width: 80%;
+    // margin: 0 auto;
+    // border: 1px solid red;
+    width: 100%;
     .topBar__link {
+      // border: 1px solid green;
       font-size: 1rem;
       line-height: 1.3rem;
       font-weight: 500;
       padding: 0.3rem;
-      justify-content: space-between;
+      // justify-content: space-between;
       i {
         margin-right: 0.5rem;
       }

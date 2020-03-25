@@ -1,29 +1,25 @@
 @import "../../../index.scss";
 
-.tableDiv {
-  // background: rgba(255, 255, 255, 0.89);
+.table {
   border-top: none;
-  width: 80vw;
-  margin: 0 auto;
-  // height: 100%;
-  // overflow: scroll;
-
-  .tableChoise {
+  width: 90vw;
+  .table__choise {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding: 15px 0;
     h3 {
       margin-right: 10px;
+      font-size: 1rem;
     }
   }
 
   table {
-    width: 90%;
     margin: 0 auto;
     border: none;
     border-collapse: collapse;
     text-align: center;
+    font-size: 0.8rem;
     img {
       margin: 0;
       height: 50px;
@@ -48,5 +44,16 @@
   }
   table td:nth-child(4) {
     text-align: right;
+  }
+}
+@media screen and(width:768px) {
+  .table {
+    .table__choise {
+      flex-direction: column;
+      padding: 15px 0;
+    }
+    table {
+      width: 90%;
+    }
   }
 }
