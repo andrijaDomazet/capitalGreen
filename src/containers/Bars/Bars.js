@@ -29,7 +29,7 @@ export default class Bars extends Component {
         <div className="bars__logo">
           <img src={Logo} alt="logo" />
         </div>
-        <div>
+        <div className="bars__links">
           <Backdrop
             clicked={this.removeBackdrop}
             show={this.state.sideDrawerOpen}

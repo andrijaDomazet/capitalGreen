@@ -13,7 +13,7 @@ export default function SideDrawer(props) {
     <div onClick={props.clicked}>
       <nav className={drawerClasses}>
         <div className="logo">
-          <img src={Logo} alt="pivo" width="80px" />
+          <img src={Logo} alt="logo" />
         </div>
         <ul>
           {options.map((option, index) => {

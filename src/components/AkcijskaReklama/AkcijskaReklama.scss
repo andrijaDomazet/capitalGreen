@@ -1,12 +1,12 @@
 @import "../../index.scss";
 
 .action__product {
-  top: 15vh;
   position: fixed;
-  z-index: 200;
+  top: 15vh;
+  margin: 0 auto;
   transform: translateX(-400%);
   transition: transform 1.5s ease-in-out;
-  margin: 0 auto;
+  z-index: 999;
   img {
     width: 100%;
     max-width: 320px;
