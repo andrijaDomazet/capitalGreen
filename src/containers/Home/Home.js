@@ -3,7 +3,7 @@ import "./Home.scss";
 import AkcijskaReklama from "../../components/AkcijskaReklama/AkcijskaReklama";
 import Backdrop from "../../components/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
-import News from "../../components/News/News";
+import MarqueeBottom from "../../components/Marquee/MarqueeBottom";
 import Banner2 from "../../components/Banner/Banner2";
 import data from "../../allData";
 import Card1 from "../../components/Cards/Card1";
@@ -58,7 +58,7 @@ export default class Home extends Component {
           clicked={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        <Banner2 small={this.state.lista} />
+        {/* <Banner2 small={this.state.lista} /> */}
         <Card1 click1={this.click1} />
         <div className={classCenter}>
           <Card2 />
@@ -68,7 +68,7 @@ export default class Home extends Component {
           removeCommentBox={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        <News small={this.state.lista} />
+        <MarqueeBottom />
         {listaProizvoda}
       </div>
       // </div>

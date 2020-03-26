@@ -28,15 +28,10 @@ export default class AkcijskaReklama extends PureComponent {
         <div className="info__text">
           <h1>AKCIJSKA PONUDA !!!</h1>
           {<Naslov>{this.state.val}</Naslov>}
-          {/* <p>
-            NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za
-            prehranu kultura. Ova đubriva sadrže različite kombinacije makro i
-            mikroelemenata za sve faze proizvodnje.
-          </p> */}
           <Buttons clicked={click2}>Saznaj više...</Buttons>
-        </div>
-        <div className="info-close" onClick={this.props.removeCommentBox}>
-          <i className="fas fa-times" />
+          <div className="info-close" onClick={this.props.removeCommentBox}>
+            <i className="fas fa-times" />
+          </div>
         </div>
       </div>
     );

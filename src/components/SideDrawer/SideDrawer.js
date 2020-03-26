@@ -15,6 +15,7 @@ export default function SideDrawer(props) {
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
+        <h2>CAPITAL GREEN</h2>
         <ul>
           {options.map((option, index) => {
             return (
