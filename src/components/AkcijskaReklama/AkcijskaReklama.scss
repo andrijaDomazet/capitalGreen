@@ -2,34 +2,40 @@
 
 .action__product {
   position: fixed;
-  top: 15vh;
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  top: 10vh;
   transform: translateX(-400%);
   transition: transform 1.5s ease-in-out;
+  justify-content: center;
+  text-align: center;
   z-index: 999;
   img {
-    width: 100%;
     max-width: 320px;
   }
 
   .info__text {
-    display: none;
-  }
+    position: relative;
+    h1,
+    h2,
+    button {
+      display: none;
+    }
 
-  .info-close {
-    position: absolute;
-    top: -25px;
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    right: 0px;
-    border-bottom: none;
-    z-index: +999;
-    i {
-      font-size: 1.2rem;
-      cursor: pointer;
-      transition: all 0.3s linear;
-      color: green;
+    .info-close {
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      background-color: white;
+      width: 25px;
+      height: 25px;
+      z-index: +999;
+      i {
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        color: green;
+      }
     }
   }
 }
@@ -40,56 +46,62 @@
 
 @media screen and(min-width:768px) {
   .action__product {
-    top: 10vh;
     position: fixed;
-    display: flex;
-    max-width: 550px;
-    z-index: 200;
+    top: 15vh;
     transform: translateX(-400%);
     transition: transform 1.5s ease-in-out;
-    margin: 0 auto;
     color: white;
-    border: 1px solid yellowgreen;
+    z-index: 200;
     img {
-      width: 350px;
-      height: 100%;
+      background: #0b59a9;
+      background: green;
+      background: grey;
+      padding: 10px;
+      width: auto;
+      height: 70vh;
     }
     .info__text {
+      position: relative;
       display: flex;
+      width: 295px;
       flex-direction: column;
       background: #0b59a9;
       background: linear-gradient(to top, #0b59a9 30%, #024c86 80%);
-      border-left: 5px double white;
+      background: grey;
       text-align: center;
+      padding: 0 10px;
+
       h1 {
+        display: inline;
+        text-align: center;
         padding-top: 20px;
         text-transform: uppercase;
-        letter-spacing: 4px;
+        letter-spacing: 1px;
         font-size: 1.5rem;
+        border-bottom: 2px double white;
       }
       h2 {
+        display: inline;
         font-size: 1.2rem;
         padding-top: 20px;
       }
-      p {
-        padding: 0 20px;
-        text-align: justify;
-      }
       button {
+        position: absolute;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
         width: 150px;
-        position: fixed;
-        bottom: 10px;
+        bottom: 1rem;
       }
-    }
+      .info-close {
+        position: absolute;
+        left: auto;
+        right: 0;
 
-    .info-close {
-      position: absolute;
-
-      i {
-        border: 1px solid blue;
-        font-size: 1.2em;
-        cursor: pointer;
-        transition: all 0.3s linear;
+        i {
+          cursor: pointer;
+          transition: all 0.3s linear;
+        }
       }
     }
   }
