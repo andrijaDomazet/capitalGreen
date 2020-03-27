@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Bars.scss";
 import TopBar from "../../components/TopBar/TopBar";
-import Logo from "../../logo.png";
+import Logo from "../../img/logo.png";
 import ToggleButton from "../../components/SideDrawer/ToggleButton";
 import SideDrawer from "../../components/SideDrawer/SideDrawer";
 import Backdrop from "../../components/Backdrop/Backdrop";

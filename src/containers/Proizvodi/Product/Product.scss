@@ -3,19 +3,21 @@
 .product-main {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.623);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 5px;
   text-align: center;
   margin: 0px 5px 0 5px;
-  animation: treca-animacija 60s linear infinite;
+  animation: prdoucts__slader 60s linear infinite;
   border: 1px solid white;
   min-width: 200px;
   height: 125px;
-
+  &:hover {
+    animation-play-state: paused;
+  }
   h2 {
+    font-size: 0.8rem;
     line-height: 0.9rem;
     height: 1.2rem;
-    font-size: 0.8rem;
     vertical-align: middle;
   }
   .product {
@@ -51,7 +53,7 @@
     .productPrice {
       display: flex;
       position: absolute;
-      bottom: 0;
+      bottom: 15px;
       left: 10px;
 
       .price1 {
@@ -68,7 +70,7 @@
       }
     }
   }
-  @keyframes treca-animacija {
+  @keyframes prdoucts__slader {
     0% {
       transform: translateX(350%);
     }
@@ -80,41 +82,27 @@
 
 @media screen and(min-width:768px) {
   .product-main {
-    background: rgba(255, 255, 255, 0.623);
-    border-radius: 5px;
-    text-align: center;
-    animation: treca-animacija 60s linear infinite;
     width: 90%;
     margin: 5px auto;
-    height: 160px;
+    height: 140px;
+    &:hover {
+      animation-play-state: paused;
+    }
     h2 {
       font-size: 0.8em;
       line-height: 1.4rem;
     }
     .product {
-      display: flex !important;
-      flex-direction: row;
       height: 90px;
       margin-top: -5px;
-      img {
-        flex: 1;
-        border-radius: 15%;
-        margin-left: 5px;
-        height: 70px;
-      }
+
       h1 {
         font-size: 0.8em;
       }
 
       p {
-        flex: 1;
         width: 30%;
         height: 100%;
-        text-align: left;
-        padding: 0 2px;
-        font-size: 0.8em;
-        line-height: 16px;
-        margin: 2px;
       }
       button {
         font-size: 0.8rem;
@@ -122,27 +110,15 @@
         margin: 2px auto;
       }
       .productPrice {
-        display: flex;
-        position: absolute;
-        bottom: 0;
-        left: 10px;
-
-        .price1 {
-          font-size: 0.8em;
-          font-weight: 500;
-          color: black;
-          text-decoration: line-through;
-          margin-right: 5px;
-        }
         .price2 {
-          font-size: 1em;
-          font-weight: 700;
-          color: red;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 20px;
         }
       }
     }
   }
-  @keyframes treca-animacija {
+  @keyframes prdoucts__slader {
     0% {
       transform: translateY(350%);
     }

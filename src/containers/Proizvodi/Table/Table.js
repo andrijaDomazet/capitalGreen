@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Table.scss";
 import Selection from "../../../components/Selection/Selection";
-import slika from "../../../logo.png";
+import slika from "../../../img/logo.png";
 export default class Table extends Component {
   state = {
     value: "select",

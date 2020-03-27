@@ -5,30 +5,43 @@
   flex-direction: column;
   .home__products {
     width: 100%;
-    bottom: 10px;
-    background: rgba(233, 233, 233, 0.87);
     height: 10rem;
-    animation: prva-animacija 1.5s;
-    overflow: hidden;
-
+    animation: prdoucts__slader 1.5s;
     h6 {
+      height: 1.6rem;
       color: white;
+      margin: 0;
       padding: 3px 0;
       text-align: center;
-      background: rgba(184, 184, 184, 0.596);
-      border-radius: 5px;
+      background: $green2;
+      border-radius: 0.25rem;
+      border: 0.5px solid white;
     }
-    div {
-      // margin: 0 5px;
-      // background: red;
-      // margin: 0 5px;
+    .home__product {
+      position: relative;
       display: flex;
       overflow: hidden;
+      height: 100%;
+      background: rgba(233, 233, 233, 0.87);
+      border-radius: 0.2rem;
+    }
+    .home__product:before {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 10%;
+      content: " ";
+      background: url("../../img/logo.png");
+      background-size: 100% 100%;
+      width: 220px;
+      height: 140px;
+      margin: auto;
+      opacity: 0.1;
     }
   }
 }
 
-@keyframes prva-animacija {
+@keyframes products__slider {
   from {
     transform: translateX(400%);
   }
@@ -70,12 +83,21 @@
       position: fixed;
       top: 5.5rem;
       right: 1.5rem;
-      width: 20vw;
-      height: 75vh;
-      border-radius: 10px;
+      width: 250px;
+      height: 70vh;
       .home__product {
         display: inline-block;
-        margin: 0 auto;
+        margin: 0 0.6rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .home__product:before {
+        position: absolute;
+        left: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 220px;
+        height: 40%;
       }
     }
   }
