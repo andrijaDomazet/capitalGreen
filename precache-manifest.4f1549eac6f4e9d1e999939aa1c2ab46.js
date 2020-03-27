@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71b9de163bf9d8ca5663f85eef2f5c87",
+    "revision": "63779b99523289be2142d15c8bb86c0c",
     "url": "/capitalGreen/index.html"
   },
   {
-    "revision": "1246daabc6ef309ed2d2",
+    "revision": "65bdb4e2a1d929304490",
     "url": "/capitalGreen/static/css/2.f93178fb.chunk.css"
   },
   {
-    "revision": "dd693e82ab5ccf6531ca",
-    "url": "/capitalGreen/static/css/main.66653ced.chunk.css"
+    "revision": "8fc8e7a5576a89a6fb0c",
+    "url": "/capitalGreen/static/css/main.480a05ec.chunk.css"
   },
   {
-    "revision": "1246daabc6ef309ed2d2",
-    "url": "/capitalGreen/static/js/2.be45299f.chunk.js"
+    "revision": "65bdb4e2a1d929304490",
+    "url": "/capitalGreen/static/js/2.b22e15d4.chunk.js"
   },
   {
     "revision": "f88b36470b8b650da4a18244e35dd001",
-    "url": "/capitalGreen/static/js/2.be45299f.chunk.js.LICENSE.txt"
+    "url": "/capitalGreen/static/js/2.b22e15d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dd693e82ab5ccf6531ca",
-    "url": "/capitalGreen/static/js/main.30a2723e.chunk.js"
+    "revision": "8fc8e7a5576a89a6fb0c",
+    "url": "/capitalGreen/static/js/main.72671988.chunk.js"
   },
   {
     "revision": "c7d3943dd367b7a4854b",
@@ -36,12 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capitalGreen/static/media/djubrivo.7b25bdd1.jpg"
   },
   {
-    "revision": "6673bf88f38a392c6f4e73dc87042327",
-    "url": "/capitalGreen/static/media/logo.6673bf88.png"
+    "revision": "d19679441f6238309a4cfe8fe4e1193d",
+    "url": "/capitalGreen/static/media/logo.d1967944.png"
   },
   {
-    "revision": "30884e2d1b24ba84996b8d853764ebf1",
-    "url": "/capitalGreen/static/media/pozadina7.30884e2d.jpg"
+    "revision": "6bbfd76bdee817b333e2bee6b3cb241d",
+    "url": "/capitalGreen/static/media/pozadina7.6bbfd76b.jpeg"
+  },
+  {
+    "revision": "797db2f87f76391fa08cdf16b1623e20",
+    "url": "/capitalGreen/static/media/pozadina8.797db2f8.jpeg"
   },
   {
     "revision": "3c10112c6c4dfe8deb1783a04f63a053",
