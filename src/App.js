@@ -7,8 +7,8 @@ import Zaposlenje from "./containers/zaposlenje/Zaposlenje";
 import Kontakt from "./containers/kontakt/Kontakt.js";
 import O_nama from "./containers/o-nama/O_nama.js";
 import Home from "./containers/Home/Home";
-import NoMatch from "./components/NoMatch/NoMatch";
-import Bars from "./containers/Bars/Bars";
+// import NoMatch from "./components/NoMatch/NoMatch";
+import Bars from "./components/Bars/Bars";
 
 function App() {
   return (

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Buttons from "../../../UI/Button/Buttons";
 import "./Product.scss";
-import slika from "../../../components/AkcijskaReklama/img/djubrivo.jpg";
+import slika from "../../../components/Popup/img/djubrivo.jpg";
 
 export default class Product extends Component {
   paragraph = () => {
@@ -20,7 +20,6 @@ export default class Product extends Component {
             <img src={slika} alt="slika" />
           </div>
           {this.paragraph()}
-
           <div>
             <div className="productPrice">
               <div className="price1">{this.props.product.price}</div>

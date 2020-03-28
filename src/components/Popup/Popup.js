@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import "./AkcijskaReklama.scss";
+import "./Popup.scss";
 import Slika from "./img/prvaStrana.jpg";
 import Buttons from "../../UI/Button/Buttons";
 
@@ -11,7 +11,7 @@ const Naslov = props => {
   );
 };
 
-export default class AkcijskaReklama extends PureComponent {
+export default class Popup extends PureComponent {
   state = {
     val: "ORGANIC MINERAL Ca"
   };

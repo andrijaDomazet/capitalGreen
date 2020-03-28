@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./Bars.scss";
-import TopBar from "../../components/TopBar/TopBar";
+import TopBar from "./TopBar/TopBar";
 import Logo from "../../img/logo.png";
-import ToggleButton from "../../components/SideDrawer/ToggleButton";
-import SideDrawer from "../../components/SideDrawer/SideDrawer";
-import Backdrop from "../../components/Backdrop/Backdrop";
-import NavBar from "../../components/NavBar/NavBar.js";
+import ToggleButton from "./SideDrawer/ToggleButton";
+import SideDrawer from "./SideDrawer/SideDrawer";
+import Backdrop from "./Backdrop/Backdrop";
+import NavBar from "./NavBar/NavBar.js";
 
 export default class Bars extends Component {
   state = {
