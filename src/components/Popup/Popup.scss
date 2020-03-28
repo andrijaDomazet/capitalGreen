@@ -4,18 +4,20 @@
   position: fixed;
   display: flex;
   width: 100%;
-  top: 10vh;
+  // top: 10vh;
   transform: translateX(-400%);
   transition: transform 1.5s ease-in-out;
   justify-content: center;
   text-align: center;
-  z-index: 999;
+  z-index: +999;
   img {
+    z-index: +999;
     max-width: 320px;
   }
 
   .info__text {
     position: relative;
+    z-index: +999;
     h1,
     h2,
     button {
@@ -47,11 +49,15 @@
 @media screen and(min-width:768px) {
   .action__product {
     position: fixed;
-    top: 15vh;
+    // top: 15vh;
+    top: 0;
+    // bottom: 0;
+    padding: 15vh 0;
     transform: translateX(-400%);
     transition: transform 1.5s ease-in-out;
     color: white;
-    z-index: 200;
+    z-index: +999;
+
     img {
       background: #0b59a9;
       background: green;

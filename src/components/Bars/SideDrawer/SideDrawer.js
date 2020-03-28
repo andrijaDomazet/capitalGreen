@@ -1,7 +1,7 @@
 import React from "react";
 import "./SideDrawer.scss";
 import { NavLink } from "react-router-dom";
-import Logo from "../../img/logo.png";
+import Logo from "../../../img/logo.png";
 
 export default function SideDrawer(props) {
   let drawerClasses = "side-drawer";

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import "./Home.scss";
-import AkcijskaReklama from "../../components/AkcijskaReklama/AkcijskaReklama";
-import Backdrop from "../../components/Backdrop/Backdrop";
+import Backdrop from "../../components/Bars/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
 import MarqueeBottom from "../../components/Marquee/MarqueeBottom";
 import Banner2 from "../../components/Banner/Banner2";
 import data from "../../allData";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
+import Popup from "../../components/Popup/Popup";
 
 export default class Home extends Component {
   state = {
@@ -18,7 +18,7 @@ export default class Home extends Component {
       { id: 4, name: "Folija" }
     ],
     prikazAkcijskeReklame: false,
-    lista: false,
+    lista: true,
     lista1: true,
     lista2: false
   };
@@ -58,12 +58,11 @@ export default class Home extends Component {
           clicked={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        {/* <Banner2 small={this.state.lista} /> */}
         <Card1 click1={this.click1} />
         <div className={classCenter}>
           <Card2 />
         </div>
-        <AkcijskaReklama
+        <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
@@ -71,7 +70,6 @@ export default class Home extends Component {
         <MarqueeBottom />
         {listaProizvoda}
       </div>
-      // </div>
     );
   }
 
