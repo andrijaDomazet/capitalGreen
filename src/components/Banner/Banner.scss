@@ -1,12 +1,14 @@
 @import "../../index.scss";
 
 .banner {
+  // width: 100%;
   background-image: url("./img/background.jpg");
   background-size: cover;
   margin: 0 auto;
   text-align: center;
   color: white;
   h3 {
+    font-size: 1.2rem;
     margin: 0;
   }
   p {

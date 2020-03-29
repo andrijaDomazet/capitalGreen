@@ -85,7 +85,7 @@ class MainCarousel extends Component {
           key={item.src}
         >
           <img
-            style={{ maxHeight: "30vh", margin: "1rem 1rem" }}
+            // style={{ maxHeight: "30vh", margin: "1rem 1rem" }}
             src={item.src}
             alt={item.altText}
           />
