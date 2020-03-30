@@ -10,29 +10,33 @@
   margin: 0 auto;
   .aboutUs__carousel {
     flex: 1;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     // height: auto;
-    height: 150px;
+    max-height: 100vh;
     img {
       width: 100%;
-
       padding: 15px;
-      border: 1px solid green;
+      // border: 1px solid green;
     }
   }
   .aboutUs__text {
     flex: 1;
     text-align: justify;
     padding: 15px;
+    // height: 100px;
+    // border: 1px solid black;
   }
 }
 @media screen and(min-width:768px) {
   .aboutUs {
     flex-direction: row;
+    // border: 2px dotted yellow;
   }
   .aboutUs > p {
     // position: absolute;
-    flex-shrink: 0;
-    color: red;
+    display: inline-block;
+    // flex-shrink: 0;
+    // border: 1px dotted blue;
+    //   color: red;
   }
 }
