@@ -70,10 +70,12 @@
   }
 
   .card2 {
+    font-size: 20px;
     position: absolute;
-    top: -120px;
+    top: -100px;
     right: calc(200px + 3vw);
-    width: 300px;
+    width: 400px;
+    padding: 0 5px;
     cursor: pointer;
     .card2-text {
       font-size: 1.1em;

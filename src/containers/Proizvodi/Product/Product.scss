@@ -81,10 +81,10 @@
 @media screen and(min-width:768px) {
   .product-main {
     width: 90%;
-    margin: 5px auto;
+    margin: 10px auto;
     height: 140px;
     &:hover {
-      animation-play-state: paused;
+      // animation-play-state: paused;
     }
     h2 {
       font-size: 0.8em;
