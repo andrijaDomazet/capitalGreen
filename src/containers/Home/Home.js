@@ -3,7 +3,6 @@ import "./Home.scss";
 import Backdrop from "../../components/Bars/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
 import MarqueeBottom from "../../components/Marquee/MarqueeBottom";
-import Banner2 from "../../components/Banner/Banner2";
 import data from "../../allData";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
@@ -54,21 +53,21 @@ export default class Home extends Component {
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
       <div className="home__div">
-        <Backdrop
-          clicked={this.removeCommentBox}
-          show={this.state.prikazAkcijskeReklame}
-        />
         <Card1 click1={this.click1} />
         <div className={classCenter}>
-          <Card2 />
+          <Card2 data={data} />
         </div>
+        <MarqueeBottom />
+        {listaProizvoda}
         <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
           show={this.state.prikazAkcijskeReklame}
         />
-        <MarqueeBottom />
-        {listaProizvoda}
+        <Backdrop
+          clicked={this.removeCommentBox}
+          show={this.state.prikazAkcijskeReklame}
+        />
       </div>
     );
   }

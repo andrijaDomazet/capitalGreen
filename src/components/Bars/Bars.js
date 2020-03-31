@@ -36,7 +36,7 @@ export default class Bars extends Component {
           />
           <TopBar />
           <NavBar admin={this.state.admin} />
-          <ToggleButton click={this.drawerToggleClickHandler} />
+          <ToggleButton clicked={this.drawerToggleClickHandler} />
           <SideDrawer
             show={this.state.sideDrawerOpen}
             clicked={this.drawerToggleClickHandler}
