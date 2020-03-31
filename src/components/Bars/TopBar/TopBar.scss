@@ -3,7 +3,6 @@
 .topBar__div {
   display: flex;
   flex-direction: column;
-
   justify-content: space-evenly;
   .topBar__link {
     font-size: 0.8rem;
@@ -11,7 +10,7 @@
     padding: 2px;
     text-align: left;
     text-decoration: none;
-    color: $green3;
+    color: $green2;
     i {
       font-size: 1em;
       margin-right: 0.2rem;

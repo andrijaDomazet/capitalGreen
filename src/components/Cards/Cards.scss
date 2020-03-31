@@ -5,11 +5,12 @@
   margin: 0 5px;
 
   h2 {
-    color: $green1;
+    color: $green2;
     font-weight: 600;
     padding-top: 20px;
     text-align: center;
     font-size: 1.4em;
+    text-shadow: 2px 1px 7px black;
   }
   p {
     text-align: justify;
@@ -55,6 +56,7 @@
     padding: 20px;
     position: relative;
     h2 {
+      font-size: 1.9rem;
       text-align: left;
       padding: 0;
       margin: 0;

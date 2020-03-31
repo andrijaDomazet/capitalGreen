@@ -32,9 +32,9 @@
       width: 25px;
       height: 25px;
       z-index: +999;
+      cursor: pointer;
       i {
         font-size: 1.2rem;
-        cursor: pointer;
         transition: all 0.3s linear;
         color: green;
       }
