@@ -3,7 +3,10 @@ import "./Cards.scss";
 import data from "../../details";
 export default function Card2(props) {
   return (
-    <div className="card2" onClick="window.open('tel:+381645222333');">
+    <div
+      className="card2"
+      // onClick={newFunction()}
+    >
       <div className="card2__phone">
         <span className="btn__phone">
           <i className="fas fa-phone-square" />
@@ -17,3 +20,6 @@ export default function Card2(props) {
     </div>
   );
 }
+// function newFunction() {
+//   return window.open("tel:+381645222333");
+// }
