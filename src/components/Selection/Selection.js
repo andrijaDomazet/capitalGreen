@@ -8,17 +8,27 @@ export default class Selection extends Component {
   setGroupProducts = e => {
     var group = e.target.value;
     this.setState({ groupProducts: e.target.value });
-    this.props.changeGroup(group);
+    this.props.changeGroup(Number(group));
   };
   render() {
     return (
-      <div className="selectionDiv">
+      <div className="selection">
         <select onChange={this.setGroupProducts}>
-          <option value="1">Đubriva</option>
-          <option value="2">Folije</option>
-          <option value="3">Biološka zaštita</option>
+          {groupOfProducts.map((group, index) => {
+            return (
+              <option key={index} value={group.value}>
+                {group.title}
+              </option>
+            );
+          })}
         </select>
       </div>
     );
   }
 }
+const groupOfProducts = [
+  { title: "Svi proizvodi", value: 0 },
+  { title: "Đubriva", value: 1 },
+  { title: "Folije", value: 2 },
+  { title: "Biološka zaštita", value: 3 }
+];
