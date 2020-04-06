@@ -9,7 +9,7 @@ export default class Table extends Component {
     group: [
       ...this.props.data[1],
       ...this.props.data[2],
-      ...this.props.data[3]
+      ...this.props.data[3],
     ],
 
     //state for pagination
@@ -17,7 +17,7 @@ export default class Table extends Component {
     newPage: false,
     startOperacion: 1,
     operationPerPage: 8,
-    elemNum: [0, 7]
+    elemNum: [0, 7],
     //end
   };
 
@@ -28,7 +28,7 @@ export default class Table extends Component {
     } else {
       this.setState({
         newPage: false,
-        elemNum: [0, 7]
+        elemNum: [0, 7],
       });
     }
   };
@@ -50,12 +50,12 @@ export default class Table extends Component {
     }
   };
   //render td of table
-  renderTableData = products => {
+  renderTableData = (products) => {
     return products.map((product, index) => {
       return (
         <tr key={index}>
           <td>
-            <img src={slika} alt="" />
+            <img src={slika} alt="no image" />
             {product.id}.
           </td>
           <td>{product.name}</td>
@@ -72,12 +72,12 @@ export default class Table extends Component {
   };
   //===================== end ==========================
 
-  grupaProizvoda = e => {
+  grupaProizvoda = (e) => {
     if (e === 0) {
       const groupProducts = [
         ...this.props.data[1],
         ...this.props.data[2],
-        ...this.props.data[3]
+        ...this.props.data[3],
       ];
       this.setState({ group: groupProducts });
     } else {
@@ -92,10 +92,7 @@ export default class Table extends Component {
     );
     return (
       <div className="table">
-        <div className="table__choise">
-          <h3>Izaberite grupu proizvoda:</h3>
-          {<Selection changeGroup={this.grupaProizvoda} />}
-        </div>
+        {<Selection changeGroup={this.grupaProizvoda} />}
         <table>
           <thead>
             <tr>{this.renderTableHeader()}</tr>

@@ -4,22 +4,15 @@ import Backdrop from "../../components/Bars/Backdrop/Backdrop";
 import Product from "../Proizvodi/Product/Product";
 import MarqueeBottom from "../../components/Marquee/MarqueeBottom";
 import data from "../../allData";
+import details from "../../details.json";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
 import Popup from "../../components/Popup/Popup";
 
 export default class Home extends Component {
   state = {
-    products: [
-      { id: 1, name: "Organic mineral Ca" },
-      { id: 2, name: "	IDRON 20 20 20 +me" },
-      { id: 3, name: "Organic mineral Ca" },
-      { id: 4, name: "Folija" }
-    ],
-    prikazAkcijskeReklame: false,
+    showPopup: false,
     lista: true,
-    lista1: true,
-    lista2: false
   };
 
   click = () => {
@@ -31,17 +24,18 @@ export default class Home extends Component {
   click2 = () => {
     this.props.history.push("/proizvodi");
   };
+
+  //Start the timer after 6 second, set render to true
   componentDidMount() {
     setTimeout(() => {
-      //Start the timer
-      this.setState({ prikazAkcijskeReklame: true }); //After 6 second, set render to true
-    }, 5000);
+      this.setState({ prikazAkcijskeReklame: true });
+    }, 6000);
   }
 
   removeCommentBox = () => {
     this.setState({
       prikazAkcijskeReklame: false,
-      lista: true
+      lista: true,
     });
   };
   close = () => {
@@ -53,21 +47,18 @@ export default class Home extends Component {
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
       <div className="home__div">
-        <Card1 click1={this.click1} />
+        <Card1 details={details} clicked={this.click1} />
         <div className={classCenter}>
-          <Card2 data={data} />
+          <Card2 details={details} />
         </div>
         <MarqueeBottom />
         {listaProizvoda}
         <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
-          show={this.state.prikazAkcijskeReklame}
+          show={this.state.showPopup}
         />
-        <Backdrop
-          clicked={this.removeCommentBox}
-          show={this.state.prikazAkcijskeReklame}
-        />
+        <Backdrop clicked={this.removeCommentBox} show={this.state.showPopup} />
       </div>
     );
   }

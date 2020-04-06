@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutUs.scss";
-// import { Card, CardText, CardBody } from "reactstrap";
 import MainCarousel from "./Carousel/MainCarousel";
 
 export default function AboutUs() {
@@ -22,9 +21,7 @@ export default function AboutUs() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
           eveniet, beatae amet officiis quos cupiditate eos sequi, voluptas,
           animi repellendus assumenda recusandae earum aliquam commodi eum
-          porro? Nulla, iusto. Dignissimos corrupti culpa quae modi, atque ullam
-          hic temporibus, commodi totam fugiat unde, aspernatur ipsam laboriosam
-          numquam soluta dolor asperiores beatae.
+          porro?
         </p>
       </div>
       <p>

@@ -5,38 +5,32 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 90vw;
-  height: 100%;
+  height: 100vh;
   background: rgba(255, 255, 255, 0.9);
   margin: 0 auto;
   .aboutUs__carousel {
     flex: 1;
-    // border: 1px solid blue;
-    // height: auto;
-    max-height: 100vh;
+    height: 50px;
     img {
       width: 100%;
       padding: 15px;
-      // border: 1px solid green;
     }
   }
   .aboutUs__text {
     flex: 1;
     text-align: justify;
     padding: 15px;
-    // height: 100px;
-    // border: 1px solid black;
   }
 }
 @media screen and(min-width:768px) {
   .aboutUs {
     flex-direction: row;
-    // border: 2px dotted yellow;
   }
-  .aboutUs > p {
-    // position: absolute;
-    display: inline-block;
-    // flex-shrink: 0;
-    // border: 1px dotted blue;
-    //   color: red;
+  .aboutUs__text + p {
+    text-align: justify;
+    color: white;
+    margin: auto 20px;
+    padding: 0 10px;
+    background-color: $green2;
   }
 }
