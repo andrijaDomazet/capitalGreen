@@ -1,6 +1,17 @@
 @import "../../index.scss";
 
 .selection {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  h3 {
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.5rem;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
   select {
     text-align: center;
     text-align-last: center;

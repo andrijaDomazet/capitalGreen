@@ -3,29 +3,14 @@
 .table {
   border-top: none;
   height: 100vh;
-  margin-bottom: 0 !important;
-  .table__choise {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    h3 {
-      margin-right: 10px;
-      font-size: 1rem;
-    }
-  }
-
   table {
-    margin: 0 auto;
-    border: none;
+    margin: 10px auto;
     border-collapse: collapse;
     text-align: center;
     font-size: 0.8rem;
     width: 90%;
-    // max-height: 50%;
     img {
-      margin: 0;
+      width: auto;
       height: 50px;
     }
   }
@@ -54,15 +39,7 @@
   }
 }
 @media screen and(min-width:768px) {
-  .table {
-    .table__choise {
-      flex-direction: row;
-      justify-content: left;
-      h3 {
-      }
-    }
-    table {
-      width: 90%;
-    }
+  table {
+    // width: 90%;
   }
 }

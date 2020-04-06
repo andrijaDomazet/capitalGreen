@@ -3,9 +3,9 @@ import "./Selection.scss";
 
 export default class Selection extends Component {
   state = {
-    groupProducts: ""
+    groupProducts: "",
   };
-  setGroupProducts = e => {
+  setGroupProducts = (e) => {
     var group = e.target.value;
     this.setState({ groupProducts: e.target.value });
     this.props.changeGroup(Number(group));
@@ -13,6 +13,7 @@ export default class Selection extends Component {
   render() {
     return (
       <div className="selection">
+        <h3>Izaberite grupu proizvoda:</h3>
         <select onChange={this.setGroupProducts}>
           {groupOfProducts.map((group, index) => {
             return (
@@ -30,5 +31,5 @@ const groupOfProducts = [
   { title: "Svi proizvodi", value: 0 },
   { title: "Đubriva", value: 1 },
   { title: "Folije", value: 2 },
-  { title: "Biološka zaštita", value: 3 }
+  { title: "Biološka zaštita", value: 3 },
 ];

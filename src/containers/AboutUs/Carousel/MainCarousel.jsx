@@ -4,7 +4,7 @@ import {
   CarouselItem,
   CarouselControl,
   CarouselIndicators,
-  CarouselCaption
+  // CarouselCaption,
 } from "reactstrap";
 import "./MainCarousel.css";
 import Slika1 from "./img/slika1.jpg";
@@ -14,22 +14,22 @@ import Slika3 from "./img/slika3.jpg";
 const items = [
   {
     src: Slika1,
-    altText: "Slide 1"
+    altText: "Slide 1",
     // caption: "Slide 1"
     // header: "Slide 1 Header"
   },
   {
     src: Slika2,
-    altText: "Slide 2"
+    altText: "Slide 2",
     // caption: "Slide 2",
     // header: "Slide 2 Header"
   },
   {
     src: Slika3,
-    altText: "Slide 3"
+    altText: "Slide 3",
     // caption: "Slide 3",
     // header: "Slide 3 Header"
-  }
+  },
 ];
 
 class MainCarousel extends Component {
@@ -77,7 +77,7 @@ class MainCarousel extends Component {
   render() {
     const { activeIndex } = this.state;
 
-    const slides = items.map(item => {
+    const slides = items.map((item) => {
       return (
         <CarouselItem
           onExiting={this.onExiting}
@@ -89,10 +89,10 @@ class MainCarousel extends Component {
             src={item.src}
             alt={item.altText}
           />
-          <CarouselCaption
+          {/* <CarouselCaption
             captionText={item.caption}
             captionHeader={item.caption}
-          />
+          /> */}
         </CarouselItem>
       );
     });
