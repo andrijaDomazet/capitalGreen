@@ -13,24 +13,42 @@ export default class Table extends Component {
     ],
 
     //state for pagination
-    showPagination: "",
-    newPage: false,
-    startOperacion: 1,
-    operationPerPage: 8,
-    elemNum: [0, 7],
+    pageNum: 1,
+    operationPerPage: 6,
+    elemNum: [0, 5],
     //end
   };
 
   // functions for Pagination ==========================
-  setPaginationPage = () => {
-    if (this.state.newPage === false) {
-      this.setState({ newPage: true, elemNum: [5, Infinity] });
-    } else {
-      this.setState({
-        newPage: false,
-        elemNum: [0, 7],
-      });
+  componentDidMount = () => {
+    this.updatePageNumber();
+  };
+  componentDidUpdate = (prevProps, prevState) => {
+    if (this.state.group !== prevState.group) {
+      // update the state
+      this.updatePageNumber();
     }
+  };
+  updatePageNumber = () => {
+    this.setState({
+      numberOfPages: Math.ceil(
+        this.state.group.length / this.state.operationPerPage
+      ),
+    });
+  };
+  setPaginationPage = (page) => {
+    this.setState({
+      elemNum: [
+        (page - 1) * 5,
+        (page - 1) * 5 + this.state.operationPerPage - 1,
+      ],
+      pageNum: page,
+    });
+    return this.state.group.slice(this.state.elemNum[0], this.state.elemNum[1]);
+  };
+  //funkcija kojom se odredjuje da li ce se prikazati pagination
+  showPagination = () => {
+    return this.state.group.length < this.state.operationPerPage ? "none" : "";
   };
   //====================== end =========================
 
@@ -41,21 +59,13 @@ export default class Table extends Component {
       return <th key={i}>{naziv}</th>;
     });
   };
-  showPagination = () => {
-    console.log("Length", this.state.group.length);
-    if (this.state.group.length < 9) {
-      this.setState({ showPagination: "none" });
-    } else {
-      this.setState({ showPagination: "" });
-    }
-  };
   //render td of table
   renderTableData = (products) => {
     return products.map((product, index) => {
       return (
         <tr key={index}>
           <td>
-            <img src={slika} alt="no image" />
+            <img src={slika} alt="no__image" />
             {product.id}.
           </td>
           <td>{product.name}</td>
@@ -86,6 +96,7 @@ export default class Table extends Component {
     }
   };
   render() {
+    // this.showPagination = this.showPagination.bind(this);
     const products = this.state.group.slice(
       this.state.elemNum[0],
       this.state.elemNum[1]
@@ -100,8 +111,8 @@ export default class Table extends Component {
           <tbody>{this.renderTableData(products)}</tbody>
         </table>
         <Pagination
-          prikaz={this.state.showPagination}
-          newPage={this.state.newPage}
+          numberOfPages={this.state.numberOfPages}
+          pageNum={this.state.pageNum}
           clicked={this.setPaginationPage}
         />
       </div>
