@@ -45,6 +45,10 @@ export default class Home extends Component {
     let naslov = <p>ORGANIC MINERAL Ca</p>;
     let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista ? "home__center move" : "home__center";
+    // var podaci = data1.audits.map((item) => {
+    //   item;
+    // });
+
     return (
       <div className="home__div">
         <Card1 details={details} clicked={this.click1} />

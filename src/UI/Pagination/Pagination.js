@@ -2,12 +2,23 @@ import React from "react";
 import "./Pagination.scss";
 
 export default function Pagination(props) {
-  console.log(props.prikaz);
-
   return (
     <div className="pagination" style={{ display: `${props.prikaz}` }}>
-      <div className={props.newPage ? "" : "open"} onClick={props.clicked} />
-      <div className={props.newPage ? "open" : ""} onClick={props.clicked} />
+      {Array.from({ length: props.numberOfPages }, (i, v) => v + 1).map(
+        (page, index) => {
+          return (
+            <div
+              key={index}
+              className={props.pageNum === page ? "" : "open"}
+              onClick={() => {
+                props.clicked(page);
+              }}
+            >
+              {page}
+            </div>
+          );
+        }
+      )}
     </div>
   );
 }
