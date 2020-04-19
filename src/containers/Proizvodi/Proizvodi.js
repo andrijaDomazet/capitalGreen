@@ -1,12 +1,12 @@
 import React from "react";
 import "./Proizvodi.scss";
 import Data from "../../allData";
-import Table from "./Table/Table";
+import Table from "../../components/Table/Table";
 import Banner from "../../components/Banner/Banner";
 
 export default class Proizvodi extends React.Component {
   state = {
-    data: Data
+    data: Data,
   };
   render() {
     return (

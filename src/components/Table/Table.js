@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./Table.scss";
-import Selection from "../../../components/Selection/Selection";
-import slika from "../../../img/logo.png";
-import Pagination from "../../../UI/Pagination/Pagination";
+import Selection from "../Selection/Selection";
+import slika from "../../img/logo.png";
+import Pagination from "../../UI/Pagination/Pagination";
 
 export default class Table extends Component {
   state = {
@@ -21,15 +21,16 @@ export default class Table extends Component {
 
   // functions for Pagination ==========================
   componentDidMount = () => {
-    this.updatePageNumber();
+    this.setPageNumber();
   };
   componentDidUpdate = (prevProps, prevState) => {
     if (this.state.group !== prevState.group) {
-      // update the state
-      this.updatePageNumber();
+      this.setState({ pageNum: 1 });
+      this.setPageNumber();
+      this.setPaginationPage(1);
     }
   };
-  updatePageNumber = () => {
+  setPageNumber = () => {
     this.setState({
       numberOfPages: Math.ceil(
         this.state.group.length / this.state.operationPerPage
@@ -47,6 +48,7 @@ export default class Table extends Component {
     return this.state.group.slice(this.state.elemNum[0], this.state.elemNum[1]);
   };
   //funkcija kojom se odredjuje da li ce se prikazati pagination
+  //trenutno nije aktivna
   showPagination = () => {
     return this.state.group.length < this.state.operationPerPage ? "none" : "";
   };
@@ -97,10 +99,7 @@ export default class Table extends Component {
   };
   render() {
     // this.showPagination = this.showPagination.bind(this);
-    const products = this.state.group.slice(
-      this.state.elemNum[0],
-      this.state.elemNum[1]
-    );
+    // const products = this.newMethod();
     return (
       <div className="table">
         {<Selection changeGroup={this.grupaProizvoda} />}
@@ -108,7 +107,7 @@ export default class Table extends Component {
           <thead>
             <tr>{this.renderTableHeader()}</tr>
           </thead>
-          <tbody>{this.renderTableData(products)}</tbody>
+          <tbody>{this.renderTableData(this.getProductsList())}</tbody>
         </table>
         <Pagination
           numberOfPages={this.state.numberOfPages}
@@ -117,5 +116,9 @@ export default class Table extends Component {
         />
       </div>
     );
+  }
+
+  getProductsList() {
+    return this.state.group.slice(this.state.elemNum[0], this.state.elemNum[1]);
   }
 }
