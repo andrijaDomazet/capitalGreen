@@ -7,42 +7,60 @@
       "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "1/1",
       "price": 654.55,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 2,
       "name": "ORGANIC MINERAL Ca+NK+Mg+B",
       "pakovanje": "6/1",
       "price": 3790.92,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 3,
       "name": "IDRON 20 20 20 +me",
       "pakovanje": "10/1",
       "price": 2000.0,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "Zahvaljujući ravnopravnom odnosu makroelemenata azota, fosfora i kalijuma IDRON 20-20-20 je pogodan za zadovoljenje hranljivih potreba biljaka u bilo kojoj fazi. Njegova primjena se preporučuje od sadnje do samog sazrijevanja, bilo da se radi o povrtlarskim, voćarskim ili cvjećarskim kulturama..",
+      "application": "povrće, jagodasto voće, drvenasto voće, citrusi",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 4,
       "name": "IDRON 10 5 40 +me",
       "pakovanje": "10/1",
       "price": 654.55,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 5,
       "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
       "price": 200,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 6,
       "name": "IDRON 5 45 15 +me",
       "pakovanje": "10/1",
       "price": 200,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     }
   ],
   [
@@ -51,28 +69,40 @@
       "name": "Folija 1",
       "pakovanje": "1/1",
       "price": 654.55,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 2,
       "name": "Folija 2",
       "pakovanje": "6/1",
       "price": 3790.92,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 3,
       "name": "Folija 3",
       "pakovanje": "6/1",
       "price": 2790.0,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 4,
       "name": "Folija 4",
       "pakovanje": "10/1",
       "price": 2000.0,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     }
   ],
   [
@@ -81,21 +111,30 @@
       "name": "Bioloska zastita 1",
       "pakovanje": "1/1",
       "price": 654.55,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 2,
       "name": "Bioloska zastita 2",
       "pakovanje": "6/1",
       "price": 3790.92,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     },
     {
       "id": 3,
       "name": "Bioloska zastita 3",
       "pakovanje": "10/1",
       "price": 2000.0,
-      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje."
+      "description": "NPK vodootopiva đubriva koriste se kroz sistem za navodnjavanje za prehranu kultura. Ova đubriva sadrže različite kombinacije makro i mikroelemenata za sve faze proizvodnje.",
+      "application": "",
+      "perTreatment": "3-6kg/1000m²",
+      "applicationTime": "od sadnje do sazrijevanja"
     }
   ]
 ]
