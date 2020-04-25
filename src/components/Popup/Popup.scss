@@ -5,8 +5,8 @@
   display: flex;
   width: 100%;
   // top: 10vh;
-  transform: translateX(-400%);
-  transition: transform 1.5s ease-in-out;
+  // transform: translateX(-400%);
+  transition: transform 1s ease-in-out !important;
   justify-content: center;
   text-align: center;
   z-index: +999;
@@ -54,6 +54,7 @@
     // bottom: 0;
     padding: 15vh 0;
     transform: translateX(-400%);
+    // transform:;
     transition: transform 1.5s ease-in-out;
     color: white;
     z-index: +999;

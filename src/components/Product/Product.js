@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Buttons from "../../../UI/Button/Buttons";
+import Buttons from "../../UI/Button/Buttons";
 import "./Product.scss";
-import slika from "../../../components/Popup/img/djubrivo.jpg";
+import slika from "../Popup/img/djubrivo.jpg";
 
 export default class Product extends Component {
   paragraph = () => {

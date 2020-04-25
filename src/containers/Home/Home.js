@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Home.scss";
 import Backdrop from "../../components/Bars/Backdrop/Backdrop";
-import Product from "../Proizvodi/Product/Product";
+import Product from "../../components/Product/Product";
 import MarqueeBottom from "../../components/Marquee/MarqueeBottom";
 import data from "../../allData";
 import details from "../../details.json";
@@ -54,11 +54,11 @@ export default class Home extends Component {
         </div>
         <MarqueeBottom />
         {listaProizvoda}
-        <Popup
+        {/* <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
           show={this.state.showPopup}
-        />
+        /> */}
         <Backdrop clicked={this.removeCommentBox} show={this.state.showPopup} />
       </div>
     );

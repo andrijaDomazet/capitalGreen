@@ -3,6 +3,7 @@ import "./Table.scss";
 import Selection from "../Selection/Selection";
 import slika from "../../img/logo.png";
 import Pagination from "../../UI/Pagination/Pagination";
+import Popup from "../Popup/Popup";
 
 export default class Table extends Component {
   state = {
@@ -17,6 +18,9 @@ export default class Table extends Component {
     operationPerPage: 6,
     elemNum: [0, 5],
     //end
+
+    showPopup: false,
+    choosedProduct: 0,
   };
 
   // functions for Pagination ==========================
@@ -55,13 +59,13 @@ export default class Table extends Component {
   //====================== end =========================
 
   // drawing Table =====================================
-  //render header of table
+  //render table header
   renderTableHeader = () => {
     return this.props.data[0].map((naziv, i) => {
       return <th key={i}>{naziv}</th>;
     });
   };
-  //render td of table
+  //render td
   renderTableData = (products) => {
     return products.map((product, index) => {
       return (
@@ -74,7 +78,11 @@ export default class Table extends Component {
           <td>{product.pakovanje} </td>
           <td>{product.price.toFixed(2)} </td>
           <td>
-            <button className="btn btn-secondary btn-sm" onClick={this.poziv}>
+            <button
+              className="btn btn-secondary btn-sm"
+              value={product.id}
+              onClick={this.poziv}
+            >
               Info
             </button>
           </td>
@@ -97,9 +105,21 @@ export default class Table extends Component {
       this.setState({ group: groupProducts });
     }
   };
+  //========================== end ============================
+  // functions for open and close Popup
+  poziv = (e) => {
+    this.setState({ showPopup: true, choosedProduct: e.target.value });
+
+    console.log("idemooo", e.target.value);
+  };
+  removeCommentBox = () => {
+    this.setState({
+      showPopup: false,
+      // lista: true,
+    });
+  };
+  //======================== end ==============================
   render() {
-    // this.showPagination = this.showPagination.bind(this);
-    // const products = this.newMethod();
     return (
       <div className="table">
         {<Selection changeGroup={this.grupaProizvoda} />}
@@ -113,6 +133,11 @@ export default class Table extends Component {
           numberOfPages={this.state.numberOfPages}
           pageNum={this.state.pageNum}
           clicked={this.setPaginationPage}
+        />
+        <Popup
+          show={this.state.showPopup}
+          removeCommentBox={this.removeCommentBox}
+          details={this.state.group[this.state.choosedProduct]}
         />
       </div>
     );
