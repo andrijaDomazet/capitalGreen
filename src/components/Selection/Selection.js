@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Selection.scss";
+import { groupOfProducts } from "../../shared/routing";
 
 export default class Selection extends Component {
   state = {
@@ -27,9 +28,3 @@ export default class Selection extends Component {
     );
   }
 }
-const groupOfProducts = [
-  { title: "Svi proizvodi", value: 0 },
-  { title: "Đubriva", value: 1 },
-  { title: "Folije", value: 2 },
-  { title: "Biološka zaštita", value: 3 },
-];
