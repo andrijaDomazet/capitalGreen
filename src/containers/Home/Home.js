@@ -15,13 +15,10 @@ export default class Home extends Component {
     lista: true,
   };
 
-  click = () => {
-    this.props.history.push("/delatnosti");
-  };
-  click1 = () => {
+  redirectToAboutUs = () => {
     this.props.history.push("/o-nama");
   };
-  click2 = () => {
+  redirectToProdductPage = () => {
     this.props.history.push("/proizvodi");
   };
 
@@ -38,22 +35,16 @@ export default class Home extends Component {
       lista: true,
     });
   };
-  close = () => {
-    console.log("idemo");
-  };
   render() {
-    let naslov = <p>ORGANIC MINERAL Ca</p>;
-    let listaProizvoda = this.setProductsList(naslov);
     let classCenter = this.state.lista ? "home__center move" : "home__center";
-
     return (
       <div className="home__div">
-        <Card1 details={details} clicked={this.click1} />
+        <Card1 details={details} clicked={this.redirectToAboutUs} />
         <div className={classCenter}>
           <Card2 details={details} />
         </div>
         <MarqueeBottom />
-        {listaProizvoda}
+        {this.setProductsList()}
         {/* <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
@@ -64,13 +55,19 @@ export default class Home extends Component {
     );
   }
 
-  setProductsList(naslov) {
+  setProductsList() {
     return this.state.lista ? (
       <div className="home__products">
         <h6>Proizvodi na akciji</h6>
         <div className="home__product">
           {data[1].map((product, index) => {
-            return <Product key={index} product={data[1][index]} />;
+            return (
+              <Product
+                key={index}
+                clicked={this.redirectToProdductPage}
+                product={product}
+              />
+            );
           })}
         </div>
       </div>
