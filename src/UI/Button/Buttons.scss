@@ -5,16 +5,13 @@ button {
   cursor: pointer;
   color: white;
   background: rgb(8, 124, 43);
-  // color: $green1;
-  //   border: 1px solid black;
   border: 1px solid white;
   border-radius: 5px !important;
   outline: none;
   padding: 0.1em 0.8em;
 
   &:hover {
-    animation: buttonAnimation 0.5s alternate;
-    // background: rgb(13, 27, 107);
+    animation: buttonAnimation 1s alternate;
   }
 }
 

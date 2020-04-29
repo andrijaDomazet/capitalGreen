@@ -1,18 +1,19 @@
 @import "../../index.scss";
 
 .table {
+  position: relative;
   border-top: none;
-  height: 100vh;
+  height: 150vh;
   table {
-    position: relative;
     margin: 10px auto;
     border-collapse: collapse;
     text-align: center;
     font-size: 0.8rem;
     width: 90%;
     img {
+      border-radius: 5px;
       width: auto;
-      height: 50px;
+      height: 90px;
     }
   }
   table tr {
@@ -20,11 +21,10 @@
   }
   table td {
     padding: 0.3em;
-
-    button {
-      background-color: $green1;
-      border: none;
-    }
+  }
+  table td > button {
+    background-color: $green1;
+    border: none;
   }
   tbody tr:nth-child(odd) td {
     background: rgba(173, 194, 173, 0.253);

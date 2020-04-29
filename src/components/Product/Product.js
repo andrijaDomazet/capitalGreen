@@ -11,6 +11,10 @@ export default class Product extends Component {
     // var shortText = text.substring(0, Infinity);
     return <p>{truncate(text, 100)}...</p>;
   };
+  redirectToProduct = () => {
+    this.props.clicked("idemooo");
+    console.log("redirect");
+  };
   render() {
     return (
       <div className="product-main">
@@ -29,7 +33,7 @@ export default class Product extends Component {
                 ).toFixed(2)}
               </div>
             </div>
-            <Buttons>Saznaj više...</Buttons>
+            <Buttons clicked={this.redirectToProduct}>Saznaj više...</Buttons>
           </div>
         </div>
       </div>
