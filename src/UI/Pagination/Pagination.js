@@ -4,7 +4,7 @@ import "./Pagination.scss";
 export default function Pagination(props) {
   const pages = Array.from({ length: props.numberOfPages }, (i, v) => v + 1);
   return (
-    <div className="pagination" style={{ display: `${props.prikaz}` }}>
+    <div className="pagination__main" style={{ display: `${props.prikaz}` }}>
       {pages.map((page, index) => {
         return (
           <div

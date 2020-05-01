@@ -1,13 +1,11 @@
 import React from "react";
 import "./AboutUs.scss";
-import MainCarousel from "./Carousel/MainCarousel";
+// import MainCarousel from "./Carousel/MainCarousel";
 
 export default function AboutUs() {
   return (
     <div className="aboutUs">
-      <div className="aboutUs__carousel">
-        <MainCarousel />
-      </div>
+      <div className="aboutUs__carousel">{/* <MainCarousel /> */}</div>
       <div className="aboutUs__text">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt

@@ -20,9 +20,7 @@ export default class Product extends Component {
       <div className="product-main">
         <h2>{this.props.product.name}</h2>
         <div className="product">
-          <div>
-            <img src={slika} alt="slika" />
-          </div>
+          <img src={slika} alt="slika" />
           {this.paragraph()}
           <div>
             <div className="productPrice">
