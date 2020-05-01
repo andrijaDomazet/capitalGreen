@@ -1,15 +1,11 @@
 @import "../../index";
 
-.pagination {
-  position: absolute;
+.pagination__main {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  width: 150px;
-  height: 35px;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-content: center;
   div {
+    margin: 10px 5px;
     text-align: center;
     border-radius: 50%;
     border: 1px solid $green1;

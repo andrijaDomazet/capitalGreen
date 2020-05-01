@@ -58,7 +58,7 @@ export default class Home extends Component {
   setProductsList() {
     return this.state.lista ? (
       <div className="home__products">
-        <h6>Proizvodi na akciji</h6>
+        <h4>Proizvodi na akciji</h4>
         <div className="home__product">
           {data[1].map((product, index) => {
             return (

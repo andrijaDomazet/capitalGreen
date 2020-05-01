@@ -7,7 +7,7 @@
   border-radius: 5px;
   text-align: center;
   margin: auto 5px;
-  animation: prdoucts__slader 60s linear infinite;
+  animation: prdoucts__slader 80s linear infinite;
   border: 1px solid white;
   min-width: 200px;
   height: 140px;
@@ -25,8 +25,7 @@
       flex: 1;
       border-radius: 15%;
       margin-left: 5px;
-      width: auto;
-      height: 70px;
+      width: 30px;
     }
     h2 {
       font-size: 0.7em;
@@ -82,25 +81,16 @@
   .product-main {
     width: 90%;
     margin: 10px auto;
-    height: 140px;
-    &:hover {
-      // animation-play-state: paused;
-    }
+    height: 150px;
+
     h2 {
       font-size: 0.8em;
       line-height: 1.4rem;
     }
     .product {
       height: 90px;
-      margin-top: -5px;
-
-      h1 {
-        font-size: 0.8em;
-      }
-
-      p {
-        width: 30%;
-        height: 100%;
+      h2 {
+        font-size: 0.8rem;
       }
       button {
         font-size: 0.8rem;

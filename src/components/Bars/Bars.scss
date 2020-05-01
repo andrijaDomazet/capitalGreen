@@ -3,21 +3,15 @@
 .bars__div {
   display: flex;
   border-bottom: 2px solid $green2;
-}
-.bars__logo {
-  text-align: center;
   img {
     margin: 0 30px;
     height: 50px;
   }
 }
+
 @media screen and(min-width:768px) {
   .bars__div {
     width: 100vw;
-  }
-  .bars__logo {
-    justify-content: center;
-    align-items: center;
     img {
       height: 75px;
     }

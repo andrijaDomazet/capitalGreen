@@ -1,22 +1,18 @@
 @import "../../index.scss";
 
 .home__div {
-  // height: 100vh;
   display: flex;
   flex-direction: column;
   .home__products {
     width: 100%;
     height: 10rem;
 
-    h6 {
-      height: 1.6rem;
+    h4 {
       color: white;
       margin: 0;
-      padding: 3px 0;
       text-align: center;
       background: $green2;
-
-      border: 0.5px solid white;
+      border-radius: 5px;
     }
     .home__product {
       position: relative;
@@ -24,7 +20,7 @@
       overflow: hidden;
       height: 100%;
       background: rgba(233, 233, 233, 0.87);
-      border-radius: 0.2rem;
+      border-radius: 5px;
     }
     .home__product:before {
       position: absolute;
@@ -60,9 +56,7 @@
       right: 1.5rem;
       width: 250px;
       height: 70vh;
-      h6 {
-        border-radius: 0.25rem;
-      }
+
       .home__product {
         display: inline-block;
         margin: 0 0.6rem;

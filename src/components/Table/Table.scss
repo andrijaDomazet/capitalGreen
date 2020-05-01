@@ -1,11 +1,13 @@
 @import "../../index.scss";
 
-.table {
+.table__main {
+  margin: 0 auto;
   position: relative;
   border-top: none;
-  height: 150vh;
+
   table {
     margin: 10px auto;
+    padding-bottom: 10px;
     border-collapse: collapse;
     text-align: center;
     font-size: 0.8rem;
@@ -40,7 +42,4 @@
   }
 }
 @media screen and(min-width:768px) {
-  table {
-    // width: 90%;
-  }
 }

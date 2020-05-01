@@ -124,7 +124,7 @@ export default class Table extends Component {
   //======================== end ==============================
   render() {
     return (
-      <div className="table">
+      <div className="table__main">
         {<Selection changeGroup={this.grupaProizvoda} />}
         <table>
           <thead>

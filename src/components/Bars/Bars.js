@@ -10,25 +10,23 @@ import NavBar from "./NavBar/NavBar.js";
 export default class Bars extends Component {
   state = {
     admin: false,
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
   removeBackdrop = () => {
     this.setState({
-      sideDrawerOpen: false
+      sideDrawerOpen: false,
     });
   };
   render() {
     return (
       <div className="bars__div">
-        <div className="bars__logo">
-          <img src={Logo} alt="logo" />
-        </div>
+        <img src={Logo} alt="logo" />
         <div className="bars__links">
           <Backdrop
             clicked={this.removeBackdrop}
