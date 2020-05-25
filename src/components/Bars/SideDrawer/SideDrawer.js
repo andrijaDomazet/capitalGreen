@@ -2,6 +2,7 @@ import React from "react";
 import "./SideDrawer.scss";
 import { NavLink } from "react-router-dom";
 import Logo from "../../../img/logo.png";
+import { options } from "../../../shared/routing";
 
 export default function SideDrawer(props) {
   let drawerClasses = "side-drawer";
@@ -31,11 +32,3 @@ export default function SideDrawer(props) {
     </div>
   );
 }
-const options = [
-  { route: "/", title: "Naslovna" },
-  { route: "/o-nama", title: "O nama" },
-  { route: "/delatnosti", title: "Delatnosti" },
-  { route: "/proizvodi", title: "Proizvodi" },
-  { route: "/zaposlenje", title: "Zaposlenje" },
-  { route: "/kontakt", title: "Kontakt" }
-];

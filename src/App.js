@@ -21,7 +21,7 @@ function App() {
           <Route path="/o-nama" component={O_nama} />
           <Route path="/delatnosti" component={Delatnosti} />
           <Route path="/proizvodi" component={Proizvodi} />
-          <Route path="/zaposlenje" component={Zaposlenje} />
+          <Route path="/nas-tim" component={Zaposlenje} />
           <Route path="/kontakt" component={Kontakt} />
           <Route component={Home} />
         </Switch>

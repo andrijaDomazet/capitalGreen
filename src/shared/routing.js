@@ -3,7 +3,7 @@ export const options = [
   { route: "/o-nama", title: "O nama" },
   { route: "/delatnosti", title: "Delatnosti" },
   { route: "/proizvodi", title: "Proizvodi" },
-  { route: "/zaposlenje", title: "Zaposlenje" },
+  { route: "/nas-tim", title: "Naš tim" },
   { route: "/kontakt", title: "Kontakt" },
 ];
 
