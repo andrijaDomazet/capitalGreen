@@ -1,10 +1,12 @@
 import React from "react";
 import "./AboutUs.scss";
+import ArrayCarousel from "./Carousel/ArrayCarousel";
 // import MainCarousel from "./Carousel/MainCarousel";
 
 export default function AboutUs() {
   return (
     <div className="aboutUs">
+      <ArrayCarousel />
       <div className="aboutUs__carousel">{/* <MainCarousel /> */}</div>
       <div className="aboutUs__text">
         <p>

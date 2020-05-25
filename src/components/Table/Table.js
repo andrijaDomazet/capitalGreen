@@ -71,11 +71,8 @@ export default class Table extends Component {
       return (
         <tr key={index}>
           <td>
-            <img
-              src={process.env.PUBLIC_URL + `/img/products/example.jpg`}
-              alt="no__image"
-            />
-            {product.id}.
+            <img src={process.env.PUBLIC_URL + `/logo.png`} alt="no__image" />
+            {/* {product.id}. */}
           </td>
           <td>{product.name}</td>
           <td>{product.pakovanje} </td>
