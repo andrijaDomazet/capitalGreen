@@ -6,8 +6,15 @@ import ArrayCarousel from "./Carousel/ArrayCarousel";
 export default function AboutUs() {
   return (
     <div className="aboutUs">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, veniam!
+        Voluptas quam mollitia temporibus sapiente aliquid vero incidunt dolores
+        animi est. Animi sapiente, ipsum odio ut earum iste blanditiis tenetur
+        neque odit maxime assumenda. Animi, sequi sit ratione et deserunt
+        incidunt quasi voluptatem dolorem voluptates necessitatibus officia quod
+        quidem eum?
+      </p>
       <ArrayCarousel />
-      <div className="aboutUs__carousel">{/* <MainCarousel /> */}</div>
       <div className="aboutUs__text">
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -24,14 +31,6 @@ export default function AboutUs() {
           porro?
         </p>
       </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, veniam!
-        Voluptas quam mollitia temporibus sapiente aliquid vero incidunt dolores
-        animi est. Animi sapiente, ipsum odio ut earum iste blanditiis tenetur
-        neque odit maxime assumenda. Animi, sequi sit ratione et deserunt
-        incidunt quasi voluptatem dolorem voluptates necessitatibus officia quod
-        quidem eum?
-      </p>
     </div>
   );
 }

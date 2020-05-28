@@ -1,12 +1,11 @@
 @import "../../index.scss";
 
 .aboutUs {
+  // border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 90vw;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(255, 255, 255);
   margin: 0 auto;
   .aboutUs__carousel {
     flex: 1;
@@ -20,17 +19,36 @@
     flex: 1;
     text-align: justify;
     padding: 15px;
+    p {
+      font-size: 0.8rem;
+    }
   }
+}
+.aboutUs > p {
+  text-align: justify;
+  color: white;
+  font-size: 0.8rem;
+  // margin: auto 20px;
+  padding: 0 10px;
+  background-color: $green1;
 }
 @media screen and(min-width:768px) {
   .aboutUs {
-    flex-direction: row;
+    // flex-direction: row;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 10px;
+    .aboutUs__text {
+      display: flex;
+      p {
+        font-size: 1rem;
+        padding: 0 15px;
+        flex: 1;
+        // border: 1px solid blue;
+      }
+    }
   }
-  .aboutUs__text + p {
-    text-align: justify;
-    color: white;
-    margin: auto 20px;
-    padding: 0 10px;
-    background-color: $green2;
+  .aboutUs > p {
+    font-size: 1rem;
   }
 }
