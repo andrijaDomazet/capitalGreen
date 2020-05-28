@@ -1,5 +1,6 @@
 import React from "react";
 import "./ArrayCarousel.scss";
+import img1 from "../../../img/pozadina1.jpeg";
 
 export default function ArrayCarousel() {
   return (
@@ -16,22 +17,22 @@ export default function ArrayCarousel() {
       </a>
       <div class="gallery-content">
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          1
+          <img src={img1} alt="no picture" />
         </div>
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          2
+          <img src={img1} alt="no picture" />
         </div>
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          3
+          <img src={img1} alt="no picture" />
         </div>
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          4
+          <img src={img1} alt="no picture" />
         </div>
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          5
+          <img src={img1} alt="no picture" />
         </div>
         <div class="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          6
+          <img src={img1} alt="no picture" />
         </div>
       </div>
     </div>
