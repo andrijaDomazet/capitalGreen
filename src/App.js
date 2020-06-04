@@ -11,16 +11,7 @@ import Home from "./containers/Home/Home";
 import Bars from "./components/Bars/Bars";
 import Footer from "./components/Footer/Footer";
 
-function App(props) {
-  console.log(window.location.pathname);
-  const setFooter = () => {
-    if (window.location.pathname === "" || "/") {
-      console.log("idemo");
-    } else {
-      console.log("aaa");
-      return <Footer />;
-    }
-  };
+function App() {
   return (
     <div className="app">
       <Router>
@@ -35,7 +26,16 @@ function App(props) {
           <Route path="/kontakt" component={Kontakt} />
           <Route component={Home} />
         </Switch>
-        {setFooter(props)}
+        <Switch>
+          <Route exact path="/" component={null} />
+          <Route exact path="/kontakt" component={null} />
+          <Route
+            exact
+            path="https://andrijadomazet.github.io/capitalGreen/"
+            component={null}
+          />
+          <Route component={Footer} />
+        </Switch>
       </Router>
     </div>
   );

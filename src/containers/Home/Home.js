@@ -15,11 +15,10 @@ export default class Home extends Component {
     lista: true,
   };
 
-  redirectToAboutUs = () => {
-    this.props.history.push("/o-nama");
-  };
-  redirectToProdductPage = () => {
-    this.props.history.push("/proizvodi");
+  redirectFunc = (page) => {
+    return page === "aboutUs"
+      ? this.props.history.push("/o-nama")
+      : this.props.history.push("/proizvodi");
   };
 
   //Start the timer after 6 second, set render to true
@@ -39,7 +38,12 @@ export default class Home extends Component {
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
       <div className="home__div">
-        <Card1 details={details} clicked={this.redirectToAboutUs} />
+        <Card1
+          details={details}
+          clicked={() => {
+            this.redirectFunc("aboutUs");
+          }}
+        />
         <div className={classCenter}>
           <Card2 details={details} />
         </div>
@@ -64,7 +68,9 @@ export default class Home extends Component {
             return (
               <Product
                 key={index}
-                clicked={this.redirectToProdductPage}
+                clicked={() => {
+                  this.redirectFunc();
+                }}
                 product={product}
               />
             );
