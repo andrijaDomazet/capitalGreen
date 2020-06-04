@@ -3,65 +3,113 @@
 .jobs {
   text-align: center;
   width: 90vw;
-  background: rgba(255, 255, 255, 0.89);
+  background: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
-  padding: 10px;
+  padding-bottom: 30px;
+
+  .jobs > div > h1 {
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9rem;
+    background: $green2;
+    font-weight: 400;
+  }
+  .jobs > div > p {
+    color: white;
+    background: $green1;
+    padding: 0 5px;
+    font-size: 0.7rem;
+    margin: 0 auto;
+    border-bottom: 2px solid $green2;
+  }
   .team__members > div {
     display: flex;
+    flex-direction: column;
     border-bottom: 1px solid $green2;
-    .team__pic {
+    .member__pic {
       flex: 1;
       text-align: center;
     }
     img {
-      width: 70%;
+      width: 35%;
     }
-    div {
+    .member__data {
       flex: 2;
+      h2 {
+        font-size: 1rem;
+      }
+      h3 {
+        font-size: 0.9rem;
+        color: $green2;
+      }
       p {
+        color: $green2;
         font-size: 0.8rem;
+        font-weight: 600;
       }
     }
     &:last-child {
       border: none;
     }
+    .member__data > div {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      align-items: center;
+      span {
+        width: 80%;
+        margin-bottom: 3px;
+        font-size: 0.8rem;
+        padding: 0 8px;
+        background: $green3;
+        margin-right: 5px;
+        border-radius: 5px;
+      }
+      :last-child {
+        background: $green1;
+      }
+    }
   }
 }
-.jobs > div > h1 {
-  width: 90%;
-  margin: 0 auto;
-  color: white;
-  background: $green2;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-.jobs > div > p {
-  color: white;
-  background: $green1;
-  padding: 5px 10%;
-  font-size: 1rem;
-  padding-bottom: 5px;
-  margin: 0 auto;
-  width: 90%;
-  border-bottom: 2px solid $green2;
-}
+
 @media screen and(min-width:768px) {
   .jobs {
+    .jobs > div > h1 {
+      width: 90%;
+      font-size: 1.4rem;
+    }
+    .jobs > div > p {
+      font-size: 1.1rem;
+      padding: 5px 10%;
+      width: 90%;
+      padding-bottom: 5px;
+    }
     .team__members > div {
-      width: 80%;
+      flex-direction: row;
+      width: 90%;
       margin: 0 auto;
       text-align: left;
-      div {
-        flex: 4;
-        padding-top: 10px;
+      img {
+        width: 65%;
+      }
+      .member__data {
+        padding-top: 20px;
         h2 {
           font-size: 1.4rem;
         }
         h3 {
+          padding-bottom: 5px;
           font-size: 1.2rem;
-          color: $green2;
         }
         p {
+          padding-top: 10px;
+          font-size: 1.1rem;
+        }
+      }
+      .member__data > div {
+        display: inline-block;
+        span {
+          width: 100%;
           font-size: 1rem;
         }
       }
