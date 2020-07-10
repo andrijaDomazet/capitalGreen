@@ -7,21 +7,6 @@
   margin: 0 auto;
   padding-bottom: 30px;
 
-  .jobs > div > h1 {
-    margin: 0 auto;
-    color: white;
-    font-size: 0.9rem;
-    background: $green2;
-    font-weight: 400;
-  }
-  .jobs > div > p {
-    color: white;
-    background: $green1;
-    padding: 0 5px;
-    font-size: 0.7rem;
-    margin: 0 auto;
-    border-bottom: 2px solid $green2;
-  }
   .team__members > div {
     display: flex;
     flex-direction: column;
@@ -57,6 +42,7 @@
       color: white;
       align-items: center;
       span {
+        box-shadow: 1px 3px 5px gray;
         width: 80%;
         margin-bottom: 3px;
         font-size: 0.8rem;
@@ -71,19 +57,23 @@
     }
   }
 }
-
+.jobs > div > h1 {
+  margin: 0 auto;
+  color: white;
+  font-size: 0.9rem;
+  background: $green2;
+  font-weight: 400;
+}
+.jobs > div > p {
+  color: white;
+  background: $green1;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  margin: 0 auto;
+  border-bottom: 2px solid $green2;
+}
 @media screen and(min-width:768px) {
   .jobs {
-    .jobs > div > h1 {
-      width: 90%;
-      font-size: 1.4rem;
-    }
-    .jobs > div > p {
-      font-size: 1.1rem;
-      padding: 5px 10%;
-      width: 90%;
-      padding-bottom: 5px;
-    }
     .team__members > div {
       flex-direction: row;
       width: 90%;
@@ -114,5 +104,15 @@
         }
       }
     }
+  }
+  .jobs > div > h1 {
+    width: 90%;
+    font-size: 1.4rem;
+  }
+  .jobs > div > p {
+    font-size: 1.1rem;
+    padding: 5px 10%;
+    width: 90%;
+    padding-bottom: 5px;
   }
 }

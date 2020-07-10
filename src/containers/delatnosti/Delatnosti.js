@@ -6,7 +6,7 @@ export default class Delatnosti extends Component {
     return (
       <div className="activities">
         <div>
-          <div></div>
+          <div>Stranica trenutno nije dostupna.</div>
         </div>
       </div>
     );

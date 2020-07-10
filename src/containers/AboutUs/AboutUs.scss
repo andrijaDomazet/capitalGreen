@@ -1,7 +1,6 @@
 @import "../../index.scss";
 
 .aboutUs {
-  // border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -28,27 +27,32 @@
   text-align: justify;
   color: white;
   font-size: 0.8rem;
-  // margin: auto 20px;
   padding: 0 10px;
   background-color: $green1;
 }
 @media screen and(min-width:768px) {
   .aboutUs {
-    // flex-direction: row;
     width: 90vw;
     margin: 0 auto;
     padding: 10px;
     .aboutUs__text {
       display: flex;
       p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0 15px;
         flex: 1;
-        // border: 1px solid blue;
       }
     }
   }
   .aboutUs > p {
     font-size: 1rem;
+  }
+  .aboutUs > p:last-child {
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 80%;
+    background: white;
+    color: $green2;
   }
 }
