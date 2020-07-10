@@ -28,6 +28,7 @@ function App() {
         </Switch>
         <Switch>
           <Route exact path="/" component={null} />
+          <Route exact path="/capitalGreen" component={null} />
           <Route exact path="/kontakt" component={null} />
           <Route
             exact

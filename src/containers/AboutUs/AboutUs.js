@@ -31,6 +31,19 @@ export default function AboutUs() {
           porro?
         </p>
       </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa
+        doloremque hic quas iure nesciunt eaque. Hic, deserunt? Modi pariatur
+        repellendus, ex dolores alias ab fugiat velit, adipisci, assumenda
+        repellat unde saepe et earum. Dolorum dicta ad, error, assumenda dolorem
+        soluta sed impedit placeat saepe praesentium magni. Sunt minima fuga
+        aspernatur expedita mollitia, dolorum rerum amet cumque nisi fugit at
+        quas officiis est incidunt. Esse nostrum tempore atque magni a
+        reiciendis assumenda ea ex ipsam quisquam. Saepe adipisci in nobis
+        incidunt aut vero labore et non quibusdam tempore, sapiente quas,
+        debitis, error maxime voluptate sed? Blanditiis perferendis obcaecati
+        odit culpa?
+      </p>
     </div>
   );
 }
