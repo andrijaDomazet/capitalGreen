@@ -3,12 +3,11 @@
 .gallery-container {
   width: 100%;
   background: $green2;
-  padding: 16px 0;
+  padding: 1rem 0;
   overflow: none;
   position: relative;
 
   .arrow-container {
-    // border: 1px solid yellow;
     background: $green1;
     position: absolute;
     top: 50%;
@@ -16,7 +15,6 @@
     width: 54px;
     margin-top: -39px;
     display: table;
-    // background: transparent;
     text-align: center;
     &:hover {
       cursor: pointer;
@@ -52,7 +50,7 @@
   // height: 160px;
   display: inline-block;
   margin: 0 12px;
-  border: 2px solid $green1;
+  border: 1px solid $green1;
   // padding-top: 56px;
   text-align: center;
   // font-size: 18px;
@@ -60,6 +58,7 @@
   // text-transform: uppercase;
   // color: white;
   img {
+    border: 1px solid blue;
     width: 100%;
     object-fit: cover;
     overflow: hidden;

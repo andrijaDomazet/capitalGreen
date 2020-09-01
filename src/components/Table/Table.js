@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Table.scss";
 import Selection from "../Selection/Selection";
-import slika from "../../img/logo.png";
 import Pagination from "../../UI/Pagination/Pagination";
 import Popup from "../Popup/Popup";
 
@@ -49,7 +48,7 @@ export default class Table extends Component {
       ],
       pageNum: page,
     });
-    return this.state.group.slice(this.state.elemNum[0], this.state.elemNum[1]);
+    this.scrollTop.scrollIntoView({ behavior: "smooth" });
   };
   //funkcija kojom se odredjuje da li ce se prikazati pagination
   //trenutno nije aktivna
@@ -72,7 +71,6 @@ export default class Table extends Component {
         <tr key={index}>
           <td>
             <img src={process.env.PUBLIC_URL + `/logo.png`} alt="no__image" />
-            {/* {product.id}. */}
           </td>
           <td>{product.name}</td>
           <td>{product.pakovanje} </td>
@@ -121,7 +119,12 @@ export default class Table extends Component {
   //======================== end ==============================
   render() {
     return (
-      <div className="table__main">
+      <div
+        className="table__main"
+        ref={(e) => {
+          this.scrollTop = e;
+        }}
+      >
         {<Selection changeGroup={this.grupaProizvoda} />}
         <table>
           <thead>
