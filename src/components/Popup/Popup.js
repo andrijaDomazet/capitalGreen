@@ -8,7 +8,7 @@ export default function Popup(props) {
   let infoClasses = show ? "action__product open" : "action__product";
   return (
     <div className={infoClasses}>
-      <img src={Slika} alt="picture" />
+      <img src={Slika} alt="noPicture" />
       <div className="info__text">
         <h1>AKCIJSKA PONUDA !!!</h1>
         <h2>{details.name}</h2>

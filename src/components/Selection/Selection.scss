@@ -1,14 +1,17 @@
 @import "../../index.scss";
 
 .selection {
+  // border: 1px solid red;
+  // padding-left: 1rem;
   width: 90%;
   display: flex;
-  margin: 10px auto;
+  margin: 1rem auto;
   h3 {
     margin: 0;
     padding: 0;
     line-height: 2rem;
-    margin-right: 10px;
+    margin-right: 1rem;
+    font-size: 1.2rem;
     vertical-align: middle;
   }
   select {
@@ -25,6 +28,9 @@
 
     option {
       text-align: center;
+    }
+    &:focus {
+      background: $green1;
     }
   }
 }
