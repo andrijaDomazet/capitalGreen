@@ -6,19 +6,39 @@
   font-size: 1.1rem;
   font-weight: 400;
   background: rgba(0, 128, 0, 0.8);
-  color: white;
-  line-height: 3rem;
-  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  color: $green1;
+  padding: 10px 20px;
   .footer__top {
     display: flex;
     justify-content: space-between;
     div {
       flex: 1;
     }
+    .footer__logo {
+      text-align: center;
+      img {
+        width: 35%;
+        height: auto;
+      }
+    }
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+
+      .links {
+        text-decoration: none;
+        color: $green1;
+      }
+    }
   }
   .footer__bottom {
+    color: $green2;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    padding-top: 10px;
     span {
-      font-style: italic;
       font-weight: 800;
     }
   }
