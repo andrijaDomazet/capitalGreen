@@ -1,3 +1,9 @@
+export const details = [
+  { title: "Ime i prezime" },
+  { title: "E-mail adresa" },
+  { title: "Vaša poruka" },
+];
+
 export const options = [
   { route: "/", title: "Naslovna" },
   { route: "/o-nama", title: "O nama" },

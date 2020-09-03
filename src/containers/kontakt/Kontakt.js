@@ -1,7 +1,9 @@
 import React from "react";
 import KarticaLogo from "./Kartica-logo";
 import "./Kontakt.scss";
+import { details } from "../../shared/shared";
 import Buttons from "../../UI/Button/Buttons";
+
 const options = () => {
   return details.map((detail, index) => {
     return (
@@ -26,8 +28,3 @@ const Kontakt = (props) => {
 };
 
 export default Kontakt;
-const details = [
-  { title: "Ime i prezime" },
-  { title: "E-mail adresa" },
-  { title: "Vaša poruka" },
-];

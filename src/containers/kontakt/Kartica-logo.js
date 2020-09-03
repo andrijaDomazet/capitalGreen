@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./logo.png";
+import Logo from "../../img/logo.png";
 import "./Kontakt.scss";
 
 const KarticaLogo = (props) => {
@@ -9,8 +9,6 @@ const KarticaLogo = (props) => {
         <div className="flex-slika">
           <img src={Logo} alt="Logo" />
         </div>
-
-        {/* <div className="flex"></div> */}
       </div>
       <h5>Vaš partner na putu ka modernoj poljoprivrednoj proizvodnji!</h5>
     </React.Fragment>

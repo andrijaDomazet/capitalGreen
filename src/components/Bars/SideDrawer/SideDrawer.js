@@ -2,7 +2,7 @@ import React from "react";
 import "./SideDrawer.scss";
 import { NavLink } from "react-router-dom";
 import Logo from "../../../img/logo.png";
-import { options } from "../../../shared/routing";
+import { options } from "../../../shared/shared";
 
 export default function SideDrawer(props) {
   let drawerClasses = "side-drawer";
