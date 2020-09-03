@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
-import { options } from "../../../shared/routing";
+import { options } from "../../../shared/shared";
 
 export default function NavBar(props) {
   return <div className="navBar-div">{navBarOptions(props)}</div>;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Selection.scss";
-import { groupOfProducts } from "../../shared/routing";
+import { groupOfProducts } from "../../shared/shared";
 
 export default class Selection extends Component {
   state = {
