@@ -19,10 +19,10 @@ export default function Footer() {
             );
           })}
         </div>
-        <div>Partneri</div>
+        <div className="footer__partners">Partneri</div>
       </div>
       <div className="footer__bottom">
-        Created by <span>Domy</span>
+        Created by <span>domY</span>
       </div>
     </div>
   );

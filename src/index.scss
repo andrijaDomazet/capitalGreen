@@ -24,6 +24,7 @@ code {
   font-size: 16px;
   box-sizing: border-box;
   font-family: "Sarala", sans-serif;
+  transition: 2s all east-out;
 }
 
 $green1: rgb(0, 179, 0);
@@ -37,14 +38,8 @@ $dark2: #99621e;
   html {
     max-width: 1400px;
     margin: 0 auto;
-    border: 1px solid red;
   }
   * {
     font-size: 32px;
   }
 }
-// @media screen and(min-width:2200px) {
-//   * {
-//     font-size: 48px;
-//   }
-// }
