@@ -8,14 +8,15 @@ const options = () => {
   return details.map((detail, index) => {
     return (
       <div key={index}>
-        <span>{detail.title}</span> <input type="text" />
+        <span>{detail.title}</span>
+        <input type="text" />
       </div>
     );
   });
 };
 const Kontakt = (props) => {
   return (
-    <div className="contact__row">
+    <div className="contact">
       <div className="contact__row-left">
         <KarticaLogo />
       </div>

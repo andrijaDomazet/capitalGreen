@@ -1,17 +1,17 @@
 @import "../../index.scss";
 
-.contact__row {
-  width: 90vw;
-  height: 80vh;
+.contact {
+  width: 80vw;
+  height: 70vh;
   background: rgba(255, 255, 255, 0.89);
+  border-radius: 15px;
   margin: 0 auto;
-  margin-top: 15px;
+  margin-top: 8vh;
   display: flex;
   flex-direction: column;
   text-align: center;
 
   .contact__row-left {
-    padding: 0 10px;
     text-align: center;
   }
   .contact__row-right {
@@ -33,15 +33,11 @@
         height: 20vh;
       }
     }
-    button {
-      margin: 10px;
-    }
   }
 }
 
 .kartica__logo {
   .flex-slika {
-    padding-top: 30px;
     margin: 0 auto;
     img {
       width: 50%;
@@ -54,21 +50,25 @@ h5 {
 }
 
 @media screen and(min-width:768px) {
-  .contact__row {
+  .contact {
     flex-direction: row;
+    box-shadow: 1px 2px 10px $green2;
     .contact__row-left {
       flex: 2;
     }
     .contact__row-right {
       flex: 3;
+      display: flex;
+      flex-direction: column;
+      margin: 2rem 0;
+      align-items: center;
       form {
-        border-left: 3px solid $green2;
-        margin-top: 80px;
-        padding: 10px;
+        width: 100%;
+        padding: 2rem;
       }
       form > div {
-        width: 100%;
-        margin-top: 20px;
+        display: flex;
+        margin-top: 10px;
         flex-direction: row;
       }
       form > div > span {
@@ -79,18 +79,23 @@ h5 {
         min-width: 350px;
       }
     }
-  }
-  .kartica__logo {
-    .flex-slika {
-      padding-top: 25px;
-      width: 100%;
-      margin: 0 auto;
-      img {
-        width: 25vw;
-      }
+    .contact__row-right > button:last-of-type {
+      margin-top: auto;
+      width: 150px;
+      font-size: 1.2rem;
     }
   }
-  h5 {
-    font-size: 1.5rem;
+  .kartica__logo {
+    margin: 2rem 0;
+    border-right: 3px solid $green2;
+    .flex-slika {
+      img {
+        width: 75%;
+      }
+    }
+    h5 {
+      margin-top: 1rem;
+      font-size: 1.4rem;
+    }
   }
 }
