@@ -1,9 +1,9 @@
 @import "../../index.scss";
 
-.jobs {
+.team {
   text-align: center;
-  width: 90vw;
-  background: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   padding-bottom: 30px;
 
@@ -13,21 +13,24 @@
     border-bottom: 1px solid $green2;
     .member__pic {
       flex: 1;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     img {
-      width: 35%;
+      width: 25%;
     }
     .member__data {
       flex: 2;
       h2 {
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
       h3 {
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: $green2;
       }
       p {
+        padding: 0.5rem;
         text-align: justify;
         color: $green2;
         font-size: 0.8rem;
@@ -45,55 +48,41 @@
       span {
         box-shadow: 1px 3px 5px gray;
         width: 80%;
-        margin-bottom: 3px;
+        margin-bottom: 0.2rem;
         font-size: 0.8rem;
-        padding: 0 8px;
         background: $green3;
-        margin-right: 5px;
-        border-radius: 5px;
+        border-radius: 0.3rem;
       }
       :last-child {
+        margin-top: 0.3rem;
         background: $green1;
       }
     }
   }
 }
-.jobs > div > h1 {
-  margin: 0 auto;
-  color: white;
-  font-size: 0.9rem;
-  background: $green2;
-  font-weight: 400;
-}
-.jobs > div > p {
-  color: white;
-  background: $green1;
-  padding: 0 5px;
-  font-size: 0.7rem;
-  margin: 0 auto;
-  border-bottom: 2px solid $green2;
-}
 @media screen and(min-width:768px) {
-  .jobs {
+  .team {
     .team__members > div {
       flex-direction: row;
-      width: 90%;
-      margin: 0 auto;
+      width: 70%;
+      margin: 2rem auto;
       text-align: left;
+      border-radius: 1rem;
+      box-shadow: 1px 2px 10px $green2;
       img {
-        width: 65%;
+        width: 80%;
       }
       .member__data {
-        padding-top: 20px;
+        padding: 1.5rem 2rem;
         h2 {
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
         h3 {
           padding-bottom: 5px;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
         p {
-          padding-top: 10px;
+          padding-top: 1rem;
           font-size: 1.1rem;
         }
       }
@@ -102,18 +91,10 @@
         span {
           width: 100%;
           font-size: 1rem;
+          margin-right: 0.3rem;
+          padding: 0 0.5rem;
         }
       }
     }
-  }
-  .jobs > div > h1 {
-    width: 90%;
-    font-size: 1.4rem;
-  }
-  .jobs > div > p {
-    font-size: 1.1rem;
-    padding: 5px 10%;
-    width: 90%;
-    padding-bottom: 5px;
   }
 }

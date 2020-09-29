@@ -7,6 +7,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer__top">
+        <h1>CAPITAL GREEN</h1>
         <div className="footer__logo">
           <img src={logo} alt="logo" />
         </div>

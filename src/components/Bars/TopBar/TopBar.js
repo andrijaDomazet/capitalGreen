@@ -20,5 +20,5 @@ export default class TopBar extends React.Component {
 const options = [
   { route: "#", title: "office@capitalgreen.rs", icon: "envelope" },
   { route: "#", title: "+381 64 5 222 333", icon: "phone-square" },
-  { route: "#", title: "Pon - Pet : 8:00 - 17:00", icon: "clock" }
+  { route: "#", title: "Pon - Pet : 8:00 - 17:00", icon: "clock" },
 ];
