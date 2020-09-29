@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4791f316e98c45a45236aaf839b13bd9",
+    "revision": "4957b84d2f0a3aa1094822849286a378",
     "url": "/capitalGreen/index.html"
   },
   {
-    "revision": "caad1c6c88b93c307207",
-    "url": "/capitalGreen/static/css/main.f7fba7c0.chunk.css"
+    "revision": "26bf4ce405337d1c9327",
+    "url": "/capitalGreen/static/css/main.4de07c72.chunk.css"
   },
   {
     "revision": "023ec9156c7706b88cac",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/capitalGreen/static/js/2.ce532ece.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "caad1c6c88b93c307207",
-    "url": "/capitalGreen/static/js/main.5b698445.chunk.js"
+    "revision": "26bf4ce405337d1c9327",
+    "url": "/capitalGreen/static/js/main.267f55e5.chunk.js"
   },
   {
     "revision": "30e59ec4ee5b3f8c5d21",
     "url": "/capitalGreen/static/js/runtime-main.e3cfc822.js"
-  },
-  {
-    "revision": "7ce405c7aab27c4fcd3784ce00084980",
-    "url": "/capitalGreen/static/media/background.7ce405c7.jpg"
   },
   {
     "revision": "3cab90946fcd79af5369d2d478fb2c5a",
