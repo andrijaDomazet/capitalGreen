@@ -11,7 +11,7 @@ export default class Proizvodi extends React.Component {
   render() {
     return (
       <div className="products">
-        <Banner />
+        <Banner index="0" />
         <Table data={this.state.data} />
       </div>
     );

@@ -1,29 +1,32 @@
 @import "../../index.scss";
 
 .banner {
-  position: relative;
-  background-image: url("./img/background.jpg");
-  background-size: cover;
-  margin: 0 auto;
   text-align: center;
-  color: white;
-  h3 {
-    font-size: 1.2rem;
-    margin: 0;
+  h1 {
+    margin: 0 auto;
+    color: white;
+    font-size: 0.9rem;
+    background: $green2;
+    font-weight: 500;
   }
   p {
-    line-height: 1.2em;
-    font-size: 0.8rem;
+    color: white;
+    background: $green1;
     padding: 0 5px;
+    font-size: 0.7rem;
+    margin: 0 auto;
   }
 }
 
 @media screen and(min-width:768px) {
   .banner {
-    width: 90%;
+    h1 {
+      padding: 0.3rem 0;
+      font-size: 1.4rem;
+    }
     p {
-      font-size: 1rem;
-      line-height: 1.6rem;
+      padding: 0.3rem 5rem;
+      font-size: 1.2rem;
     }
   }
 }

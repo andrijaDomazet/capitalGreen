@@ -2,18 +2,12 @@ import React from "react";
 import "./Team.scss";
 import FaceM from "../../img/men.png";
 import FaceW from "../../img/woman.png";
+import Banner from "../../components/Banner/Banner";
 
 export default function Team() {
   return (
-    <div className="jobs">
-      <div>
-        <h1>Tim stručnjaka koji se brine o vašoj proizvodnji</h1>
-        <p>
-          Naš tim iskusnih poljoprivrednih stručnjaka posvećeno radi kako bi
-          naši klijenti mogli da dobiju najbolju uslugu na jednom mestu.
-          Upoznajte naš tim, mi smo tu zbog vas.
-        </p>
-      </div>
+    <div className="team">
+      <Banner index="1" />
       <div className="team__members">
         <div>
           <div className="member__pic">
