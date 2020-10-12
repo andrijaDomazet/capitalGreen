@@ -3,6 +3,7 @@ import "./Table.scss";
 import Selection from "../Selection/Selection";
 import Pagination from "../../UI/Pagination/Pagination";
 import Popup from "../Popup/Popup";
+import Product from "./Product";
 
 export default class Table extends Component {
   state = {
@@ -11,7 +12,7 @@ export default class Table extends Component {
       ...this.props.data[2],
       ...this.props.data[3],
     ],
-
+    // desc: true,
     //state for pagination
     pageNum: 1,
     operationPerPage: 6,
@@ -58,34 +59,20 @@ export default class Table extends Component {
   //====================== end =========================
 
   // drawing Table =====================================
-  //render table header
+  //render header
   renderTableHeader = () => {
-    return this.props.data[0].map((naziv, i) => {
-      return <th key={i}>{naziv}</th>;
-    });
+    return (
+      <div className="product__header">
+        {this.props.data[0].map((naziv, i) => {
+          return <div key={i}>{naziv}</div>;
+        })}
+      </div>
+    );
   };
-  //render td
+  //render products
   renderTableData = (products) => {
     return products.map((product, index) => {
-      return (
-        <tr key={index}>
-          <td>
-            <img src={process.env.PUBLIC_URL + `/logo.png`} alt="no__image" />
-          </td>
-          <td>{product.name}</td>
-          <td>{product.pakovanje} </td>
-          <td>{product.price.toFixed(2)} </td>
-          <td>
-            <button
-              className="btn btn-secondary btn-sm"
-              value={product.id}
-              onClick={this.poziv}
-            >
-              Info
-            </button>
-          </td>
-        </tr>
-      );
+      return <Product product={product} />;
     });
   };
   //===================== end ==========================
@@ -104,16 +91,9 @@ export default class Table extends Component {
     }
   };
   //========================== end ============================
-  // functions for open and close Popup
-  poziv = (e) => {
-    this.setState({ showPopup: true, choosedProduct: e.target.value });
-
-    console.log("idemooo", e.target.value);
-  };
   removeCommentBox = () => {
     this.setState({
       showPopup: false,
-      // lista: true,
     });
   };
   //======================== end ==============================
@@ -126,12 +106,9 @@ export default class Table extends Component {
         }}
       >
         {<Selection changeGroup={this.grupaProizvoda} />}
-        <table>
-          <thead>
-            <tr>{this.renderTableHeader()}</tr>
-          </thead>
-          <tbody>{this.renderTableData(this.getProductsList())}</tbody>
-        </table>
+        {this.renderTableHeader()}
+        {this.renderTableData(this.getProductsList())}
+
         <Pagination
           numberOfPages={this.state.numberOfPages}
           pageNum={this.state.pageNum}

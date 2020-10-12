@@ -9,9 +9,9 @@
   h3 {
     margin: 0;
     padding: 0;
-    line-height: 2rem;
+    line-height: 1.2rem;
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     vertical-align: middle;
   }
   select {
@@ -31,6 +31,14 @@
     }
     &:focus {
       background: $green1;
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .selection {
+    h3 {
+      font-size: 1.2rem;
+      line-height: 2rem;
     }
   }
 }
