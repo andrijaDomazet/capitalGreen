@@ -3,41 +3,63 @@
 .table__main {
   margin: 0 auto;
   position: relative;
-  table {
-    margin: 10px auto;
-    padding-bottom: 10px;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 0.8rem;
+  .product__header {
+    display: flex;
     width: 90%;
-    img {
-      border-radius: 5px;
-      width: auto;
-      height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid $green2;
+    div {
+      flex: 1;
+      font-size: 1.2rem;
     }
   }
-  table tr {
-    border-bottom: 1px solid $dark1;
+  .product {
+    position: relative;
+    border-bottom: 1.5px solid $green2;
+    width: 90%;
+    margin: 0 auto;
   }
-  table td {
-    padding: 0.3em;
+  .product-basic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  table td > button {
-    background-color: $green1;
-    border: none;
+  .product-basic > div {
+    flex: 1;
+    img {
+      width: 100px;
+    }
   }
-  tbody tr:nth-child(odd) td {
-    background: rgba(173, 194, 173, 0.253);
-  }
-  tbody tr:last-child {
-    border-bottom: none;
-  }
-  table td:nth-child(2) {
-    text-align: left;
-  }
-  table td:nth-child(4) {
-    text-align: right;
+  .product__desc {
+    text-align: justify;
+    color: $green2;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    p {
+      font-size: 0.8rem;
+    }
+    span {
+      font-size: 0.9rem;
+      color: $green1;
+      font-weight: 900;
+    }
   }
 }
 @media screen and(min-width:768px) {
+  .product {
+    .product-basic {
+      flex-direction: row;
+    }
+    .product__desc {
+      margin: 0 2rem;
+      p {
+        font-size: 1rem;
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
 }
