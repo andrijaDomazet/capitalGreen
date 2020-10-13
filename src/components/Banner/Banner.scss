@@ -6,13 +6,13 @@
     margin: 0 auto;
     color: white;
     font-size: 0.8rem;
-    background: $green2;
+    background: rgba(5, 101, 39, 0.9);
     font-weight: 500;
   }
   p {
     color: white;
-    background: $green1;
-    padding: 0 5px;
+    background: rgba(0, 179, 0, 0.8);
+    padding: 0 0.3rem;
     font-size: 0.6rem;
     margin: 0 auto;
   }
@@ -21,7 +21,7 @@
 @media screen and(min-width:768px) {
   .banner {
     h1 {
-      padding: 0.3rem 0;
+      padding: 0.2rem 0;
       font-size: 1.4rem;
     }
     p {

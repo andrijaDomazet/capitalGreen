@@ -37,7 +37,7 @@ export default class Home extends Component {
   render() {
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
-      <div className="home__div">
+      <div className="home">
         <Card1
           details={details}
           clicked={() => {

@@ -1,15 +1,14 @@
 @import "../../index.scss";
 
 .selection {
-  // border: 1px solid red;
-  // padding-left: 1rem;
   width: 90%;
   display: flex;
-  margin: 1rem auto;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  text-align: center;
   h3 {
-    margin: 0;
-    padding: 0;
-    line-height: 1.2rem;
+    line-height: 1rem;
     margin-right: 1rem;
     font-size: 1rem;
     vertical-align: middle;
@@ -20,9 +19,10 @@
     background: $green1;
     color: white;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
     border: none;
+    width: 80%;
     border-radius: 5px;
     cursor: pointer;
 
@@ -34,11 +34,24 @@
     }
   }
 }
+@media screen and(max-width:767px) {
+  .selection {
+    select {
+      margin: 0 auto;
+    }
+  }
+}
 @media screen and(min-width:768px) {
   .selection {
+    flex-direction: row;
+    padding: 1.2rem 0;
     h3 {
       font-size: 1.2rem;
       line-height: 2rem;
+    }
+    select {
+      width: auto;
+      font-size: 1.2rem;
     }
   }
 }

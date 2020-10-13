@@ -1,10 +1,10 @@
 import React from "react";
-import "./Proizvodi.scss";
+import "./Products.scss";
 import Data from "../../allData";
 import Table from "../../components/Table/Table";
 import Banner from "../../components/Banner/Banner";
 
-export default class Proizvodi extends React.Component {
+export default class Products extends React.Component {
   state = {
     data: Data,
   };
