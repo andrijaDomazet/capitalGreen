@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Delatnosti from "./containers/delatnosti/Delatnosti";
-import Proizvodi from "./containers/Proizvodi/Proizvodi";
+import Products from "./containers/Products/Products";
 import Team from "./containers/Team/Team";
 import Kontakt from "./containers/kontakt/Kontakt.js";
 import O_nama from "./containers/AboutUs/AboutUs.js";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/o-nama" component={O_nama} />
           <Route path="/delatnosti" component={Delatnosti} />
-          <Route path="/proizvodi" component={Proizvodi} />
+          <Route path="/proizvodi" component={Products} />
           <Route path="/nas-tim" component={Team} />
           <Route path="/kontakt" component={Kontakt} />
           <Route component={Home} />
