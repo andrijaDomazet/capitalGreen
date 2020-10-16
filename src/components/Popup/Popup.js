@@ -9,18 +9,8 @@ export default function Popup(props) {
   return (
     <div className={infoClasses}>
       <img src={Slika} alt="noPicture" />
-      <div className="info__text">
-        <h1>AKCIJSKA PONUDA !!!</h1>
-        <h2>{details.name}</h2>
-        <ol>
-          <li>{details.pakovanje}</li>
-          <li>{details.price}</li>
-        </ol>
-        <p>{details.description}</p>
-        <Buttons>Saznaj više...</Buttons>
-        <div className="info-close" onClick={props.removeCommentBox}>
-          <i className="fas fa-times" />
-        </div>
+      <div className="info-close" onClick={props.removeCommentBox}>
+        <i className="fas fa-times" />
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import "./Table.scss";
 import Selection from "../Selection/Selection";
 import Pagination from "../../UI/Pagination/Pagination";
 import Popup from "../Popup/Popup";
-import Product from "./Product";
+import Product from "../Product/Product";
 
 export default class Table extends Component {
   state = {
@@ -71,9 +71,13 @@ export default class Table extends Component {
   };
   //render products
   renderTableData = (products) => {
-    return products.map((product, index) => {
-      return <Product product={product} />;
-    });
+    return (
+      <div className="tableProducts">
+        {products.map((product, index) => {
+          return <Product classes="product-table" product={product} />;
+        })}
+      </div>
+    );
   };
   //===================== end ==========================
 
