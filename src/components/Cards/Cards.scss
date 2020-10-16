@@ -26,13 +26,15 @@
   margin-left: 0.5rem;
 }
 .card2 {
-  top: 0.5rem;
-  width: 18rem;
-  margin: 1.5rem auto;
+  position: absolute;
+  top: 20rem;
+  // right: calc(1rem);
+  width: 20rem;
+  // margin: 1.5rem auto;
   border: 1px solid white;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
   animation: pulse 2s infinite;
 
   .card2__phone {
@@ -42,11 +44,11 @@
     }
   }
   .card2__text {
-    font-size: 0.8em;
+    font-size: 0.9rem;
     line-height: 1.5rem;
     span {
       font-size: 1.2rem;
-      color: $green3;
+      color: $green1;
       font-weight: 900;
     }
   }
@@ -75,32 +77,28 @@
     margin-left: 0;
   }
   .card2 {
-    font-size: 1.2rem;
-    position: absolute;
+    font-size: 1.4rem;
     top: -100px;
-    right: calc(200px + 3vw);
-    width: 400px;
-    padding: 0 5px;
+    // right: calc(80%);
+    right: 15rem;
+    width: 25rem;
+    // padding: 0 5px;
     cursor: pointer;
     .btn__phone {
       font-size: 1.4rem;
-      letter-spacing: 0.15rem;
+      letter-spacing: 0.1rem;
       i {
         font-size: 1.4rem;
       }
-    }
-    .card2-text {
-      font-size: 1rem;
-      line-height: 1.4rem;
     }
   }
 }
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0px rgba(195, 195, 195, 0.9);
+    -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.9);
   }
   100% {
-    -webkit-box-shadow: 0 0 0 15px rgba(195, 195, 195, 0);
+    -webkit-box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
   }
 }
 
