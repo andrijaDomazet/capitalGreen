@@ -3,7 +3,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  // height: 100%;
+  align-items: center;
   .home__products {
     position: fixed;
     bottom: 1.5rem;
@@ -40,6 +40,7 @@
 @media screen and(min-width:768px) {
   .home {
     position: relative;
+    align-items: start;
     .home__left {
       width: 50vw;
     }

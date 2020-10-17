@@ -26,11 +26,12 @@
   margin-left: 0.5rem;
 }
 .card2 {
-  position: absolute;
-  top: 20rem;
+  // position: absolute;
+  // top: 20rem;
   // right: calc(1rem);
   width: 20rem;
   // margin: 1.5rem auto;
+  margin-top: 2rem;
   border: 1px solid white;
   color: white;
   text-align: center;
@@ -77,9 +78,10 @@
     margin-left: 0;
   }
   .card2 {
+    position: absolute;
     font-size: 1.4rem;
-    top: -100px;
-    // right: calc(80%);
+    top: -120px;
+    right: calc(0);
     right: 15rem;
     width: 25rem;
     // padding: 0 5px;
