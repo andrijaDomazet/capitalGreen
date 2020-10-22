@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutUs.scss";
-import ArrayCarousel from "./Carousel/ArrayCarousel";
-// import MainCarousel from "./Carousel/MainCarousel";
+import ArrayCarousel from "../../components/Carousel/ArrayCarousel";
 
 export default function AboutUs() {
   return (

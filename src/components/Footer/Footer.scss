@@ -28,12 +28,12 @@
     }
   }
   .footer__bottom {
-    background: $green2;
+    background: rgba(5, 101, 39, 0.9);
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
     font-style: italic;
     opacity: 0.9;
-    padding: 5px 0;
+    padding: 0.1rem 0;
     span {
       font-weight: 800;
       &:hover {
@@ -45,7 +45,7 @@
 }
 @media screen and(min-width:768px) {
   .footer {
-    padding-top: 15px;
+    padding-top: 0.5rem;
     .footer__top {
       h1 {
         display: none;
@@ -55,7 +55,7 @@
         display: inline;
         text-align: center;
         img {
-          width: 70%;
+          width: 50%;
           height: auto;
         }
       }
@@ -64,7 +64,7 @@
         display: flex;
         align-items: center;
         .links {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 700;
           text-decoration: none;
           color: $green2;
