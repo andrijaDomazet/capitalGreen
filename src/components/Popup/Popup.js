@@ -22,7 +22,11 @@ export default class Popup extends Component {
     let infoClasses = show ? "action__product open" : "action__product";
     return (
       <div className={infoClasses}>
-        <img src={this.picturePos()} alt="noPicture" />
+        <img
+          src={this.picturePos()}
+          alt="noPicture"
+          onClick={this.changePage}
+        />
         <div className="info-close" onClick={this.props.removeCommentBox}>
           <i className="fas fa-times" />
         </div>

@@ -12,43 +12,66 @@ export default class Product extends Component {
     return <p>{truncate(text, 100)}...</p>;
   };
   poziv = (e) => {
-    this.props.clicked("idemooo");
-    console.log("redirect");
-
-    // this.setState({
-    //   desc: !this.state.desc,
-    //   choosedProduct: !this.state.choosedProduct,
-    // });
-    console.log("idemooo", e.target.value);
+    if (e === "info") {
+      this.setState({
+        desc: !this.state.desc,
+        choosedProduct: !this.state.choosedProduct,
+      });
+    } else {
+      this.props.clicked("idemooo");
+      console.log("redirect");
+    }
+  };
+  productPrice = (product) => {
+    console.log("Prod", product);
+    if (this.props.pwd.includes(product.id)) {
+      return (
+        <div className="productPrice">
+          <div className="oldPrice">{product.price}</div>
+          <div className="price2">
+            {Math.floor(product.price - product.price * 0.2).toFixed(2)}
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="productPrice">
+          <div className="price1">{product.price}</div>
+        </div>
+      );
+    }
   };
   render() {
     const product = this.props.product;
     const classes = this.props.classes;
     return (
       <div className={`product ${classes}`}>
-        <div className="productName">
-          <h2> {product.name}</h2>
-        </div>
-        <div className="productImg">
-          <img src={process.env.PUBLIC_URL + `/example.jpg`} alt="no__image" />
-        </div>
-        <div className="productParagraph">{this.paragraph()}</div>
-        <div className="productPack">{product.pakovanje}</div>
-        <div className="productPrice">
-          <div className="price1">{product.price}</div>
-          <div className="price2">
-            {Math.floor(product.price - product.price * 0.2).toFixed(2)}
+        <div className="product-top">
+          <div className="productName">
+            <h2> {product.name}</h2>
+          </div>
+          <div className="productImg">
+            <img
+              src={process.env.PUBLIC_URL + `/example.jpg`}
+              alt="no__image"
+            />
+          </div>
+          <div className="productParagraph">{this.paragraph()}</div>
+          <div className="productPack">{product.pakovanje}</div>
+          {this.productPrice(product)}
+          <div className="productButton">
+            <Buttons
+              className="btn btn-secondary btn-sm"
+              value={product.id}
+              clicked={() => {
+                this.poziv("info");
+              }}
+            >
+              {classes === "product-main" ? "Saznaj više..." : "Info"}
+            </Buttons>
           </div>
         </div>
-        <div className="productButton">
-          <Buttons
-            className="btn btn-secondary btn-sm"
-            value={product.id}
-            clicked={this.poziv}
-          >
-            {classes === "product-main" ? "Saznaj više..." : "Info"}
-          </Buttons>
-        </div>
+
         <div
           className="product__desc"
           style={{
