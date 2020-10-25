@@ -1,74 +1,72 @@
 @import "../../index.scss";
 
 .product-main {
-  display: flex;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 5px;
-  text-align: center;
-  animation: prdoucts__slader 80s linear infinite;
-  border: 1px solid white;
-  min-width: 240px;
-  height: 160px;
-  padding: 1.5rem;
-  .productName {
-    position: absolute;
-    top: 0;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    height: 1.2rem;
-    vertical-align: middle;
-  }
-  .productImg {
-    position: relative;
-    width: 50%;
-    img {
-      position: absolute;
-      left: 0;
-      flex: 1;
-      border-radius: 15%;
-      width: 80%;
-    }
-  }
-  .productParagraph {
-    width: 50%;
-
-    p {
-      flex: 1;
-      height: 70px;
-      text-align: left;
-      padding: 0 2px;
-      font-size: 0.6em;
-      line-height: 12px;
-    }
-  }
-  .productPack {
-    display: none;
-  }
-  .productPrice {
+  .product-top {
     display: flex;
-    position: absolute;
-    bottom: 0px;
-    left: 10px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+    text-align: center;
+    animation: prdoucts__slader 80s linear infinite;
+    min-width: 240px;
+    height: 160px;
+    padding: 1.5rem 0.5rem;
+    .productName {
+      position: absolute;
+      top: 0;
+      font-size: 1rem;
+      line-height: 1.2rem;
+      height: 1.2rem;
+      vertical-align: middle;
+    }
 
-    .price1 {
-      font-size: 0.8em;
-      font-weight: 500;
-      color: black;
-      text-decoration: line-through;
-      margin-right: 5px;
+    .productImg {
+      position: relative;
+      flex: 2;
+      img {
+        position: absolute;
+        left: 0;
+        border-radius: 15%;
+        width: 80%;
+      }
     }
-    .price2 {
-      font-size: 1em;
-      font-weight: 700;
-      color: red;
+    .productParagraph {
+      flex: 4;
+      p {
+        text-align: left;
+        padding: 0 0.1rem;
+        font-size: 0.8rem;
+        line-height: 1rem;
+      }
     }
-  }
-  .productButton {
-    position: absolute;
-    font-size: 0.7rem;
-    line-height: 1.2rem;
-    bottom: 5px;
-    right: 5px;
+    .productPack {
+      display: none;
+    }
+    .productPrice {
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      left: 10px;
+
+      .price1 {
+        font-size: 0.8em;
+        font-weight: 500;
+        color: black;
+        text-decoration: line-through;
+        margin-right: 5px;
+      }
+      .price2 {
+        font-size: 1em;
+        font-weight: 700;
+        color: red;
+      }
+    }
+    .productButton {
+      position: absolute;
+      font-size: 0.7rem;
+      line-height: 1.2rem;
+      bottom: 5px;
+      right: 5px;
+    }
   }
 
   .product {
@@ -88,60 +86,23 @@
     }
   }
 }
-.product-table {
+.product.table {
   display: flex;
   border-bottom: 1px solid $green2;
   flex-direction: row;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
-  align-items: center;
-  .productImg {
-    order: 1;
-    flex: 1;
-    img {
-      width: 80%;
-      margin: 0 auto;
-    }
-  }
-  .productParagraph {
-    display: none;
-  }
-  .productName {
-    order: 2;
-    flex: 2;
-  }
-  .productPack {
-    order: 3;
-    flex: 1;
-  }
-  .productPrice {
-    order: 4;
-    flex: 1;
-  }
-  .productButton {
-    order: 5;
-    flex: 1;
-  }
 }
 @media screen and(min-width:768px) {
   .product-main {
-    margin: 0.8rem auto;
-    height: 10rem;
-
-    h2 {
-      font-size: 0.8em;
-      line-height: 1.4rem;
-    }
-    .product {
-      height: 5.5rem;
-      h2 {
-        font-size: 0.8rem;
-      }
-      button {
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-        margin: 2px auto;
+    .product-top {
+      margin: 0.8rem auto;
+      height: 10rem;
+      .productName {
+        h2 {
+          font-size: 0.8em;
+          line-height: 1.4rem;
+        }
       }
       .productPrice {
         bottom: 15px;
@@ -150,6 +111,64 @@
           margin-top: 10px;
           margin-left: 20px;
         }
+      }
+      .productName {
+        h2 {
+          font-size: 0.8rem;
+        }
+      }
+      .productButton {
+        button {
+          font-size: 0.8rem;
+          line-height: 1.2rem;
+          margin: 2px auto;
+        }
+      }
+    }
+  }
+  .product.table {
+    flex-direction: column;
+    .product-top {
+      width: 100%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      .productImg {
+        order: 1;
+        flex: 1;
+        img {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+      .productParagraph {
+        display: none;
+      }
+      .productName {
+        order: 2;
+        flex: 2;
+      }
+      .productPack {
+        order: 3;
+        flex: 1;
+      }
+      .productPrice {
+        order: 4;
+        flex: 1;
+        .oldPrice {
+          text-decoration: line-through;
+          color: red;
+        }
+        .price2 {
+          font-size: 1.2rem;
+        }
+        .price1 {
+          font-size: 1.2rem;
+        }
+      }
+      .productButton {
+        order: 5;
+        flex: 1;
       }
     }
   }

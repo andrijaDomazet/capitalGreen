@@ -66,7 +66,7 @@ export default class Home extends Component {
       <div className="home__products">
         <h4>Proizvodi na akciji</h4>
         <div className="home__product">
-          {data[1].map((product, index) => {
+          {this.productsWithDiscounts().map((product, index) => {
             return (
               <Product
                 classes="product-main"
@@ -75,6 +75,7 @@ export default class Home extends Component {
                   this.redirectFunc();
                 }}
                 product={product}
+                pwd={data[4]}
               />
             );
           })}
@@ -82,4 +83,11 @@ export default class Home extends Component {
       </div>
     ) : null;
   }
+  productsWithDiscounts = () => {
+    let products = [...data[1], ...data[2], ...data[3]];
+    let pwd = products.filter((a) => {
+      return data[4].includes(a.id);
+    });
+    return pwd;
+  };
 }

@@ -18,7 +18,6 @@ export default class Table extends Component {
     operationPerPage: 6,
     elemNum: [0, 5],
     //end
-
     showPopup: false,
     choosedProduct: 0,
   };
@@ -74,7 +73,14 @@ export default class Table extends Component {
     return (
       <div className="tableProducts">
         {products.map((product, index) => {
-          return <Product classes="product-table" product={product} />;
+          return (
+            <Product
+              key={index}
+              classes="table"
+              product={product}
+              pwd={this.props.data[4]}
+            />
+          );
         })}
       </div>
     );
