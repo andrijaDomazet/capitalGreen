@@ -18,63 +18,12 @@
   .product__header > div:nth-child(2) {
     flex: 2;
   }
-  .product {
-    position: relative;
-    border-bottom: 1.5px solid $green2;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .product-basic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .product-basic > div {
-    color: $green2;
-    flex: 1;
-    img {
-      width: 100px;
-    }
-  }
-  .product__desc {
-    text-align: justify;
-    color: $green2;
-    font-weight: 600;
-    padding-bottom: 1rem;
-    p {
-      font-size: 0.8rem;
-    }
-    span {
-      font-size: 0.9rem;
-      color: $green1;
-      font-weight: 900;
-    }
-  }
 }
-.tableProducts > div:last-child {
-  // border: none;
-}
-@media screen and(min-width:768px) {
-  .product {
-    .product-basic {
-      flex-direction: row;
-    }
-    .product-basic > div:nth-child(2) {
-      flex: 2;
-      text-align: left;
-      h2 {
-        font-size: 1.2rem;
-      }
-    }
-    .product__desc {
-      margin: 0 2rem;
-      p {
-        font-size: 1rem;
-        span {
-          font-size: 1.2rem;
-        }
-      }
+@media screen and(max-width:768px) {
+  .table__main {
+    .product__header {
+      display: none;
+      border: 1px solid red;
     }
   }
 }

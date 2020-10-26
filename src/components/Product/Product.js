@@ -27,16 +27,16 @@ export default class Product extends Component {
     if (this.props.pwd.includes(product.id)) {
       return (
         <div className="productPrice">
-          <div className="oldPrice">{product.price}</div>
+          <div className="oldPrice">{product.price} din</div>
           <div className="price2">
-            {Math.floor(product.price - product.price * 0.2).toFixed(2)}
+            {Math.floor(product.price - product.price * 0.2).toFixed(2)} din
           </div>
         </div>
       );
     } else {
       return (
         <div className="productPrice">
-          <div className="price1">{product.price}</div>
+          <div className="price1">{product.price} din</div>
         </div>
       );
     }
