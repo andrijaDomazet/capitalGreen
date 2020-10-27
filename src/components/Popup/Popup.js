@@ -1,14 +1,25 @@
 import React, { Component } from "react";
 import "./Popup.scss";
-import Slika1 from "./img/prvaStrana.jpg";
+import slika1 from "./img/prvaStrana.jpg";
 import Slika2 from "./img/drugaStrana.jpg";
+import folija from "./img/folija.jpg";
+import zastita from "./img/zastita.jpg";
 
 export default class Popup extends Component {
   state = {
+    order: [slika1, folija, zastita],
     page: 1,
   };
+  changeFlayer = (f) => {
+    let arr = [];
+    let e = this.state.order.indexOf(f);
+    arr[0] = f;
+    arr[e] = this.state.order[0];
+    e === 1 ? (arr[2] = this.state.order[2]) : (arr[1] = this.state.order[1]);
+    this.setState({ order: arr });
+  };
   picturePos = () => {
-    return this.state.page === 1 ? Slika1 : Slika2;
+    return this.state.page === 1 ? folija : Slika2;
   };
   changePage = (page) => {
     if (page !== this.state.page) {
@@ -23,7 +34,8 @@ export default class Popup extends Component {
     return (
       <div className={infoClasses}>
         <img
-          src={this.picturePos()}
+          className="centralImg"
+          src={this.state.order[0]}
           alt="noPicture"
           onClick={this.changePage}
         />
@@ -44,6 +56,24 @@ export default class Popup extends Component {
               this.changePage(2);
             }}
           ></i>
+        </div>
+        <div className="test">
+          <div
+            className="left"
+            onClick={() => {
+              this.changeFlayer(this.state.order[1]);
+            }}
+          >
+            <img className="folija" src={this.state.order[1]} alt="" />
+          </div>
+          <div
+            className="right"
+            onClick={() => {
+              this.changeFlayer(this.state.order[2]);
+            }}
+          >
+            <img className="zastita" src={this.state.order[2]} alt="" />
+          </div>
         </div>
       </div>
     );
