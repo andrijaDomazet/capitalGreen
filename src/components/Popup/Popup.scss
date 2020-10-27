@@ -8,7 +8,7 @@
   transition: transform 1s ease-in-out !important;
   text-align: center;
   z-index: +999;
-  img {
+  .centralImg {
     position: absolute;
     left: 0;
     width: 80%;
@@ -34,15 +34,13 @@
   }
   .changePage {
     position: absolute;
-    right: 2%;
-    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 92vh;
     z-index: +999;
-    border: 1px solid white;
-    border-radius: 10px;
     padding: 2px 15px;
     font-size: 1.5rem;
     line-height: 2rem;
-    // text-transform: uppercase;
     i {
       margin: 0 5px;
       font-size: 1.5rem;
@@ -67,15 +65,65 @@
     transform: translateX(-400%);
     transition: transform 2s ease-in-out;
     color: white;
-    img {
+    .test {
+      .left {
+        position: absolute;
+        top: 25vh;
+        left: 10%;
+        width: auto;
+        height: 45vh;
+        border-radius: 5%;
+        z-index: +100;
+        cursor: pointer;
+        img {
+          width: auto;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5%;
+        }
+      }
+      .right {
+        position: absolute;
+        top: 25vh;
+        right: 10%;
+        width: auto;
+        height: 45vh;
+        border-radius: 5%;
+        z-index: +100;
+        cursor: pointer;
+        img {
+          width: auto;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5%;
+        }
+      }
+      .right::before,
+      .left::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(78, 78, 78, 0.8);
+        border-radius: 5%;
+      }
+      .right:hover::before,
+      .left:hover::before {
+        background: rgba(85, 85, 85, 0.4);
+      }
+    }
+    .centralImg {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       padding: 10px;
       width: auto;
-      height: 100vh;
+      height: 92vh;
       z-index: +999;
     }
+
     .info-close {
       z-index: +999;
       cursor: pointer;
