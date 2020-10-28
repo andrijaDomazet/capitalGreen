@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-.product-main {
+.product__home {
   .product-top {
     display: flex;
     background: rgba(255, 255, 255, 0.85);
@@ -42,7 +42,6 @@
       display: none;
     }
     .productPrice {
-      border: 1px solid red;
       display: flex;
       position: absolute;
       bottom: 0px;
@@ -120,7 +119,7 @@
   }
 }
 @media screen and(min-width:768px) {
-  .product-main {
+  .product__home {
     .product-top {
       margin: 0.8rem auto;
       height: 10rem;
@@ -131,11 +130,14 @@
         }
       }
       .productPrice {
-        bottom: 15px;
+        bottom: 20px;
         .price2 {
+          line-height: 1.1rem;
+          width: 120px;
           position: absolute;
-          margin-top: 10px;
-          margin-left: 20px;
+          margin-top: 1.4rem;
+          margin-left: 1.5rem;
+          padding: 0;
         }
       }
       .productName {
@@ -206,6 +208,7 @@
       }
     }
     .product__desc {
+      width: 90%;
       margin: 0 2rem;
       p {
         font-size: 1rem;

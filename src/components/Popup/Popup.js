@@ -10,6 +10,7 @@ export default class Popup extends Component {
     order: [slika1, folija, zastita],
     page: 1,
   };
+  //changing main flayer
   changeFlayer = (f) => {
     let arr = [];
     let e = this.state.order.indexOf(f);
@@ -18,6 +19,7 @@ export default class Popup extends Component {
     e === 1 ? (arr[2] = this.state.order[2]) : (arr[1] = this.state.order[1]);
     this.setState({ order: arr });
   };
+  //funcs for rotate flayer !TODOOO!
   picturePos = () => {
     return this.state.page === 1 ? folija : Slika2;
   };
@@ -28,11 +30,14 @@ export default class Popup extends Component {
         : this.setState({ page: 1 });
     }
   };
+  //end
+  //setting popup showing class
+  setPopup = (show) => {
+    return show ? "action__product open" : "action__product";
+  };
   render() {
-    const { show } = this.props;
-    let infoClasses = show ? "action__product open" : "action__product";
     return (
-      <div className={infoClasses}>
+      <div className={this.setPopup(this.props.show)}>
         <img
           className="centralImg"
           src={this.state.order[0]}
@@ -64,7 +69,7 @@ export default class Popup extends Component {
               this.changeFlayer(this.state.order[1]);
             }}
           >
-            <img className="folija" src={this.state.order[1]} alt="" />
+            <img src={this.state.order[1]} alt="" />
           </div>
           <div
             className="right"
@@ -72,7 +77,7 @@ export default class Popup extends Component {
               this.changeFlayer(this.state.order[2]);
             }}
           >
-            <img className="zastita" src={this.state.order[2]} alt="" />
+            <img src={this.state.order[2]} alt="" />
           </div>
         </div>
       </div>

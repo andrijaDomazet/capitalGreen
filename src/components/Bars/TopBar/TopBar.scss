@@ -1,14 +1,13 @@
 @import "../../../index.scss";
 
-.topBar__div {
+.topBar {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-
+  height: 4rem;
   .topBar__link {
     font-size: 0.8rem;
     line-height: 0.8rem;
-    padding: 2px;
     text-align: left;
     text-decoration: none;
     color: $green2;
@@ -20,9 +19,12 @@
 }
 
 @media screen and(min-width:768px) {
-  .topBar__div {
+  .topBar {
     flex-direction: row;
     width: 100%;
+    padding: 0 8vw;
+    height: auto;
+    justify-content: space-around;
     .topBar__link {
       font-size: 1rem;
       line-height: 1.3rem;

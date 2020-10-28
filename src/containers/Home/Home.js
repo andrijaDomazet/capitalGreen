@@ -69,7 +69,7 @@ export default class Home extends Component {
           {this.productsWithDiscounts().map((product, index) => {
             return (
               <Product
-                classes="product-main"
+                classes="product__home"
                 key={index}
                 clicked={() => {
                   this.redirectFunc();
