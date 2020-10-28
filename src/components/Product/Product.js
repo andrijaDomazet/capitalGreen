@@ -8,9 +8,9 @@ export default class Product extends Component {
     var text = this.props.product.description;
     const truncate = (str, len) =>
       str.substring(0, (str + " ").lastIndexOf(" ", len));
-    // var shortText = text.substring(0, Infinity);
     return <p>{truncate(text, 100)}...</p>;
   };
+
   poziv = (e) => {
     if (e === "info") {
       this.setState({
@@ -22,8 +22,8 @@ export default class Product extends Component {
       console.log("redirect");
     }
   };
+  //func product price difference
   productPrice = (product) => {
-    console.log("Prod", product);
     if (this.props.pwd.includes(product.id)) {
       return (
         <div className="productPrice">
@@ -42,8 +42,7 @@ export default class Product extends Component {
     }
   };
   render() {
-    const product = this.props.product;
-    const classes = this.props.classes;
+    const { product, classes } = this.props;
     return (
       <div className={`product ${classes}`}>
         <div className="product-top">
@@ -67,7 +66,7 @@ export default class Product extends Component {
                 this.poziv("info");
               }}
             >
-              {classes === "product-main" ? "Saznaj više..." : "Info"}
+              {classes === "product__home" ? "Saznaj više..." : "Info"}
             </Buttons>
           </div>
         </div>

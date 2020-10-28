@@ -5,20 +5,20 @@
   border-bottom: 2px solid $green2;
   min-width: 300px;
   img {
-    margin: 0 2rem;
-    height: 50px;
+    margin: 0 0.8rem;
+    height: 4rem;
   }
 }
 
 @media screen and(min-width:768px) {
   .bars__div {
     img {
-      height: 75px;
+      height: 4rem;
     }
   }
 }
 @media screen and(min-width:968px) {
   .bars__links {
-    width: 80%;
+    width: 90%;
   }
 }
