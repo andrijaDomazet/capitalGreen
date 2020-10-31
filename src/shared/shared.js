@@ -7,7 +7,7 @@ export const details = [
 export const options = [
   { route: "/", title: "Naslovna" },
   { route: "/o-nama", title: "O nama" },
-  // { route: "/delatnosti", title: "Delatnosti" },
+  { route: "/delatnosti", title: "Delatnosti" },
   { route: "/proizvodi", title: "Proizvodi" },
   { route: "/nas-tim", title: "Naš tim" },
   { route: "/kontakt", title: "Kontakt" },
