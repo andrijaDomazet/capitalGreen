@@ -3,41 +3,27 @@
 .table__main {
   margin: 0 auto;
   position: relative;
-  table {
-    margin: 10px auto;
-    padding-bottom: 10px;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 0.8rem;
+  background: rgba(255, 255, 255, 0.8);
+  .product__header {
+    display: flex;
     width: 90%;
-    img {
-      border-radius: 5px;
-      width: auto;
-      height: 90px;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 3px solid $green2;
+    div {
+      flex: 1;
+      font-size: 1.2rem;
     }
   }
-  table tr {
-    border-bottom: 1px solid $dark1;
-  }
-  table td {
-    padding: 0.3em;
-  }
-  table td > button {
-    background-color: $green1;
-    border: none;
-  }
-  tbody tr:nth-child(odd) td {
-    background: rgba(173, 194, 173, 0.253);
-  }
-  tbody tr:last-child {
-    border-bottom: none;
-  }
-  table td:nth-child(2) {
-    text-align: left;
-  }
-  table td:nth-child(4) {
-    text-align: right;
+  .product__header > div:nth-child(2) {
+    flex: 2;
   }
 }
-@media screen and(min-width:768px) {
+@media screen and(max-width:768px) {
+  .table__main {
+    .product__header {
+      display: none;
+      border: 1px solid red;
+    }
+  }
 }

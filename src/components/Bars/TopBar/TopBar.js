@@ -14,7 +14,7 @@ export default class TopBar extends React.Component {
     });
   };
   render() {
-    return <div className="topBar__div">{this.optionsTopBar()}</div>;
+    return <div className="topBar">{this.optionsTopBar()}</div>;
   }
 }
 const options = [

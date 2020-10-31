@@ -2,41 +2,80 @@
 
 .action__product {
   position: fixed;
-  display: flex;
+  top: 4rem;
   width: 100%;
-  // top: 10vh;
-  // transform: translateX(-400%);
+  transform: translateX(-400%);
   transition: transform 1s ease-in-out !important;
-  justify-content: center;
   text-align: center;
   z-index: +999;
-  img {
-    z-index: +999;
-    max-width: 320px;
+  .centralImg {
+    position: absolute;
+    left: 5%;
+    width: auto;
+    height: 60%;
+    border-radius: 1.5rem;
+    // padding: 10px;
+    // margin: 0 auto;
   }
-
-  .info__text {
-    position: relative;
+  .info-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    border-radius: 50%;
+    border: 2px solid $green2;
     z-index: +999;
-    h1,
-    h2,
-    button {
-      display: none;
+    i {
+      font-size: 1.4rem;
+      transition: all 0.3s linear;
+      color: green;
     }
-
-    .info-close {
-      position: absolute;
-      top: -25px;
-      left: -25px;
-      background-color: white;
-      width: 25px;
-      height: 25px;
-      z-index: +999;
+  }
+  .changePage {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 92vh;
+    z-index: +999;
+    padding: 2px 15px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    i {
+      margin: 0 5px;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      color: $green2;
       cursor: pointer;
-      i {
-        font-size: 1.2rem;
-        transition: all 0.3s linear;
-        color: green;
+    }
+    span {
+      margin: 0 5px;
+    }
+  }
+  .test {
+    height: 100vh;
+    border: 1px solid red;
+    .left {
+      border: 1px solid blue;
+      position: absolute;
+      height: 25%;
+      bottom: 10%;
+      left: 20%;
+      img {
+        height: 100%;
+        border-radius: 5%;
+      }
+    }
+    .right {
+      position: absolute;
+      height: 25%;
+      right: 20%;
+      bottom: 10%;
+      img {
+        height: 100%;
+        overflow: hidden; //
+        border-radius: 5%;
       }
     }
   }
@@ -49,70 +88,80 @@
 @media screen and(min-width:768px) {
   .action__product {
     position: fixed;
-    // top: 15vh;
     top: 0;
-    // bottom: 0;
-    padding: 15vh 0;
     transform: translateX(-400%);
-    // transform:;
-    transition: transform 1.5s ease-in-out;
+    transition: transform 2s ease-in-out;
     color: white;
-    z-index: +999;
-
-    img {
-      background: #0b59a9;
-      background: green;
-      background: grey;
+    .test {
+      .left {
+        position: absolute;
+        top: 25vh;
+        left: 10%;
+        width: auto;
+        height: 45vh;
+        border-radius: 5%;
+        z-index: +100;
+        cursor: pointer;
+        img {
+          width: auto;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5%;
+        }
+      }
+      .right {
+        position: absolute;
+        top: 25vh;
+        right: 10%;
+        width: auto;
+        height: 45vh;
+        border-radius: 5%;
+        z-index: +100;
+        cursor: pointer;
+        img {
+          width: auto;
+          height: 100%;
+          overflow: hidden;
+          border-radius: 5%;
+        }
+      }
+      .right::before,
+      .left::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(78, 78, 78, 0.8);
+        border-radius: 5%;
+      }
+      .right:hover::before,
+      .left:hover::before {
+        background: rgba(85, 85, 85, 0.4);
+      }
+    }
+    .centralImg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       padding: 10px;
       width: auto;
-      height: 70vh;
+      height: 92vh;
+      z-index: +999;
     }
-    .info__text {
-      position: relative;
-      display: flex;
-      width: 295px;
-      flex-direction: column;
-      background: #0b59a9;
-      background: linear-gradient(to top, #0b59a9 30%, #024c86 80%);
-      background: grey;
-      text-align: center;
-      padding: 0 10px;
 
-      h1 {
-        display: inline;
-        text-align: center;
-        padding-top: 20px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 1.5rem;
-        border-bottom: 2px double white;
-      }
-      h2 {
-        display: inline;
-        font-size: 1.2rem;
-        padding-top: 20px;
-      }
-      button {
-        position: absolute;
-        display: block;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        bottom: 1rem;
-      }
-      .info-close {
-        position: absolute;
-        left: auto;
-        right: 0;
-
-        i {
-          cursor: pointer;
-          transition: all 0.3s linear;
+    .info-close {
+      z-index: +999;
+      cursor: pointer;
+      i {
+        &:hover {
+          transform: rotate(90deg);
+          color: red;
         }
       }
     }
   }
-
   .action__product.open {
     transform: translateX(0);
   }

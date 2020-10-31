@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="footer__partners">Partneri</div>
       </div>
       <div className="footer__bottom">
-        Created by <span>domY</span>
+        Created by <span>AgroWeb</span>
       </div>
     </div>
   );

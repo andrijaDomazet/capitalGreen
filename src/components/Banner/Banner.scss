@@ -2,31 +2,37 @@
 
 .banner {
   text-align: center;
+
   h1 {
     margin: 0 auto;
     color: white;
-    font-size: 0.9rem;
-    background: $green2;
+    font-size: 0.8rem;
+    background: rgba(5, 101, 39, 0.9);
     font-weight: 500;
   }
   p {
     color: white;
-    background: $green1;
-    padding: 0 5px;
-    font-size: 0.7rem;
+    background: rgba(0, 179, 0, 0.8);
+    padding: 0 0.3rem;
+    font-size: 0.6rem;
     margin: 0 auto;
   }
 }
 
 @media screen and(min-width:768px) {
   .banner {
+    background: rgba(255, 255, 255, 0.8);
     h1 {
-      padding: 0.3rem 0;
-      font-size: 1.4rem;
+      width: 90%;
+      margin: 0 auto;
+      letter-spacing: 0.2rem;
+      font-size: 1.2rem;
     }
     p {
+      width: 90%;
+      margin: 0 auto;
       padding: 0.3rem 5rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 }

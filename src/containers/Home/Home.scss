@@ -1,22 +1,24 @@
 @import "../../index.scss";
 
-.home__div {
+.home {
   display: flex;
   flex-direction: column;
+  align-items: center;
   .home__products {
+    position: fixed;
+    bottom: 1.5rem;
     h4 {
+      width: 100vw;
       color: white;
-      margin: 0;
       text-align: center;
       background: $green2;
-      border-radius: 5px;
     }
     .home__product {
       position: relative;
       display: flex;
       overflow: hidden;
       height: 100%;
-      background: rgba(233, 233, 233, 0.87);
+      background: rgba(233, 233, 233, 0.8);
       border-radius: 5px;
     }
     .home__product:before {
@@ -36,8 +38,9 @@
 }
 
 @media screen and(min-width:768px) {
-  .home__div {
+  .home {
     position: relative;
+    align-items: start;
     .home__left {
       width: 50vw;
     }
@@ -53,7 +56,10 @@
       right: 1.5rem;
       width: 20%;
       height: 70vh;
-
+      h4 {
+        width: auto;
+        border-radius: 5px;
+      }
       .home__product {
         display: inline-block;
         margin: 0 0.6rem;

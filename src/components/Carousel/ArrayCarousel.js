@@ -1,6 +1,8 @@
 import React from "react";
 import "./ArrayCarousel.scss";
-import img1 from "../../../img/pozadina1.jpeg";
+import img1 from "./img/slika1.jpg";
+import img2 from "./img/slika2.jpg";
+import img3 from "./img/slika3.jpg";
 
 export default function ArrayCarousel() {
   return (
@@ -20,10 +22,10 @@ export default function ArrayCarousel() {
           <img src={img1} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          <img src={img1} alt="noPicture" />
+          <img src={img2} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          <img src={img1} alt="noPicture" />
+          <img src={img3} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
           <img src={img1} alt="noPicture" />

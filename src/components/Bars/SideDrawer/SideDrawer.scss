@@ -3,31 +3,33 @@
 .side-drawer {
   position: fixed;
   top: 0;
-  left: -5px;
-  width: 45%;
-  max-width: 250px;
+  left: 0;
+  width: 50%;
+  max-width: 18rem;
   height: 100%;
   background: white;
   box-shadow: 2px 0px 5px $green2;
   transform: translateX(-100%);
   transition: transform 0.5s ease-out;
   z-index: 999;
-
   .logo {
-    text-align: center;
-    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 1.5rem 0;
     img {
-      width: 120px;
+      width: 10rem;
+      height: auto;
     }
   }
   h2 {
+    text-align: center;
+    width: 100%;
     color: green;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   ul {
-    margin-top: 30px;
+    margin-top: 1rem;
     padding: 0.5rem;
-    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;

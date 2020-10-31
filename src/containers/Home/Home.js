@@ -24,20 +24,22 @@ export default class Home extends Component {
   //Start the timer after 6 second, set render to true
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ prikazAkcijskeReklame: true });
+      this.setState({ showPopup: true });
     }, 6000);
   }
 
   removeCommentBox = () => {
+    console.log("E");
+
     this.setState({
-      prikazAkcijskeReklame: false,
-      lista: true,
+      showPopup: false,
+      // lista: true,
     });
   };
   render() {
     let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
-      <div className="home__div">
+      <div className="home">
         <Card1
           details={details}
           clicked={() => {
@@ -49,11 +51,11 @@ export default class Home extends Component {
         </div>
         <MarqueeBottom />
         {this.setProductsList()}
-        {/* <Popup
+        <Popup
           click2={this.click2}
           removeCommentBox={this.removeCommentBox}
           show={this.state.showPopup}
-        /> */}
+        />
         <Backdrop clicked={this.removeCommentBox} show={this.state.showPopup} />
       </div>
     );
@@ -64,14 +66,16 @@ export default class Home extends Component {
       <div className="home__products">
         <h4>Proizvodi na akciji</h4>
         <div className="home__product">
-          {data[1].map((product, index) => {
+          {this.productsWithDiscounts().map((product, index) => {
             return (
               <Product
+                classes="product__home"
                 key={index}
                 clicked={() => {
                   this.redirectFunc();
                 }}
                 product={product}
+                pwd={data[4]}
               />
             );
           })}
@@ -79,4 +83,11 @@ export default class Home extends Component {
       </div>
     ) : null;
   }
+  productsWithDiscounts = () => {
+    let products = [...data[1], ...data[2], ...data[3]];
+    let pwd = products.filter((a) => {
+      return data[4].includes(a.id);
+    });
+    return pwd;
+  };
 }
