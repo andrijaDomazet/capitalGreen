@@ -2,7 +2,7 @@
 
 .action__product {
   position: fixed;
-  top: 5rem;
+  top: 4rem;
   width: 100%;
   transform: translateX(-400%);
   transition: transform 1s ease-in-out !important;
@@ -10,11 +10,12 @@
   z-index: +999;
   .centralImg {
     position: absolute;
-    left: 0;
-    width: 80%;
-    height: auto;
+    left: 5%;
+    width: auto;
+    height: 60%;
     border-radius: 1.5rem;
-    padding: 10px;
+    // padding: 10px;
+    // margin: 0 auto;
   }
   .info-close {
     position: absolute;
@@ -50,6 +51,32 @@
     }
     span {
       margin: 0 5px;
+    }
+  }
+  .test {
+    height: 100vh;
+    border: 1px solid red;
+    .left {
+      border: 1px solid blue;
+      position: absolute;
+      height: 25%;
+      bottom: 10%;
+      left: 20%;
+      img {
+        height: 100%;
+        border-radius: 5%;
+      }
+    }
+    .right {
+      position: absolute;
+      height: 25%;
+      right: 20%;
+      bottom: 10%;
+      img {
+        height: 100%;
+        overflow: hidden; //
+        border-radius: 5%;
+      }
     }
   }
 }
