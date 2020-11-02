@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./TopBar.scss";
 
 export default class TopBar extends React.Component {
   optionsTopBar = () => {
     return options.map((option, index) => {
       return (
-        <Link to={option.route} key={index} className="topBar__link">
+        <a href={`tel:${option.title}`} className="topBar__link">
           <i className={`fas fa-${option.icon}`} />
           {option.title}
-        </Link>
+        </a>
       );
     });
   };

@@ -8,40 +8,32 @@
   .marquee__bottom {
     position: fixed;
     display: inline-block;
-    bottom: 10px;
+    bottom: 0.8rem;
     background: rgba(219, 219, 219, 0.774);
     width: 100%;
-    height: 30px;
-    line-height: 30px;
     color: rgb(36, 36, 36);
     overflow: hidden;
-    border-bottom: 1px solid rgb(255, 255, 255);
-
     span {
       color: green;
       text-transform: uppercase;
       font-weight: bold;
-      margin-right: 5px;
+      margin-right: 0.3rem;
     }
     p {
-      left: 0px;
       font-weight: 600;
       animation-name: marquee-animation;
       animation-duration: 32s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
       animation-timing-function: linear;
-      &:hover {
-        animation-play-state: paused;
-      }
     }
   }
 }
 @keyframes marquee-animation {
   0% {
-    transform: translateX(1300px);
+    transform: translateX(105vw);
   }
   100% {
-    transform: translateX(-900px);
+    transform: translateX(-50vw);
   }
 }

@@ -12,7 +12,6 @@ import Popup from "../../components/Popup/Popup";
 export default class Home extends Component {
   state = {
     showPopup: false,
-    lista: true,
   };
 
   redirectFunc = (page) => {
@@ -29,15 +28,11 @@ export default class Home extends Component {
   }
 
   removeCommentBox = () => {
-    console.log("E");
-
     this.setState({
       showPopup: false,
-      // lista: true,
     });
   };
   render() {
-    let classCenter = this.state.lista ? "home__center move" : "home__center";
     return (
       <div className="home">
         <Card1
@@ -46,9 +41,7 @@ export default class Home extends Component {
             this.redirectFunc("aboutUs");
           }}
         />
-        <div className={classCenter}>
-          <Card2 details={details} />
-        </div>
+        <Card2 details={details} />
         <MarqueeBottom />
         {this.setProductsList()}
         <Popup
@@ -62,7 +55,7 @@ export default class Home extends Component {
   }
 
   setProductsList() {
-    return this.state.lista ? (
+    return (
       <div className="home__products">
         <h4>Proizvodi na akciji</h4>
         <div className="home__product">
@@ -81,7 +74,7 @@ export default class Home extends Component {
           })}
         </div>
       </div>
-    ) : null;
+    );
   }
   productsWithDiscounts = () => {
     let products = [...data[1], ...data[2], ...data[3]];
