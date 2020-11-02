@@ -7,8 +7,10 @@ export default function Card2(props) {
     <div className="card2">
       <div className="card2__phone">
         <span className="btn__phone">
-          <i className="fas fa-phone-square" />
-          {details[1].phone}
+          <a href={`tel:${details[1].phone}`}>
+            <i className="fas fa-phone-square" />
+            {details[1].phone}
+          </a>
         </span>
       </div>
       <div className="card2__text">

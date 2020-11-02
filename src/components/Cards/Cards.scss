@@ -26,11 +26,7 @@
   margin-left: 0.5rem;
 }
 .card2 {
-  // position: absolute;
-  // top: 20rem;
-  // right: calc(1rem);
   width: 20rem;
-  // margin: 1.5rem auto;
   margin-top: 2rem;
   border: 1px solid white;
   color: white;
@@ -40,8 +36,14 @@
 
   .card2__phone {
     font-weight: bold;
-    i {
-      margin-right: 0.3rem;
+    .btn__phone {
+      a {
+        color: white;
+        text-decoration: none;
+        i {
+          margin-right: 0.3rem;
+        }
+      }
     }
   }
   .card2__text {
@@ -57,8 +59,7 @@
 @media screen and(min-width:768px) {
   .card1 {
     width: 60vw;
-    padding: 20px;
-    position: relative;
+    padding: 1.2rem;
     h2 {
       font-size: 1.9rem;
       text-align: left;
@@ -66,8 +67,8 @@
       margin: 0;
     }
     .card1-text {
-      padding: 15px 0;
-      line-height: 1.6em;
+      padding: 1rem 0;
+      line-height: 1.6rem;
       font-size: 1.2rem;
     }
     div {
@@ -80,17 +81,21 @@
   .card2 {
     position: absolute;
     font-size: 1.4rem;
-    top: -120px;
-    right: calc(0);
-    right: 15rem;
-    width: 25rem;
-    // padding: 0 5px;
+    bottom: 10vh;
+    right: 25vw;
+    width: 30vw;
+    padding: 0.1rem 0.5rem;
     cursor: pointer;
+    .card2__text {
+      font-size: 1rem;
+    }
     .btn__phone {
-      font-size: 1.4rem;
       letter-spacing: 0.1rem;
-      i {
+      a {
         font-size: 1.4rem;
+        i {
+          font-size: 1.4rem;
+        }
       }
     }
   }
