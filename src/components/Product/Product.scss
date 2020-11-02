@@ -52,7 +52,7 @@
       .price2 {
         font-size: 1.2rem;
         font-weight: 500;
-        color: black;
+        color: $green1;
       }
     }
     .productButton {
@@ -136,7 +136,7 @@
           width: 120px;
           position: absolute;
           margin-top: 1.4rem;
-          margin-left: 1.5rem;
+          margin-left: 1rem;
           padding: 0;
         }
       }
@@ -194,8 +194,9 @@
         }
         .price2 {
           font-weight: 700;
-          line-height: 1.4rem;
+          line-height: 1.6rem;
           font-size: 1.4rem;
+          color: $green1;
         }
         .price1 {
           font-weight: 700;
