@@ -13,6 +13,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  z-index: +100;
 
   &:focus {
     outline: none;

@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-.bars__div {
+.bars {
   display: flex;
   border-bottom: 2px solid $green2;
   min-width: 300px;
@@ -11,15 +11,22 @@
 }
 
 @media screen and(min-width:768px) {
-  .bars__div {
-    img {
-      height: 4rem;
+  .bars {
+    .bars__logo {
+      img {
+        // width: 100%;
+        // height: auto;
+        // height: 100%;
+        // width: auto;
+        height: 4rem;
+      }
     }
   }
 }
 @media screen and(min-width:968px) {
   .bars__links {
     width: 90%;
+    margin: 0 auto;
   }
 }
 // @media screen and(max-width:768px) {
