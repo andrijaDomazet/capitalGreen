@@ -26,7 +26,7 @@
   margin-left: 0.5rem;
 }
 .card2 {
-  width: 20rem;
+  width: 22rem;
   margin-top: 2rem;
   border: 1px solid white;
   color: white;
@@ -37,17 +37,20 @@
   .card2__phone {
     font-weight: bold;
     .btn__phone {
+      letter-spacing: 0.1rem;
       a {
         color: white;
         text-decoration: none;
+        font-size: 1.4rem;
         i {
+          font-size: 1.4rem;
           margin-right: 0.3rem;
         }
       }
     }
   }
   .card2__text {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5rem;
     span {
       font-size: 1.2rem;
