@@ -8,13 +8,12 @@
   flex-direction: column;
   justify-content: space-around;
   height: 2rem;
-  width: 1.5rem;
+  // width: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   z-index: +100;
-
   &:focus {
     outline: none;
   }
