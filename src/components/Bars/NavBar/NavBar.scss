@@ -6,8 +6,10 @@
 
 @media screen and(min-width:768px) {
   .navBar-div {
+    flex: 3;
     display: flex;
     justify-content: space-around;
+    // border: 1px solid blue;
     .links {
       width: 100%;
       display: flex;
@@ -16,7 +18,7 @@
 
       .nav-link {
         font-size: 1.2rem;
-        line-height: 2.5rem;
+        // line-height: 2.5rem;
         text-decoration: none;
         color: $green2;
         font-weight: bold;

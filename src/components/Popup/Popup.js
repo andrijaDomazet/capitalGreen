@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./Popup.scss";
 import slika1 from "./img/prvaStrana.jpg";
-import Slika2 from "./img/drugaStrana.jpg";
+import slika2 from "./img/drugaStrana.jpg";
 import folija from "./img/folija.jpg";
 import zastita from "./img/zastita.jpg";
 
@@ -15,19 +15,28 @@ export default class Popup extends Component {
     let arr = [];
     let e = this.state.order.indexOf(f);
     arr[0] = f;
+
     arr[e] = this.state.order[0];
     e === 1 ? (arr[2] = this.state.order[2]) : (arr[1] = this.state.order[1]);
+    console.log(arr);
+
     this.setState({ order: arr });
   };
   //funcs for rotate flayer !TODOOO!
   picturePos = () => {
-    return this.state.page === 1 ? folija : Slika2;
+    return this.state.page === 1 ? folija : slika2;
   };
-  changePage = (page) => {
-    if (page !== this.state.page) {
-      this.state.page === 1
-        ? this.setState({ page: 2 })
-        : this.setState({ page: 1 });
+  changePage = () => {
+    if (this.state.page === 1 && this.state.order[0] === slika1) {
+      let arr = [];
+      let e = this.state.order.indexOf(slika1);
+      arr = [slika2, this.state.order[1], this.state.order[2]];
+      this.setState({ order: arr, page: 2 });
+    } else if (this.state.page === 2 && this.state.order[0] == slika2) {
+      let arr = [];
+      let e = this.state.order.indexOf(slika2);
+      arr = [slika1, this.state.order[1], this.state.order[2]];
+      this.setState({ order: arr, page: 1 });
     }
   };
   //end
@@ -51,14 +60,17 @@ export default class Popup extends Component {
           <i
             className="fas fa-chevron-circle-left"
             onClick={() => {
-              this.changePage(1);
+              this.changePage();
             }}
           ></i>
-          <span>{this.state.page} / 2</span>
+          <span>
+            {this.state.page} /{" "}
+            {this.state.order[0] === slika1 || slika2 ? 2 : 1}
+          </span>
           <i
             className="fas fa-chevron-circle-right"
             onClick={() => {
-              this.changePage(2);
+              this.changePage();
             }}
           ></i>
         </div>

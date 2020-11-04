@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 4rem;
+  height: 100%;
   .topBar__link {
     font-size: 0.8rem;
     line-height: 0.8rem;
@@ -22,8 +22,9 @@
 
 @media screen and(min-width:768px) {
   .topBar {
+    // flex: 2;
     flex-direction: row;
-    width: 100%;
+    // width: 100%;
     padding: 0 8vw;
     height: auto;
     justify-content: space-around;
