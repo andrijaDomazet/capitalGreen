@@ -4,28 +4,46 @@
   display: flex;
   border-bottom: 2px solid $green2;
   min-width: 300px;
-  img {
-    margin: 0 0.8rem;
-    height: 4rem;
+  height: 10vh;
+  .bars__logo {
+    display: flex;
+    width: calc(4rem + 10%);
+    // border: 1px solid red;
+    justify-content: center;
+    // margin: 0 0.2rem;
+    img {
+      // margin: 0 0.8rem;
+      width: auto;
+      height: 100%;
+    }
   }
 }
 
 @media screen and(min-width:768px) {
   .bars {
+    height: 12vh;
+    // flex-direction: column;
     .bars__logo {
+      width: 10%;
       img {
         // width: 100%;
         // height: auto;
         // height: 100%;
         // width: auto;
-        height: 4rem;
+        height: 100%;
       }
+    }
+    .bars__links {
+      width: 100%;
+      // border: 1px solid yellow;
+      display: flex;
+      flex-direction: column;
     }
   }
 }
 @media screen and(min-width:968px) {
   .bars__links {
-    width: 90%;
+    // width: 100%;
     margin: 0 auto;
   }
 }
