@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dd3d3827a9867dcd81a0e76d3c8f129",
+    "revision": "684a1342a33df4eb4079e9f7dd30ccfb",
     "url": "/index.html"
   },
   {
-    "revision": "3e7933bd7ed44e7b8838",
-    "url": "/static/css/main.d9300783.chunk.css"
+    "revision": "ae6e4f153a52f71f0981",
+    "url": "/static/css/main.65fb3017.chunk.css"
   },
   {
-    "revision": "004bde34281c5c1b349f",
-    "url": "/static/js/2.c0aeedb0.chunk.js"
+    "revision": "a302f9945cfe28847f35",
+    "url": "/static/js/2.96bc355e.chunk.js"
   },
   {
     "revision": "dbe5ca7a82c728776bb536c3d2d64135",
-    "url": "/static/js/2.c0aeedb0.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.96bc355e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3e7933bd7ed44e7b8838",
-    "url": "/static/js/main.f78f253e.chunk.js"
+    "revision": "ae6e4f153a52f71f0981",
+    "url": "/static/js/main.1b93760a.chunk.js"
   },
   {
     "revision": "67836631550fc3ecf8d1",
     "url": "/static/js/runtime-main.4c63439b.js"
   },
   {
-    "revision": "41d6db09712d0e1ab7b1202b57ce826e",
-    "url": "/static/media/drugaStrana.41d6db09.jpg"
+    "revision": "039a16f69994e89fe2aaa5b3337ed431",
+    "url": "/static/media/drugaStrana.039a16f6.jpg"
   },
   {
-    "revision": "abe90ea92cb1f22e14d3ab1e93995ffc",
-    "url": "/static/media/folija.abe90ea9.jpg"
+    "revision": "0b78850068f9ef8191a00f80aef9ec4b",
+    "url": "/static/media/folija.0b788500.jpg"
   },
   {
     "revision": "aa183e8f3cf9df1095061312783ddddb",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/pozadina8.42a8a9a4.jpeg"
   },
   {
-    "revision": "4ded776ed9251e312a1f6194484b49e5",
-    "url": "/static/media/prvaStrana.4ded776e.jpg"
+    "revision": "7b58bb8f138087e2fe5d6eb4c42572cb",
+    "url": "/static/media/prvaStrana.7b58bb8f.jpg"
   },
   {
     "revision": "1f2993f877e51963e430e92451d08aef",
@@ -56,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/slika3.f1378eea.jpg"
   },
   {
-    "revision": "46c63541b820d54489c4188c79d82e82",
-    "url": "/static/media/zastita.46c63541.jpg"
+    "revision": "c40a1d14677121274771bdf0c6aae59a",
+    "url": "/static/media/zastita.c40a1d14.jpg"
   }
 ]);
