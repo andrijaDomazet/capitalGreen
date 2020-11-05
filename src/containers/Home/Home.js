@@ -57,7 +57,7 @@ export default class Home extends Component {
   setProductsList() {
     return (
       <div className="home__products">
-        <h4>Proizvodi na akciji</h4>
+        <h3>Proizvodi na akciji</h3>
         <div className="home__product">
           {this.productsWithDiscounts().map((product, index) => {
             return (

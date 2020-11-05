@@ -2,25 +2,22 @@
 
 .action__product {
   position: fixed;
-  top: 4rem;
+  top: 0;
   width: 100%;
   transform: translateX(-400%);
   transition: transform 1s ease-in-out !important;
   text-align: center;
   z-index: +999;
   .centralImg {
-    position: absolute;
-    left: 5%;
-    width: auto;
-    height: 60%;
+    width: calc(90vw - 25%);
+    height: auto;
     border-radius: 1.5rem;
-    // padding: 10px;
-    // margin: 0 auto;
+    margin-top: 3rem;
   }
   .info-close {
     position: absolute;
     top: 15px;
-    right: 25px;
+    right: 20px;
     width: 30px;
     height: 30px;
     line-height: 32px;
@@ -30,22 +27,25 @@
     i {
       font-size: 1.4rem;
       transition: all 0.3s linear;
-      color: green;
+      color: red;
     }
   }
   .changePage {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 92vh;
+    top: calc(20vh + 10%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     z-index: +999;
-    padding: 2px 15px;
+    padding: 0 0.5rem;
     font-size: 1.5rem;
     line-height: 2rem;
     i {
-      margin: 0 5px;
-      font-size: 1.5rem;
-      line-height: 2rem;
+      margin: 0 0.1rem;
+      font-size: 2.5rem;
+      line-height: 2.5rem;
       color: $green2;
       cursor: pointer;
     }
@@ -53,30 +53,46 @@
       margin: 0 5px;
     }
   }
+  .changePage > span {
+    display: none;
+  }
   .test {
-    height: 100vh;
-    // border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
     .left {
-      // border: 1px solid blue;
-      position: absolute;
-      height: 25%;
-      bottom: 10%;
-      left: 20%;
+      position: relative;
+      height: 25vh;
       img {
         height: 100%;
         border-radius: 5%;
       }
     }
     .right {
-      position: absolute;
-      height: 25%;
-      right: 20%;
-      bottom: 10%;
+      position: relative;
+      height: 25vh;
       img {
         height: 100%;
-        overflow: hidden; //
+        overflow: hidden;
         border-radius: 5%;
       }
+    }
+    .right::before,
+    .left::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(78, 78, 78, 0.8);
+      border-radius: 5%;
+    }
+    .right:hover::before,
+    .left:hover::before {
+      background: rgba(85, 85, 85, 0.4);
     }
   }
 }
@@ -88,10 +104,10 @@
 @media screen and(min-width:768px) {
   .action__product {
     position: fixed;
-    top: 0;
     transform: translateX(-400%);
     transition: transform 2s ease-in-out;
     color: white;
+    height: 100%;
     .test {
       .left {
         position: absolute;
@@ -125,17 +141,6 @@
           border-radius: 5%;
         }
       }
-      .right::before,
-      .left::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(78, 78, 78, 0.8);
-        border-radius: 5%;
-      }
       .right:hover::before,
       .left:hover::before {
         background: rgba(85, 85, 85, 0.4);
@@ -143,11 +148,12 @@
     }
     .centralImg {
       position: absolute;
+      top: -5%;
       left: 50%;
       transform: translateX(-50%);
       padding: 10px;
       width: auto;
-      height: 92vh;
+      height: 90vh;
       z-index: +999;
     }
 
@@ -160,6 +166,17 @@
           color: red;
         }
       }
+    }
+    .changePage {
+      width: auto;
+      top: 92vh;
+      i {
+        font-size: 1.5rem;
+      }
+    }
+    .changePage > span {
+      display: inline;
+      line-height: 2.5rem;
     }
   }
   .action__product.open {

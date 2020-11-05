@@ -3,7 +3,7 @@
 .product__home {
   .product-top {
     display: flex;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 5px;
     text-align: center;
     animation: prdoucts__slader 80s linear infinite;
@@ -15,9 +15,11 @@
       position: absolute;
       top: 0;
       font-size: 1rem;
-      line-height: 1.2rem;
+      line-height: 1.6rem;
       height: 1.2rem;
       vertical-align: middle;
+      text-align: center;
+      width: 100%;
     }
 
     .productImg {
@@ -138,7 +140,7 @@
           line-height: 1.1rem;
           width: 120px;
           position: absolute;
-          margin-top: 1.4rem;
+          margin-top: 0.5rem;
           margin-left: 1rem;
           padding: 0;
         }
