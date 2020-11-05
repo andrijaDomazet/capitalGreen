@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.65fb3017.chunk.css",
-    "main.js": "/static/js/main.1b93760a.chunk.js",
-    "main.js.map": "/static/js/main.1b93760a.chunk.js.map",
+    "main.css": "/static/css/main.565ba55a.chunk.css",
+    "main.js": "/static/js/main.135717d9.chunk.js",
+    "main.js.map": "/static/js/main.135717d9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4c63439b.js",
     "runtime-main.js.map": "/static/js/runtime-main.4c63439b.js.map",
     "static/js/2.96bc355e.chunk.js": "/static/js/2.96bc355e.chunk.js",
     "static/js/2.96bc355e.chunk.js.map": "/static/js/2.96bc355e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d459db6338d3fdad001a0c502f72a9fc.js": "/precache-manifest.d459db6338d3fdad001a0c502f72a9fc.js",
+    "precache-manifest.e6a28cacf14a066a94554ad565ff9046.js": "/precache-manifest.e6a28cacf14a066a94554ad565ff9046.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.65fb3017.chunk.css.map": "/static/css/main.65fb3017.chunk.css.map",
+    "static/css/main.565ba55a.chunk.css.map": "/static/css/main.565ba55a.chunk.css.map",
     "static/js/2.96bc355e.chunk.js.LICENSE.txt": "/static/js/2.96bc355e.chunk.js.LICENSE.txt",
     "static/media/drugaStrana.jpg": "/static/media/drugaStrana.039a16f6.jpg",
     "static/media/folija.jpg": "/static/media/folija.0b788500.jpg",
     "static/media/Home.scss": "/static/media/logo.aa183e8f.png",
     "static/media/App.scss": "/static/media/pozadina8.42a8a9a4.jpeg",
     "static/media/prvaStrana.jpg": "/static/media/prvaStrana.7b58bb8f.jpg",
-    "static/media/slika1.jpg": "/static/media/slika1.1f2993f8.jpg",
-    "static/media/slika2.jpg": "/static/media/slika2.c3e4b233.jpg",
-    "static/media/slika3.jpg": "/static/media/slika3.f1378eea.jpg",
+    "static/media/slika1.jpg": "/static/media/slika1.2d0608ee.jpg",
+    "static/media/slika2.jpg": "/static/media/slika2.5e812d37.jpg",
+    "static/media/slika3.jpg": "/static/media/slika3.22c5cec4.jpg",
     "static/media/zastita.jpg": "/static/media/zastita.c40a1d14.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4c63439b.js",
     "static/js/2.96bc355e.chunk.js",
-    "static/css/main.65fb3017.chunk.css",
-    "static/js/main.1b93760a.chunk.js"
+    "static/css/main.565ba55a.chunk.css",
+    "static/js/main.135717d9.chunk.js"
   ]
 }
