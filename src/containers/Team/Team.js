@@ -14,7 +14,7 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Predrag Strbac</h2>
+            <h2>Predrag Štrbac</h2>
             <h3>Direktor</h3>
             <div>
               <span>Tel: +381 64 5 222 333</span>
@@ -33,17 +33,17 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Petar Gogić</h2>
-            <h3>Savetnik direktora</h3>
+            <h2>Andrija Domazet</h2>
+            <h3>Zamenik direktora</h3>
             <div>
-              <span>Tel: +381 64 5 222 333</span>
-              <span>Mail: gogic@capitalgreen.rs</span>
+              <span>Tel: +381 64 229 68 68</span>
+              <span>Mail: domazet@capitalgreen.rs</span>
             </div>
             <p>
-              Ima savetodavnu ulogu u kompaniji, sa fokusom na razvoj i
-              optimizaciju poslovanja. Za cilj ima i analizu poslovanja
-              klijenata, a sve kako bi se u budućnosti njihova poljoprivredna
-              proizvodnja u što većoj meri unapredila.
+              Ima aktivnu ulogu u strateškom poslovanju kompanije, sa fokusom na
+              razvoj i optimizaciju. Za cilj ima i analizu poslovanja klijenata,
+              a sve kako bi se u budućnosti njihova poljoprivredna proizvodnja u
+              što većoj meri unapredila.
             </p>
           </div>
         </div>
@@ -52,10 +52,9 @@ export default function Team() {
             <img src={FaceW} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Marija Perić</h2>
+            <h2>Marija Perić Živanovic</h2>
             <h3>Administracija i finansije</h3>
             <div>
-              <span>Tel: +381 64 5 222 333</span>
               <span>Mail: peric@capitalgreen.rs</span>
             </div>
             <p>
@@ -71,11 +70,10 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Stojan Anđelić</h2>
+            <h2>Laslo Gabor</h2>
             <h3>Komercijalista</h3>
             <div>
-              <span>Tel: +381 64 5 222 333</span>
-              <span>Mail: andjelic@capitalgreen.rs</span>
+              <span>Mail: gabor@capitalgreen.rs</span>
             </div>
             <p>
               Vrhunski komercijalista, sa izraženom sposobnošću da prepozna

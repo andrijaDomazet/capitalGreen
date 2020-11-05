@@ -6,7 +6,9 @@
   align-items: center;
   .home__products {
     margin: 2rem 0 1rem 0;
-    h4 {
+    h3 {
+      letter-spacing: 0.1rem;
+      padding: 0.1rem 0;
       color: white;
       text-align: center;
       background: $green2;
@@ -21,14 +23,17 @@
     }
     .home__product:before {
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 10%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       content: " ";
       background: url("../../img/logo.png");
-      background-size: 100% 100%;
+      background-size: auto 90%;
+      background-position: center;
+      background-repeat: no-repeat;
       margin: auto;
-      opacity: 0.1;
+      opacity: 0.15;
     }
   }
 }
@@ -49,7 +54,7 @@
       width: 20%;
       height: 70vh;
       margin: auto;
-      h4 {
+      h3 {
         width: auto;
         border-radius: 5px;
       }
@@ -66,6 +71,7 @@
         transform: translateY(-50%);
         width: 100%;
         height: auto;
+        background-size: 85% auto;
       }
     }
   }

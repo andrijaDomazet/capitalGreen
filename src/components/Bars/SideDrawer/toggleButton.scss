@@ -3,12 +3,12 @@
 .toggle {
   position: absolute;
   display: flex;
-  top: 1rem;
-  right: 1.5rem;
+  right: 5%;
+  top: calc(0.4rem + 1%);
+  height: 10vh;
   flex-direction: column;
   justify-content: space-around;
   height: 2rem;
-  // width: 1.5rem;
   background: transparent;
   border: none;
   cursor: pointer;

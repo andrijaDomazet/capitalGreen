@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/capitalGreen/static/css/main.f7fba7c0.chunk.css",
+    "main.js": "/capitalGreen/static/js/main.5b698445.chunk.js",
+    "main.js.map": "/capitalGreen/static/js/main.5b698445.chunk.js.map",
+    "runtime-main.js": "/capitalGreen/static/js/runtime-main.e3cfc822.js",
+    "runtime-main.js.map": "/capitalGreen/static/js/runtime-main.e3cfc822.js.map",
+    "static/js/2.ce532ece.chunk.js": "/capitalGreen/static/js/2.ce532ece.chunk.js",
+    "static/js/2.ce532ece.chunk.js.map": "/capitalGreen/static/js/2.ce532ece.chunk.js.map",
+    "index.html": "/capitalGreen/index.html",
+    "precache-manifest.c8e1af94252b6dfe38dc80821383c36a.js": "/capitalGreen/precache-manifest.c8e1af94252b6dfe38dc80821383c36a.js",
+    "service-worker.js": "/capitalGreen/service-worker.js",
+    "static/css/main.f7fba7c0.chunk.css.map": "/capitalGreen/static/css/main.f7fba7c0.chunk.css.map",
+    "static/js/2.ce532ece.chunk.js.LICENSE.txt": "/capitalGreen/static/js/2.ce532ece.chunk.js.LICENSE.txt",
+    "static/media/Banner.scss": "/capitalGreen/static/media/background.7ce405c7.jpg",
+    "static/media/djubrivo.jpg": "/capitalGreen/static/media/djubrivo.3cab9094.jpg",
+    "static/media/Home.scss": "/capitalGreen/static/media/logo.aa183e8f.png",
+    "static/media/pozadina1.jpeg": "/capitalGreen/static/media/pozadina1.95d0368e.jpeg",
+    "static/media/App.scss": "/capitalGreen/static/media/pozadina8.42a8a9a4.jpeg",
+    "static/media/prvaStrana.jpg": "/capitalGreen/static/media/prvaStrana.4ded776e.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e3cfc822.js",
+    "static/js/2.ce532ece.chunk.js",
+    "static/css/main.f7fba7c0.chunk.css",
+    "static/js/main.5b698445.chunk.js"
+  ]
+}
