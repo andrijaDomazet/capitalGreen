@@ -5,7 +5,7 @@ export default class TopBar extends React.Component {
   optionsTopBar = () => {
     return options.map((option, index) => {
       return (
-        <a href={`tel:${option.title}`} className="topBar__link">
+        <a href={`tel:${option.title}`} className="topBar__link" key={index}>
           <i className={`fas fa-${option.icon}`} />
           {option.title}
         </a>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 import "./Bars.scss";
 import TopBar from "./TopBar/TopBar";
 import Logo from "../../img/logo.png";
@@ -26,9 +27,9 @@ export default class Bars extends Component {
   render() {
     return (
       <div className="bars">
-        <div className="bars__logo">
+        <NavLink to="/" className="bars__logo">
           <img src={Logo} alt="logo" />
-        </div>
+        </NavLink>
         <div className="bars__links">
           <Backdrop
             clicked={this.removeBackdrop}
