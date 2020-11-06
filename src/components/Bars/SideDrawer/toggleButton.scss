@@ -1,11 +1,16 @@
 @import "../../../index.scss";
-
-.toggle {
+.toggle__button {
   position: absolute;
   display: flex;
-  right: 5%;
-  top: calc(0.4rem + 1%);
+  top: 0;
+  right: 0;
   height: 10vh;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+.toggle {
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 2rem;
