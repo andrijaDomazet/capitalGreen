@@ -8,6 +8,7 @@ import details from "../../details.json";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
 import Popup from "../../components/Popup/Popup";
+import DocumentMeta from "react-document-meta";
 
 export default class Home extends Component {
   state = {
@@ -33,24 +34,40 @@ export default class Home extends Component {
     });
   };
   render() {
+    const meta = {
+      title: "Capital green doo",
+      description: "Capital green doo presentacion",
+      connonical: "https://capitalgreen.rs",
+      meta: {
+        charset: "utf-8",
+        name: {
+          keywords: "capital,green,fertilizer,agriculture,organic",
+        },
+      },
+    };
     return (
-      <div className="home">
-        <Card1
-          details={details}
-          clicked={() => {
-            this.redirectFunc("aboutUs");
-          }}
-        />
-        <Card2 details={details} />
-        <MarqueeBottom />
-        {this.setProductsList()}
-        <Popup
-          click2={this.click2}
-          removeCommentBox={this.removeCommentBox}
-          show={this.state.showPopup}
-        />
-        <Backdrop clicked={this.removeCommentBox} show={this.state.showPopup} />
-      </div>
+      <DocumentMeta {...meta}>
+        <div className="home">
+          <Card1
+            details={details}
+            clicked={() => {
+              this.redirectFunc("aboutUs");
+            }}
+          />
+          <Card2 details={details} />
+          <MarqueeBottom />
+          {this.setProductsList()}
+          <Popup
+            click2={this.click2}
+            removeCommentBox={this.removeCommentBox}
+            show={this.state.showPopup}
+          />
+          <Backdrop
+            clicked={this.removeCommentBox}
+            show={this.state.showPopup}
+          />
+        </div>
+      </DocumentMeta>
     );
   }
 

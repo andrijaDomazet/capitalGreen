@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
 import Delatnosti from "./containers/delatnosti/Delatnosti";
 import Products from "./containers/Products/Products";
@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="app">
-      <Router>
+      <BrowserRouter>
         <Bars />
         <Switch>
           <Route exact path="https://andrijadomazet.github.io/capitalGreen/" />
@@ -37,7 +37,7 @@ function App() {
           />
           <Route component={Footer} />
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
