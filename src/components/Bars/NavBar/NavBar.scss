@@ -9,7 +9,6 @@
     flex: 3;
     display: flex;
     justify-content: space-around;
-    // border: 1px solid blue;
     .links {
       width: 100%;
       display: flex;
@@ -17,10 +16,12 @@
       align-items: center;
 
       .nav-link {
+        padding: 0 0.5rem;
         font-size: 1.2rem;
         text-decoration: none;
         color: $green2;
         font-weight: bold;
+        z-index: +100;
         &:hover {
           color: $green1;
         }

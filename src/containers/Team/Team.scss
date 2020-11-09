@@ -19,6 +19,7 @@
     }
     img {
       width: 25%;
+      filter: drop-shadow(2px 5px 8px grey);
     }
     .member__data {
       flex: 2;
@@ -75,7 +76,6 @@
       box-shadow: 1px 2px 10px $green2;
       img {
         width: 80%;
-        filter: drop-shadow(2px 5px 8px grey);
       }
       .member__data {
         padding: 1.5rem 2rem;
@@ -89,7 +89,7 @@
           font-size: 1.3rem;
         }
         p {
-          padding-top: 1rem;
+          padding: 1rem 0 0 0;
           font-size: 1.1rem;
         }
       }
