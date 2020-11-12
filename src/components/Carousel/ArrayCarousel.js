@@ -28,13 +28,13 @@ export default function ArrayCarousel() {
           <img src={img3} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          <img src={img1} alt="noPicture" />
+          <img src={img2} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          <img src={img1} alt="noPicture" />
+          <img src={img3} alt="noPicture" />
         </div>
         <div className="tile" ng-repeat="tile in tiles" id="tile-{{tile}}">
-          <img src={img1} alt="noPicture" />
+          <img src={img2} alt="noPicture" />
         </div>
       </div>
     </div>
