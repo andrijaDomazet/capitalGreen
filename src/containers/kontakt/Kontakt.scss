@@ -15,12 +15,15 @@
     bottom: 0;
     text-align: center;
     width: 100%;
-    border: 1px solid $green2;
     letter-spacing: 0.05rem;
     color: $green2;
     font-size: 0.8rem;
     font-weight: 600;
     order: 3;
+    span {
+      color: black;
+      font-weight: 900;
+    }
   }
   .contact__row-left {
     text-align: center;
