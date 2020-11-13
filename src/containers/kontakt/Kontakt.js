@@ -18,8 +18,9 @@ const Kontakt = (props) => {
   return (
     <div className="contact">
       <div className="contact-info">
-        Capital green doo | Tel: +381 64 5 222 333 | Adresa: Franje Krča 144,
-        Zemun | MB: 21343455 | PIB: 110367480
+        Capital green doo | <span>Tel:</span> +381 64 5 222 333
+        <span> Adresa:</span> | Franje Krča 144, Zemun |<span> MB: </span>
+        21343455 |<span> PIB:</span> 110367480
       </div>
       <div className="contact__row-left">
         <KarticaLogo />

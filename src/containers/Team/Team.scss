@@ -3,13 +3,14 @@
 .team {
   text-align: center;
   width: 90%;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.8);
   margin: 0 auto;
   padding-bottom: 30px;
 
   .team__members > div {
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid $green2;
     .member__pic {
       flex: 1;
