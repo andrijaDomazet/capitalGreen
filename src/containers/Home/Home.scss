@@ -43,14 +43,10 @@
     position: relative;
     align-items: start;
     height: 85vh;
-    .home__left {
-      width: 50vw;
-      border: 1px solid red;
-    }
     .home__products {
       position: fixed;
-
-      top: 6rem;
+      position: absolute;
+      top: 1rem;
       right: 1.5rem;
       width: 20%;
       height: 70vh;
@@ -74,6 +70,19 @@
         height: auto;
         background-size: 85% auto;
       }
+    }
+  }
+}
+@media screen and(min-width:2400px) {
+  .home {
+    height: 90vh;
+    max-width: 2400px;
+    margin: 0 auto;
+    .home__products {
+      width: 20vw;
+    }
+    h3 {
+      font-size: 1.5rem;
     }
   }
 }

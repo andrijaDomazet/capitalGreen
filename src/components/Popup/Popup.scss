@@ -183,3 +183,15 @@
     transform: translateX(0);
   }
 }
+@media screen and(min-width:2400px) {
+  .action__product {
+    max-width: 2400px;
+    margin: 0 auto;
+    .centralImg {
+      margin-top: 5rem;
+    }
+    .changePage {
+      top: 94vh;
+    }
+  }
+}

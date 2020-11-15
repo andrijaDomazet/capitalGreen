@@ -4,7 +4,7 @@ import "./NavBar.scss";
 import { options } from "../../../shared/shared";
 
 export default function NavBar(props) {
-  return <div className="navBar-div">{navBarOptions(props)}</div>;
+  return <div className="navBar">{navBarOptions(props)}</div>;
 }
 
 const navBarOptions = (props) => {

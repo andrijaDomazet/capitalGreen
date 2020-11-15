@@ -1,11 +1,11 @@
 @import "../../../index.scss";
 
-.navBar-div {
+.navBar {
   display: none;
 }
 
 @media screen and(min-width:768px) {
-  .navBar-div {
+  .navBar {
     flex: 3;
     display: flex;
     justify-content: space-around;
@@ -14,7 +14,6 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-
       .nav-link {
         padding: 0 0.5rem;
         font-size: 1.2rem;
@@ -28,6 +27,15 @@
         &.active {
           color: $green1;
         }
+      }
+    }
+  }
+}
+@media screen and(min-width:2400px) {
+  .navBar {
+    .links {
+      .nav-link {
+        font-size: 1.6rem;
       }
     }
   }
