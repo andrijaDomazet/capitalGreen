@@ -54,3 +54,9 @@ $dark2: #99621e;
     font-size: 1.6rem;
   }
 }
+@media screen and(min-width:2800px) {
+  * {
+    // max-width: 1400px;
+    font-size: 1.8rem;
+  }
+}

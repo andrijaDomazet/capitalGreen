@@ -19,6 +19,7 @@
 @media screen and(min-width:768px) {
   .bars {
     height: 12vh;
+    height: 4.5rem;
     .bars__logo {
       width: 10%;
       img {
@@ -34,6 +35,12 @@
 }
 @media screen and(min-width:968px) {
   .bars__links {
+    margin: 0 auto;
+  }
+}
+@media screen and(min-width:2400px) {
+  .bars {
+    max-width: 2400px;
     margin: 0 auto;
   }
 }
