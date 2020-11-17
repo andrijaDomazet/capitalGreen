@@ -26,6 +26,8 @@ const Kontakt = (props) => {
         <KarticaLogo />
       </div>
       <div className="contact__row-right">
+        <h1>Kontakt</h1>
+        <h2>Za sva dodatna pitanja možete nas ovde kontaktirati.</h2>
         <form action="">{options()}</form>
         <Buttons children="Pošalji" />
       </div>
