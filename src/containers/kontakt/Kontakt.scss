@@ -27,8 +27,15 @@
   }
   .contact__row-left {
     text-align: center;
+    border-bottom: 2px solid $green2;
+    padding-bottom: 1rem;
   }
   .contact__row-right {
+    h1 {
+      font-size: 2rem;
+      color: $green2;
+    }
+
     form > div {
       width: 100%;
       margin-top: 5px;
@@ -77,6 +84,7 @@ h5 {
     .contact__row-left {
       flex: 2;
       margin: 2rem 0;
+      border: none;
     }
     .contact__row-right {
       flex: 3;
@@ -84,10 +92,22 @@ h5 {
       flex-direction: column;
       margin: 2rem 0;
       align-items: center;
+      h1 {
+        width: 100%;
+        text-align: left;
+        color: $green2;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-left: 2rem;
+      }
+      h2 {
+        padding-left: 2rem;
+        width: 100%;
+        text-align: left;
+      }
       form {
         width: 100%;
-        margin-top: 20px;
-        padding: 2rem;
+        padding-left: 2rem;
       }
       form > div {
         display: flex;
@@ -95,23 +115,22 @@ h5 {
         flex-direction: row;
       }
       form > div > span {
-        text-align: center;
-        min-width: 150px;
+        text-align: left;
+        min-width: 120px;
       }
       input {
-        min-width: 350px;
+        min-width: 400px;
       }
       form > div:last-child {
         input {
-          height: 20vh;
+          height: 18vh;
         }
       }
     }
     .contact__row-right > button:last-of-type {
-      margin-bottom: 5rem;
-      margin-top: auto;
       width: 150px;
       font-size: 1.2rem;
+      margin: 1rem;
     }
   }
   .kartica__logo {
