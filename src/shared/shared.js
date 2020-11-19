@@ -1,6 +1,6 @@
 export const details = [
   { title: "Ime i prezime" },
-  { title: "E-mail adresa" },
+  { title: "Kontakt telefon" },
   { title: "Vaša poruka" },
 ];
 
