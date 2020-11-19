@@ -12,6 +12,7 @@
       color: white;
       text-align: center;
       background: $green2;
+      font-weight: 500;
     }
     .home__product {
       position: relative;
@@ -19,7 +20,7 @@
       overflow: hidden;
       height: 100%;
       background: rgba(233, 233, 233, 0.8);
-      border-radius: 5px;
+      border-radius: 0.3rem;
     }
     .home__product:before {
       position: absolute;
@@ -44,20 +45,20 @@
     align-items: start;
     height: 85vh;
     .home__products {
-      position: fixed;
       position: absolute;
       top: 1rem;
       right: 1.5rem;
       width: 20%;
+      min-width: 16rem;
       height: 70vh;
       margin: auto;
       h3 {
         width: auto;
-        border-radius: 5px;
+        border-radius: 0.3rem;
       }
       .home__product {
-        display: inline-block;
-        margin: 0 0.6rem;
+        display: block;
+        margin: 0 0.3rem;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
       }
