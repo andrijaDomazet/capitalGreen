@@ -8,12 +8,19 @@ import details from "../../details.json";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
 import Popup from "../../components/Popup/Popup";
+import { readString } from "react-papaparse";
+const str = `Column 1,Column 2,Column 3,Column 4
+1-1,1-2,1-3,1-4
+2-1,2-2,2-3,2-4
+3-1,3-2,3-3,3-4
+4,5,6,7`;
 
+const res = readString(str);
+const res2 = readString("../../eee.csv");
 export default class Home extends Component {
   state = {
     showPopup: false,
   };
-
   redirectFunc = (page) => {
     return page === "aboutUs"
       ? this.props.history.push("/o-nama")
@@ -33,6 +40,9 @@ export default class Home extends Component {
     });
   };
   render() {
+    console.log(res);
+    // console.log(res2);
+
     return (
       <div className="home">
         <Card1

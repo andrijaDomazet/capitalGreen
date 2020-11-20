@@ -23,8 +23,13 @@
     background-position: 50% 40%;
   }
 }
-@media screen and(min-width:1400px) {
+@media screen and(min-width:2400px) {
   .app {
     margin: 0 auto;
+    background: linear-gradient(to bottom, white 6%, rgba(36, 41, 43, 0.35) 30%),
+      url("img/pozadina9.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }

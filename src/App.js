@@ -11,6 +11,7 @@ import Home from "./containers/Home/Home";
 import Bars from "./components/Bars/Bars";
 import Footer from "./components/Footer/Footer";
 import DocumentMeta from "react-document-meta";
+
 const meta = {
   title: "Capital green doo",
   description: "Capital green doo presentacion",

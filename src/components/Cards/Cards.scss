@@ -10,16 +10,16 @@
     font-weight: 600;
     padding-top: 1.5rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   p {
     text-align: justify;
     text-justify: inter-word;
     padding: 0.6rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.07rem;
     color: white;
     line-height: 1.6rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 .card1 > button {
@@ -103,6 +103,31 @@
     }
   }
 }
+
+@media screen and(min-width:2400px) {
+  .card2 {
+    right: calc(18rem + 12%);
+    width: 35rem;
+    .card2__phone {
+      .btn__phone {
+        a {
+          font-size: 2.2rem;
+          i {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+    .card2__text {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.9);
