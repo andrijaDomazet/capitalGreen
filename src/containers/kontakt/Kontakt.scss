@@ -27,7 +27,6 @@
   .contact__row-left {
     text-align: center;
     border-bottom: 2px solid $green2;
-    padding-bottom: 1rem;
   }
   .contact__row-right {
     h1 {
@@ -47,10 +46,18 @@
       text-align: center;
       min-width: 6rem;
     }
-    form > div:last-child {
+    form > div:nth-child(3) {
       input {
         height: 15vh;
       }
+    }
+    form > input:last-of-type {
+      margin: 1rem 0;
+      padding: 0.3rem 2rem;
+      border-radius: 0.3rem;
+      border: 1px solid white;
+      background: $green2;
+      color: white;
     }
   }
 }
@@ -68,10 +75,7 @@
     margin: 1rem auto;
     .contact__row-left {
       order: 2;
-    }
-    .contact__row-right > button:last-of-type {
-      margin: 1.5rem 0;
-      padding: 0.3rem 1.5rem;
+      padding-bottom: 1rem;
     }
   }
 }
@@ -97,49 +101,51 @@
       flex-direction: column;
       margin: 2.5rem 0;
       align-items: center;
+      justify-content: center;
       text-align: left;
       border-left: 3px solid $green2;
+      padding-left: 1.5rem;
       h1 {
         width: 100%;
         color: $green2;
         font-size: 2.5rem;
         line-height: 3rem;
-        padding-left: 2rem;
       }
       h2 {
         font-size: 1rem;
-        padding-left: 2rem;
         width: 100%;
       }
       form {
         width: 100%;
-        padding-left: 2rem;
       }
       form > div {
         display: flex;
-        margin-top: 10px;
         flex-direction: row;
+        margin-top: 0.8rem;
       }
       form > div > span {
         text-align: left;
-        min-width: 120px;
+        min-width: 8rem;
       }
       input {
-        min-width: 400px;
+        min-width: 25rem;
       }
-      form > div:last-child {
+      form > div:nth-child(3) {
         input {
-          height: 18vh;
+          height: 22vh;
         }
       }
-    }
-    .contact__row-right > button:last-of-type {
-      width: 150px;
-      font-size: 1.2rem;
-      margin: 1rem;
+      form > input:last-of-type {
+        margin: 1rem 0;
+        background: $green2;
+      }
     }
   }
   .kartica__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     .flex-slika {
       img {
         width: 70%;

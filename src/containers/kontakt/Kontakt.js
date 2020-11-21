@@ -2,14 +2,13 @@ import React from "react";
 import KarticaLogo from "./Kartica-logo";
 import "./Kontakt.scss";
 import { details } from "../../shared/shared";
-import Buttons from "../../UI/Button/Buttons";
 
 const options = () => {
   return details.map((detail, index) => {
     return (
       <div key={index}>
         <span>{detail.title}</span>
-        <input type="text" />
+        <input type="text" name={detail.name} />
       </div>
     );
   });
@@ -28,8 +27,15 @@ const Kontakt = (props) => {
       <div className="contact__row-right">
         <h1>Kontakt</h1>
         <h2>Za sva dodatna pitanja možete nas ovde kontaktirati.</h2>
-        <form action="">{options()}</form>
-        <Buttons children="Pošalji" />
+        <form
+          action="mailto:office@capitalgreen.rs"
+          method="POST"
+          encType="multipart/form-data"
+          name="EmailForm"
+        >
+          {options()}
+          <input type="submit" value="Pošalji" />
+        </form>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 export const details = [
-  { title: "Ime i prezime" },
-  { title: "Kontakt telefon" },
-  { title: "Vaša poruka" },
+  { title: "Ime i prezime", name: "name" },
+  { title: "Kontakt telefon", name: "tel" },
+  { title: "Vaša poruka", name: "text" },
 ];
 
 export const options = [
