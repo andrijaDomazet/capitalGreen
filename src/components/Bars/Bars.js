@@ -27,7 +27,7 @@ export default class Bars extends Component {
   render() {
     return (
       <div className="bars">
-        <NavLink to="/" className="bars__logo">
+        <NavLink to="/#/" className="bars__logo">
           <img src={Logo} alt="logo" />
         </NavLink>
         <div className="bars__links">

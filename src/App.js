@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import "./App.scss";
 import Delatnosti from "./containers/delatnosti/Delatnosti";
 import Products from "./containers/Products/Products";
@@ -27,7 +27,7 @@ function App() {
   return (
     <DocumentMeta {...meta}>
       <div className="app">
-        <BrowserRouter>
+        <HashRouter>
           <Bars />
           <Switch>
             <Route
@@ -53,7 +53,7 @@ function App() {
             />
             <Route component={Footer} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     </DocumentMeta>
   );
