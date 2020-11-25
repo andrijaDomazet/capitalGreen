@@ -14,7 +14,8 @@ import DocumentMeta from "react-document-meta";
 
 const meta = {
   title: "Capital green doo",
-  description: "Capital green doo presentacion",
+  description:
+    "Kompanija Capital green doo posluje u oblasti poljoprivrede i ekskluzivni je uvoznik đubriva Organic mineral.",
   connonical: "https://capitalgreen.rs",
   meta: {
     charset: "utf-8",

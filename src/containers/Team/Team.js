@@ -14,8 +14,8 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Predrag Štrbac</h2>
-            <h3>Direktor</h3>
+            <h3>Predrag Štrbac</h3>
+            <h4>Direktor</h4>
             <div>
               <span>Tel: +381 64 5 222 333</span>
               <span>Mail: strbac@capitalgreen.rs</span>
@@ -33,8 +33,8 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Andrija Domazet</h2>
-            <h3>Zamenik direktora</h3>
+            <h3>Andrija Domazet</h3>
+            <h4>Zamenik direktora</h4>
             <div>
               <span>Tel: +381 64 229 68 68</span>
               <span>Mail: domazet@capitalgreen.rs</span>
@@ -52,8 +52,8 @@ export default function Team() {
             <img src={FaceW} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Marija Perić Živanovic</h2>
-            <h3>Administracija i finansije</h3>
+            <h3>Marija Perić Živanovic</h3>
+            <h4>Administracija i finansije</h4>
             <div>
               <span>Mail: peric@capitalgreen.rs</span>
             </div>
@@ -70,8 +70,8 @@ export default function Team() {
             <img src={FaceM} alt="profile" />
           </div>
           <div className="member__data">
-            <h2>Laslo Gabor</h2>
-            <h3>Komercijalista</h3>
+            <h3>Laslo Gabor</h3>
+            <h4>Komercijalista</h4>
             <div>
               <span>Mail: gabor@capitalgreen.rs</span>
             </div>

@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $green2;
-    h1 {
+    h5 {
       font-size: 1.6rem;
       text-align: center;
       width: 100%;
@@ -47,7 +47,7 @@
   .footer {
     padding-top: 0.5rem;
     .footer__top {
-      h1 {
+      h5 {
         display: none;
       }
       .footer__logo {

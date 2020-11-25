@@ -32,7 +32,7 @@ export default class Popup extends Component {
       let e = this.state.order.indexOf(slika1);
       arr = [slika2, this.state.order[1], this.state.order[2]];
       this.setState({ order: arr, page: 2 });
-    } else if (this.state.page === 2 && this.state.order[0] == slika2) {
+    } else if (this.state.page === 2 && this.state.order[0] === slika2) {
       let arr = [];
       let e = this.state.order.indexOf(slika2);
       arr = [slika1, this.state.order[1], this.state.order[2]];

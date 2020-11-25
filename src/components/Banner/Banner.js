@@ -5,7 +5,7 @@ const Banner = (props) => {
   const { title, text } = productsBanner[props.index];
   return (
     <div className="banner">
-      <h1>{title}</h1>
+      <h2>{title}</h2>
       <p>{text}</p>
     </div>
   );
