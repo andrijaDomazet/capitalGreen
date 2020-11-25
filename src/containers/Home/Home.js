@@ -40,9 +40,6 @@ export default class Home extends Component {
     });
   };
   render() {
-    console.log(res);
-    // console.log(res2);
-
     return (
       <div className="home">
         <Card1

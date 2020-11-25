@@ -47,7 +47,7 @@ export default class Product extends Component {
       <div className={`product ${classes}`}>
         <div className="product-top">
           <div className="productName">
-            <h2> {product.name}</h2>
+            <h4> {product.name}</h4>
           </div>
           <div className="productImg">
             <img

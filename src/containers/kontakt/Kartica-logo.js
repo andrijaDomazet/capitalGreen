@@ -8,7 +8,7 @@ const KarticaLogo = () => {
       <div className="flex-slika">
         <img src={Logo} alt="Logo" />
       </div>
-      <h5>Vaš partner na putu ka modernoj poljoprivrednoj proizvodnji!</h5>
+      <h2>Vaš partner na putu ka modernoj poljoprivrednoj proizvodnji!</h2>
     </div>
   );
 };

@@ -25,8 +25,8 @@ const Kontakt = (props) => {
         <KarticaLogo />
       </div>
       <div className="contact__row-right">
-        <h1>Kontakt</h1>
-        <h2>Za sva dodatna pitanja možete nas ovde kontaktirati.</h2>
+        <h3>Kontakt</h3>
+        <h4>Za sva dodatna pitanja možete nas ovde kontaktirati.</h4>
         <form
           action="mailto:office@capitalgreen.rs"
           method="POST"
