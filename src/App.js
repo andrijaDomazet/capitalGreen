@@ -16,11 +16,12 @@ const meta = {
   title: "Capital green doo",
   description:
     "Kompanija Capital green doo posluje u oblasti poljoprivrede i ekskluzivni je uvoznik đubriva Organic mineral.",
-  connonical: "https://capitalgreen.rs",
+  canonical: "https://capitalgreen.rs",
   meta: {
     charset: "utf-8",
     name: {
-      keywords: "capital,green,fertilizer,agriculture,organic",
+      keywords:
+        "capital green,djubrivo,poljoprivreda,zastita, paprika, pradajz, zelena salata",
     },
   },
 };
@@ -44,15 +45,11 @@ function App() {
             <Route component={Home} />
           </Switch>
           <Switch>
-            <Route exact path="/" component={null} />
-            <Route exact path="/capitalGreen" component={null} />
-            <Route exact path="/kontakt" component={null} />
-            <Route
-              exact
-              path="https://andrijadomazet.github.io/capitalGreen/"
-              component={null}
-            />
-            <Route component={Footer} />
+            <Route exact path="/o-nama" component={Footer} />
+            <Route exact path="/delatnosti" component={Footer} />
+            <Route exact path="/proizvodi" component={Footer} />
+            <Route exact path="/nas-tim" component={Footer} />
+            <Route component={null} />
           </Switch>
         </HashRouter>
       </div>
