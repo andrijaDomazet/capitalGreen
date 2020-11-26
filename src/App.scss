@@ -6,7 +6,7 @@
   background-size: cover;
   background-position: 100% 70%;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: scroll;
 }
 
 @media screen and(min-width:768px) {
@@ -21,6 +21,7 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 40%;
+    overflow: hidden;
   }
 }
 @media screen and(min-width:2400px) {

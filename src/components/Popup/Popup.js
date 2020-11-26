@@ -39,7 +39,7 @@ export default class Popup extends Component {
       this.setState({ order: arr, page: 1 });
     }
   };
-  //end
+
   //setting popup showing class
   setPopup = (show) => {
     return show ? "action__product open" : "action__product";
