@@ -4,18 +4,18 @@
   color: $green1;
   margin: 0 0.3rem;
   text-shadow: 2px 3px 5px grey;
-
-  h2 {
-    color: $green3;
-    font-weight: 600;
-    padding-top: 1.5rem;
-    text-align: center;
-    font-size: 1.2rem;
-  }
+  // border: 1px solid red;
+  // h2 {
+  //   color: $green3;
+  //   font-weight: 600;
+  //   text-align: center;
+  //   padding-left: 0.6rem;
+  //   font-size: 1.2rem;
+  // }
   p {
     text-align: justify;
     text-justify: inter-word;
-    padding: 0.6rem;
+    padding: 0.5rem 0.6rem;
     letter-spacing: 0.07rem;
     color: white;
     line-height: 1.6rem;
@@ -24,10 +24,11 @@
 }
 .card1 > button {
   margin-left: 0.5rem;
+  margin-top: 1rem;
 }
 .card2 {
   width: 22rem;
-  margin: 5rem 0 2rem 0;
+  margin: 3rem 0 0.5rem 0;
   border: 1px solid white;
   color: white;
   text-align: center;
@@ -63,14 +64,14 @@
   .card1 {
     width: 60%;
     padding: 1.2rem;
-    h2 {
-      font-size: 1.8rem;
-      text-align: left;
-      padding: 0;
-      margin: 0;
-    }
+    // h2 {
+    //   font-size: 1.8rem;
+    //   text-align: left;
+    //   padding: 0;
+    //   margin: 0;
+    // }
     .card1-text {
-      padding: 0.5rem 0 1.5rem 0;
+      padding: 0rem 0 1rem 0;
       line-height: 2rem;
       font-size: 1.2rem;
     }
@@ -80,11 +81,12 @@
   }
   .card1 > button {
     margin-left: 0;
+    margin-top: 0.5rem;
   }
   .card2 {
     position: absolute;
-    bottom: 10vh;
-    right: calc(18rem + 5%);
+    bottom: calc(2rem + 10%);
+    right: calc(16rem + 8%);
     font-size: 1.4rem;
     width: 25rem;
     padding: 0.1rem 0.5rem;

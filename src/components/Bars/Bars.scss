@@ -2,7 +2,7 @@
 
 .bars {
   display: flex;
-  border-bottom: 2px solid $green2;
+  // border-bottom: 2px solid $green2;
   min-width: 300px;
   height: 10vh;
   min-height: 45px;
@@ -10,6 +10,9 @@
     display: flex;
     width: calc(4rem + 10%);
     justify-content: center;
+    // border: 1px solid red;
+    padding: 5px;
+    // margin: 10px;
     img {
       width: auto;
       height: 100%;
@@ -21,6 +24,8 @@
   .bars {
     height: 12vh;
     height: 4.5rem;
+    border-bottom: 2px solid $green2;
+
     .bars__logo {
       width: 10%;
       img {
