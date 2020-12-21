@@ -1,0 +1,41 @@
+@import "../../../index.scss";
+.toggle__button {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  min-height: 45px;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid blue;
+}
+.toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 2.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: +100;
+  &:focus {
+    outline: none;
+  }
+  .toggle-button-line {
+    width: 2rem;
+    height: 0.35rem;
+    background: $green2;
+    transition: all 0.1s linear;
+    &:active {
+      background: $green1;
+    }
+  }
+}
+@media screen and(min-width:768px) {
+  .toggle {
+    display: none;
+  }
+}

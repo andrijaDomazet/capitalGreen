@@ -1,0 +1,52 @@
+@import "../../index.scss";
+
+.bars {
+  display: flex;
+  // border-bottom: 2px solid $green2;
+  min-width: 300px;
+  height: 10vh;
+  min-height: 45px;
+  .bars__logo {
+    display: flex;
+    width: calc(4rem + 10%);
+    justify-content: center;
+    // border: 1px solid red;
+    padding: 5px;
+    // margin: 10px;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and(min-width:768px) {
+  .bars {
+    height: 12vh;
+    height: 4.5rem;
+    border-bottom: 2px solid $green2;
+
+    .bars__logo {
+      width: 10%;
+      img {
+        height: 100%;
+      }
+    }
+    .bars__links {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+@media screen and(min-width:968px) {
+  .bars__links {
+    margin: 0 auto;
+  }
+}
+@media screen and(min-width:2400px) {
+  .bars {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+}

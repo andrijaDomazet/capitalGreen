@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.scss";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import DocumentMeta from "react-document-meta";
+import Bars from "./components/Bars/Bars";
+import Home from "./containers/Home/Home";
+import BioloskaZastita from "./containers/BioloskaZastita/BioloskaZastita";
+import Kontakt from "./containers/Kontakt/Kontakt";
 
 const meta = {
   title: "Capital green doo",
@@ -11,16 +16,23 @@ const meta = {
     charset: "utf-8",
     name: {
       keywords:
-        "capital green,djubrivo,poljoprivreda,zastita, paprika, pradajz, zelena salata",
+        "capital green,capital green srbija,djubrivo,poljoprivreda,bioloska zastita,paprika,pradajz,zelena salata",
     },
   },
 };
 function App() {
   return (
     <DocumentMeta {...meta}>
-      <div className="app">
-        <h1>CAPITAL GREEN doo</h1>
-      </div>
+      <BrowserRouter>
+        <div className="app">
+          <Bars />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/bioloska-zastita" exact component={BioloskaZastita} />
+            <Route path="/kontakt" component={Kontakt} />
+          </Switch>
+        </div>
+      </BrowserRouter>
     </DocumentMeta>
   );
 }
