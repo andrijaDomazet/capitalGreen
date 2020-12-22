@@ -1,0 +1,22 @@
+@import "../../../index.scss";
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(46, 46, 46, 0.9);
+  z-index: +101;
+  animation: backdrop__animation 1.5s;
+}
+
+@keyframes backdrop__animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
