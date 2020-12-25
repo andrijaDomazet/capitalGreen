@@ -1,5 +1,93 @@
 @import "../../index.scss";
 
 .bioloska-zastita {
-  //   border: 2px solid red;
+  text-align: center;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 0 auto;
+  padding: 1rem 0;
+  .bioloska-zastita_1 {
+    display: flex;
+    margin: 0 1.5rem;
+    border: 2px solid $green2;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .bioloska-zastita_1 > p {
+    text-align: justify;
+    padding: 0.4rem 1rem;
+    column-count: 3;
+  }
+  .bioloska-zastita_1 > p > h3,
+  .idemo > h3 {
+    background: $green3;
+    width: 100%;
+    padding: 0 0.2rem;
+    color: white;
+    font-weight: normal;
+    margin: 0.6rem 0 0.2rem 0;
+  }
+  .bioloska-zastita_1 > p > img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+  .bioloska-zastita_1.test {
+    p {
+      column-count: 2;
+    }
+  }
+  .bioloska-zastita_1.test.idemo {
+    p {
+      column-count: 1;
+      img {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+        border-radius: 1.5rem;
+      }
+    }
+  }
+}
+.bioloska-zastita > h2 {
+  margin: 0 1.2rem;
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  text-align: left;
+}
+.idemo {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
+@media screen and(max-width:767px) {
+  .bioloska-zastita {
+    .bioloska-zastita_1 {
+      p {
+        column-count: 1;
+      }
+    }
+    .bioloska-zastita_1.test {
+      p {
+        column-count: 1;
+      }
+    }
+    .bioloska-zastita_1.test.idemo > p > div {
+      flex-direction: column;
+      img {
+        padding: 1rem !important;
+      }
+      .idemo {
+        column-count: 1 !important;
+      }
+    }
+  }
+  .bioloska-zastita > h2 {
+    font-size: 1.4rem;
+  }
 }

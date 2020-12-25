@@ -1,0 +1,36 @@
+@import "../../index.scss";
+
+.banner {
+  text-align: center;
+  h1 {
+    margin: 0 auto;
+    color: white;
+    font-size: 0.8rem;
+    background: rgba(0, 179, 0, 0.9);
+    font-weight: 500;
+  }
+  p {
+    color: white;
+    background: rgba(5, 101, 38, 0.9);
+    padding: 0 0.3rem;
+    font-size: 0.6rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .banner {
+    margin: 0 1.2rem;
+    box-shadow: 2px 3px 7px $green2;
+    h1 {
+      letter-spacing: 0.15rem;
+      font-size: 2rem;
+      padding: 0.4rem 0;
+    }
+    p {
+      margin: 0 auto;
+      padding: 0.2rem 5rem;
+      font-size: 1rem;
+    }
+  }
+}
