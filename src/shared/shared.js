@@ -9,7 +9,7 @@ export const options = [
   // { route: "/o-nama", title: "O nama" },
   { route: "/bioloska-zastita", title: "Biološka zaštita" },
   { route: "/organic-mineral", title: "Organic mineral" },
-  //   { route: "/nas-tim", title: "Naš tim" },
+  { route: "/nas-tim", title: "Naš tim" },
   { route: "/kontakt", title: "Kontakt" },
 ];
 
@@ -29,7 +29,12 @@ export const productsBanner = [
   {
     title: "Tim stručnjaka koji se brine o Vašoj proizvodnji",
     text:
-      " Naš tim iskusnih poljoprivrednih stručnjaka posvećeno radi kako bi naši klijenti mogli da dobiju najbolju uslugu na jednom mestu. Upoznajte naš tim, mi smo tu zbog vas.",
+      " Naš tim iskusnih poljoprivrednih stručnjaka posvećeno radi kako bi naši klijenti mogli da dobiju najbolju uslugu na jednom mestu.",
+  },
+  {
+    title: "Biološka zaštita biljaka",
+    text:
+      " Naš tim iskusnih poljoprivrednih stručnjaka posvećeno radi kako bi naši klijenti mogli da dobiju najbolju uslugu na jednom mestu.",
   },
 ];
 

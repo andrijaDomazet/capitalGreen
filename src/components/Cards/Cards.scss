@@ -6,7 +6,7 @@
   text-shadow: 2px 3px 5px grey;
   p {
     text-align: justify;
-    text-justify: inter-word;
+    // text-justify: inter-word;
     padding: 0.5rem 0.6rem;
     letter-spacing: 0.07rem;
     color: white;
@@ -25,7 +25,7 @@
   border: 1px solid white;
   color: white;
   text-align: center;
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.45);
   animation: pulse 2s infinite;
 
   .card2__phone {
@@ -53,6 +53,21 @@
     }
   }
 }
+@media screen and(max-width:767px) {
+  .card1 {
+    order: 2;
+    // color: $green2;
+    background: white;
+    margin: 3rem 0;
+    .card1-text {
+      margin: 0;
+      color: $green3;
+      text-shadow: none;
+      font-size: 0.9rem;
+    }
+  }
+}
+
 @media screen and(min-width:768px) {
   .card1 {
     width: 60%;
@@ -72,13 +87,16 @@
   }
   .card2 {
     position: absolute;
-    bottom: calc(2rem + 10%);
-    right: calc(2rem + 8%);
+    bottom: calc(3rem + 10%);
+    right: calc(1rem + 8%);
     font-size: 1.4rem;
     width: 25rem;
     padding: 0.1rem 0.5rem;
+    background: rgba(0, 0, 0, 0.35);
+
     cursor: pointer;
     .card2__text {
+      letter-spacing: 0.05rem;
       font-size: 1rem;
     }
     .btn__phone {
@@ -92,7 +110,6 @@
     }
   }
 }
-
 @media screen and(min-width:2400px) {
   .card2 {
     right: calc(18rem + 12%);

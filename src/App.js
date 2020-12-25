@@ -6,6 +6,7 @@ import Bars from "./components/Bars/Bars";
 import Home from "./containers/Home/Home";
 import BioloskaZastita from "./containers/BioloskaZastita/BioloskaZastita";
 import Kontakt from "./containers/Kontakt/Kontakt";
+import Team from "./containers/Team/Team";
 
 const meta = {
   title: "Capital green doo",
@@ -29,6 +30,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/bioloska-zastita" exact component={BioloskaZastita} />
+            <Route path="/nas-tim" component={Team} />
             <Route path="/kontakt" component={Kontakt} />
           </Switch>
         </div>
