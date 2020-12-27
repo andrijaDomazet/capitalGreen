@@ -7,7 +7,7 @@ const meta = {
   title: "Bioloska zastita",
   description:
     "Primena hemijskih sredstava za zaštitu biljaka poremetila je prirodnu ravnotežu, što uzrokuje smanjenjem broja prirodnih neprijatelja kao i povećanjem broja štetočina.  Da bismo mogli da primenjujemo biološku zaštitu, važno je da zadržimo korisne životinje jer one pomažu u borbi protiv štetočina.",
-  canonical: "https://capitalgreen.rs/bioloska-zastita",
+  canonical: "https://capitalgreen.rs/#/bioloska-zastita",
   meta: {
     charset: "utf-8",
     name: {
@@ -33,9 +33,9 @@ export default function BioloskaZastita() {
             tretiranje hemijskim sredstvima iz razloga jer neće biti ni
             inficirana ni napadnuta insektima i štetočinama, branićemo je dok je
             zdrava.
-            <h3>Gajenje biljaka na organski način</h3> vodi računa o
-            predostrožnosti i preventivi, ali i stalnoj brizi za zdravlje
-            čoveka, biljke, životinje i prirodne sredine, kao i uređen
+            <h3>Gajenje biljaka na organski način</h3> Organski način gajenja
+            biljaka zahteva predostrožnot i preventivu, ali i stalnu brigu za
+            zdravlje čoveka, biljke, životinje i prirodne sredine, kao i uređen
             zajednički život svih učesnika u ovom procesu. Ovde se javlja velika
             razlika u ciljevima organske i konvencionalne proizvodnje, jer u
             organskoj proizvodnji nije osnovni cilj produktivnost procesa i

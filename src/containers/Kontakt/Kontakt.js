@@ -17,11 +17,12 @@ const options = () => {
 const meta = {
   title: "Kontakt Capital green doo",
   description: "Kontakt informacije kompanije Capital green",
-  canonical: "https://capitalgreen.rs/kontakt",
+  canonical: "https://capitalgreen.rs/#/kontakt",
   meta: {
     charset: "utf-8",
     name: {
-      keywords: "capital green srbija, kontakt capital green srbija",
+      keywords:
+        "capital green srbija, capital green beograd, kotakt telefon, radno vreme",
     },
   },
 };
