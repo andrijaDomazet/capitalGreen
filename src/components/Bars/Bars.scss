@@ -2,7 +2,6 @@
 
 .bars {
   display: flex;
-  // border-bottom: 2px solid $green2;
   background: white;
   min-width: 300px;
   height: 10vh;
@@ -11,9 +10,7 @@
     display: flex;
     width: calc(4rem + 10%);
     justify-content: center;
-    // border: 1px solid red;
     padding: 5px;
-    // margin: 10px;
     img {
       width: auto;
       height: 100%;

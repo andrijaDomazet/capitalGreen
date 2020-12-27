@@ -4,6 +4,20 @@ import FaceM from "../../img/men.png";
 import FaceW from "../../img/woman.png";
 import Banner from "../../components/Banner/Banner";
 
+const meta = {
+  title: "Bioloska zastita",
+  description:
+    "Naš tim iskusnih poljoprivrednih stručnjaka posvećeno radi kako bi naši klijenti mogli da dobiju najbolju uslugu na jednom mestu. Tim stručnjaka koji se brine o Vašoj proizvodnji.",
+  canonical: "https://capitalgreen.rs/#/nas-tim",
+  meta: {
+    charset: "utf-8",
+    name: {
+      keywords:
+        "capital green tim, direktor, komercijalista, biznis plan, bioloska zastita, pooljoprivreda",
+    },
+  },
+};
+
 export default function Team() {
   return (
     <div className="team">

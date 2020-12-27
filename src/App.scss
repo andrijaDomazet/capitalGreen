@@ -1,6 +1,7 @@
 @import "./index.scss";
 
 .app {
+  position: relative;
   background: linear-gradient(to bottom, white 8%, rgba(76, 104, 110, 0.4) 30%),
     url("img/pozadina9.jpeg");
   background: linear-gradient(
@@ -9,13 +10,12 @@
       rgba(54, 54, 54, 0.1) 10%
     ),
     url("img/pozadina9.jpeg");
-  // background: grey;
   background-size: cover;
   background-position: 100% 70%;
+  background-position: 50% 60%;
+  width: 100vw;
   min-height: 100vh;
-  overflow-x: scroll;
 }
-
 @media screen and(min-width:768px) {
   .app {
     background: linear-gradient(
@@ -28,7 +28,6 @@
     background-size: cover;
     background-attachment: fixed;
     background-position: 50% 40%;
-    overflow: hidden;
     h1 {
       font-size: 2.5rem;
     }

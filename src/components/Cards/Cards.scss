@@ -6,7 +6,6 @@
   text-shadow: 2px 3px 5px grey;
   p {
     text-align: justify;
-    // text-justify: inter-word;
     padding: 0.5rem 0.6rem;
     letter-spacing: 0.07rem;
     color: white;
@@ -17,7 +16,6 @@
 }
 .card1 > button {
   margin-left: 0.5rem;
-  margin-top: 1rem;
 }
 .card2 {
   width: 22rem;
@@ -55,15 +53,44 @@
 }
 @media screen and(max-width:767px) {
   .card1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     order: 2;
-    // color: $green2;
     background: white;
-    margin: 3rem 0;
+    clip-path: polygon(0 1.2rem, 100% 0, 100% 100%, 0 100%);
+    padding: 1.8rem 0rem 0.5rem 0;
+    margin: 0;
+    text-align: right;
     .card1-text {
       margin: 0;
-      color: $green3;
+      color: $green2;
       text-shadow: none;
+      text-align: right;
       font-size: 0.9rem;
+      font-style: italic;
+    }
+  }
+  .card1 > button {
+    margin-top: 0.2rem;
+  }
+  .card1 > button:last-child {
+    left: 0;
+    margin-right: 0.5rem;
+    padding: 0.2rem 1.2rem;
+  }
+  .card2 {
+    width: 95%;
+    max-width: 360px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 16rem;
+    .card2__text {
+      font-size: 0.9rem;
+      span {
+        font-size: 1rem;
+      }
     }
   }
 }
