@@ -1,17 +1,12 @@
 @import "../../index.scss";
 
 .card1 {
-  color: $green1;
   margin: 0 0.3rem;
-  text-shadow: 2px 3px 5px grey;
-  p {
+  .card1-text {
     text-align: justify;
-    padding: 0.5rem 0.6rem;
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.05rem;
     color: white;
     line-height: 1.6rem;
-    font-size: 0.8rem;
-    text-shadow: 2px 4px 5px black;
   }
 }
 .card1 > button {
@@ -60,13 +55,13 @@
     order: 2;
     background: white;
     clip-path: polygon(0 1.2rem, 100% 0, 100% 100%, 0 100%);
-    padding: 1.8rem 0rem 0.5rem 0;
+    padding: 1.4rem 0rem 0.5rem 0;
     margin: 0;
     text-align: right;
     .card1-text {
       margin: 0;
+      padding: 0.5rem 0.6rem;
       color: $green2;
-      text-shadow: none;
       text-align: right;
       font-size: 0.9rem;
       font-style: italic;
@@ -103,6 +98,7 @@
       padding: 0rem 0 0.5rem 0;
       line-height: 2rem;
       font-size: 1.2rem;
+      text-shadow: 2px 4px 5px black;
     }
     div {
       margin: 0;

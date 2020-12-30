@@ -22,6 +22,7 @@
       filter: drop-shadow(2px 5px 8px grey);
     }
     .member__data {
+      margin-top: 0.5rem;
       flex: 2;
       h3 {
         font-size: 1.1rem;
@@ -43,19 +44,19 @@
     }
     .member__data > div {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       color: white;
       align-items: center;
+      justify-content: space-around;
       span {
         box-shadow: 1px 3px 5px gray;
-        width: 80%;
+        padding: 0 1rem;
         margin-bottom: 0.2rem;
         font-size: 0.8rem;
         background: $green3;
         border-radius: 0.3rem;
       }
       :last-child {
-        margin-top: 0.3rem;
         background: $green1;
       }
     }
@@ -95,12 +96,11 @@
         }
       }
       .member__data > div {
-        display: inline-block;
+        justify-content: flex-start;
         span {
-          width: 100%;
           font-size: 1rem;
           margin-right: 0.3rem;
-          padding: 0 0.5rem;
+          padding: 0 1.5rem;
         }
       }
     }
