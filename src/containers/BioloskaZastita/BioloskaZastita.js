@@ -140,7 +140,7 @@ export default function BioloskaZastita() {
               }}
             >
               <img
-                src="/img/act10.jpg"
+                src="/img/trips.jpg"
                 alt="trips"
                 style={{
                   padding: "1rem 1rem 1rem 0",
