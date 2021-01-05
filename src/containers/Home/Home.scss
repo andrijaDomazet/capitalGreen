@@ -52,8 +52,11 @@
   .home {
     overflow: scroll;
     position: relative;
+
     h1 {
       position: absolute;
+      left: 0; //????????????????????????????????????????????
+      // right: 0;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 3.5rem);
       text-align: right;
       font-size: 1.8rem;
@@ -61,12 +64,10 @@
       padding: 0.5rem 0.7rem 1.8rem 0;
       width: 100%;
       background: rgb(255, 255, 255);
-      overflow: hidden;
     }
   }
   .home > div:nth-child(2) {
     margin-top: auto;
-    // border: 2px solid red;
   }
 }
 @media screen and(min-width:768px) {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Bars from "./components/Bars/Bars";
 import Home from "./containers/Home/Home";
 import BioloskaZastita from "./containers/BioloskaZastita/BioloskaZastita";
@@ -9,7 +9,7 @@ import Team from "./containers/Team/Team";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app">
         <Bars />
         <Switch>
@@ -19,7 +19,7 @@ function App() {
           <Route path="/kontakt" component={Kontakt} />
         </Switch>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

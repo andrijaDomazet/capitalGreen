@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
 import { options } from "../../../shared/shared";
+import { Animated } from "react-animated-css";
 
 export default function NavBar(props) {
   return <div className="navBar">{navBarOptions(props)}</div>;
@@ -12,9 +13,19 @@ const navBarOptions = (props) => {
     <div className="links">
       {options.map((option, index) => {
         return (
-          <NavLink to={option.route} exact key={index} className="nav-link">
-            {option.title}
-          </NavLink>
+          <Animated
+            animationIn="flash"
+            animationOut="fadeOut"
+            animationInDuration={1000}
+            animationInDelay={4000}
+            animationOutDuration={1000}
+            isVisible={true}
+            key={index}
+          >
+            <NavLink to={option.route} exact className="nav-link">
+              {option.title}
+            </NavLink>
+          </Animated>
         );
       })}
       {adminFunction(props)}
