@@ -6,6 +6,7 @@ import { details2 } from "../../shared/shared";
 import Card1 from "../../components/Cards/Card1";
 import Card2 from "../../components/Cards/Card2";
 import DocumentMeta from "react-document-meta";
+import { Animated } from "react-animated-css";
 
 const meta = {
   title: "Capital green doo",
@@ -39,13 +40,28 @@ export default class Home extends Component {
     return (
       <DocumentMeta {...meta}>
         <div className="home">
-          <h1>Capital green doo</h1>
-          <Card1
-            details={details2}
-            clicked={() => {
-              this.redirectFunc("aboutUs");
-            }}
-          />
+          <Animated
+            animationIn="fadeInUp"
+            animationOut="fadeOut"
+            animationInDuration={800}
+            isVisible={true}
+          >
+            <h1>Capital green doo</h1>
+          </Animated>
+          <Animated
+            animationIn="fadeInUp"
+            animationOut="fadeOut"
+            animationInDelay={400}
+            animationInDuration={1800}
+            isVisible={true}
+          >
+            <Card1
+              details={details2}
+              clicked={() => {
+                this.redirectFunc("aboutUs");
+              }}
+            />
+          </Animated>
           <Card2 details={details2} />
           <MarqueeBottom />
           <Backdrop

@@ -30,7 +30,16 @@ $green3: rgb(0, 136, 0);
 $orange: #ba2d0b;
 $dark1: #754322;
 $dark2: #99621e;
-
+@media only screen and (max-width: 768px) {
+  * {
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
 @media screen and(min-width:1400px) {
   html {
     margin: 0 auto;
